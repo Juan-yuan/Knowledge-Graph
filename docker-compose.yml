@@ -1,0 +1,24 @@
+services:
+  neo4j:
+    image: docker.m.daocloud.io/library/neo4j:5.26
+    container_name: neo4j
+    restart: unless-stopped
+    ports:
+      - "7474:7474"   # Browser / HTTP
+      - "7687:7687"   # Bolt
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/logs:/logs
+      - ./neo4j/import:/var/lib/neo4j/import
+      - ./neo4j/plugins:/plugins
+    environment:
+      NEO4J_AUTH: neo4j/password123
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_server_memory_heap_initial__size: 512m
+      NEO4J_server_memory_heap_max__size: 1G
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
