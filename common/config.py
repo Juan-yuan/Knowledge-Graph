@@ -27,6 +27,10 @@ class Config:
 
         self.EMBEDDING_MODEL_PATH = os.getenv("EMBEDDING_MODEL_PATH")
 
+        self.HERBS_BASE_URL = os.getenv("HERBS_BASE_URL")
+        self.HERBS_LIST_URL = os.getenv("HERBS_LIST_URL")
+        self.CRAWLER_USER_AGENT = os.getenv("CRAWLER_USER_AGENT")
+
         self.ENTITY_INDEX_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss.index")
         self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss_id2text.pkl")
 

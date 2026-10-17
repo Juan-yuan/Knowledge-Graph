@@ -15,9 +15,14 @@ ENV/
 # Conda
 .conda/
 
+# Conda
+.conda/
+prompt.txt
+
 # =========================
 # Environment & Secrets
 # =========================
+.env
 common/.env
 .env.*
 !.env.example

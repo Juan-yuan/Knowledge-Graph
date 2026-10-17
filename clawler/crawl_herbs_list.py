@@ -1,0 +1,103 @@
+import csv
+import json
+import sys
+from pathlib import Path
+from urllib.parse import quote, urljoin
+
+import requests
+from bs4 import BeautifulSoup
+from langchain_core.messages import HumanMessage, SystemMessage
+from tqdm import tqdm
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from common.config import Config
+from common.llm import my_llm
+from common.path_utils import get_file_path
+
+_conf = Config()
+BASE_URL = _conf.HERBS_BASE_URL
+LIST_URL = _conf.HERBS_LIST_URL
+OUTPUT_CSV = get_file_path("clawler/medicinal_herbs_list.csv")
+HEADERS = {"User-Agent": _conf.CRAWLER_USER_AGENT}
+BATCH_SIZE = 50
+MAX_RETRIES = 3
+
+SYSTEM_PROMPT = (
+    "You are a translator specializing in Traditional Chinese Medicine. "
+    "Translate each Chinese medicinal herb name into English. Use the standard English "
+    "name when one exists, followed by the Pinyin in parentheses, e.g. "
+    "\"Ephedra (Ma Huang)\". Return ONLY a JSON array of strings, with the same length "
+    "and order as the input."
+)
+
+
+def fetch_herb_list():
+    """
+    Fetch the herb list page and extract herb names and detail links.
+
+    Returns:
+        List of (chinese_name, detail_url) tuples, de-duplicated by url
+    """
+    response = requests.get(LIST_URL, headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    response.encoding = "utf-8"
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    content = soup.select_one("#content .p_content")
+    herbs, seen = [], set()
+    for a in content.select("li a[href^='/wiki/']"):
+        name = a.get_text(strip=True)
+        # Percent-encode the path so the stored link is pure ASCII
+        url = urljoin(BASE_URL, quote(a["href"]))
+        if name and url not in seen:
+            seen.add(url)
+            herbs.append((name, url))
+    return herbs
+
+
+def translate_batch(names):
+    """
+    Translate a batch of Chinese herb names into English with the LLM.
+
+    Args:
+        names: Chinese herb names
+
+    Returns:
+        English names in the same order as the input
+    """
+    messages = [SystemMessage(content=SYSTEM_PROMPT),
+                HumanMessage(content=json.dumps(names, ensure_ascii=False))]
+    for attempt in range(1, MAX_RETRIES + 1):
+        try:
+            content = my_llm.invoke(messages).content.strip()
+            content = content.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+            result = json.loads(content)
+            if isinstance(result, list) and len(result) == len(names):
+                return [str(r).strip() for r in result]
+            print(f"Length mismatch ({len(result)} vs {len(names)}), retry {attempt}")
+        except Exception as e:
+            print(f"Translate failed: {e}, retry {attempt}")
+    # Fall back to translating one by one so a single bad batch doesn't stop the run
+    return [translate_batch([n])[0] for n in names] if len(names) > 1 else names
+
+
+def main():
+    herbs = fetch_herb_list()
+    print(f"Found {len(herbs)} herbs")
+
+    names = [name for name, _ in herbs]
+    english_names = []
+    for i in tqdm(range(0, len(names), BATCH_SIZE), desc="Translating"):
+        english_names.extend(translate_batch(names[i:i + BATCH_SIZE]))
+
+    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Herb Name", "Detail URL"])
+        for english_name, (_, url) in zip(english_names, herbs):
+            writer.writerow([english_name, url])
+    print(f"Saved to {OUTPUT_CSV}")
+
+
+if __name__ == "__main__":
+    main()
