@@ -58,4 +58,4 @@ if __name__ == "__main__":
     print(device)
     print(embedding_model)
     print(embedding_model.encode(["Hello"]))
-    print(embedding_model.model.get_embedding_dimension())
+    print(embedding_model.model.get_sentence_embedding_dimension())
