@@ -27,7 +27,7 @@ MAX_RETRIES = 3
 # Random pause before each request so 10 threads don't hammer the site
 REQUEST_DELAY = (0.5, 1.5)
 CHUNK_SIZE = 4000
-CJK_PATTERN = re.compile(r"[㐀-鿿豈-﫿]")
+CJK_PATTERN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff]")
 
 SYSTEM_PROMPT = (
     "You are a translator specializing in Traditional Chinese Medicine. "

@@ -35,14 +35,17 @@ SYSTEM_PROMPT = (
 )
 
 
-def fetch_herb_list():
+def fetch_herb_list(list_url=LIST_URL):
     """
-    Fetch the herb list page and extract herb names and detail links.
+    Fetch a list page (herbs by default) and extract item names and detail links.
+
+    Args:
+        list_url: url of the list page
 
     Returns:
         List of (chinese_name, detail_url) tuples, de-duplicated by url
     """
-    response = requests.get(LIST_URL, headers=HEADERS, timeout=30)
+    response = requests.get(list_url, headers=HEADERS, timeout=30)
     response.raise_for_status()
     response.encoding = "utf-8"
     soup = BeautifulSoup(response.text, "html.parser")
@@ -65,17 +68,18 @@ def to_ascii(text):
     return text.encode("ascii", "ignore").decode().strip()
 
 
-def translate_batch(names):
+def translate_batch(names, system_prompt=SYSTEM_PROMPT):
     """
-    Translate a batch of Chinese herb names into English with the LLM.
+    Translate a batch of Chinese names (herbs by default) into English with the LLM.
 
     Args:
-        names: Chinese herb names
+        names: Chinese names
+        system_prompt: translation instructions for the LLM
 
     Returns:
         English names in the same order as the input
     """
-    messages = [SystemMessage(content=SYSTEM_PROMPT),
+    messages = [SystemMessage(content=system_prompt),
                 HumanMessage(content=json.dumps(names, ensure_ascii=False))]
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -88,7 +92,7 @@ def translate_batch(names):
         except Exception as e:
             print(f"Translate failed: {e}, retry {attempt}")
     # Fall back to translating one by one so a single bad batch doesn't stop the run
-    return [translate_batch([n])[0] for n in names] if len(names) > 1 else names
+    return [translate_batch([n], system_prompt)[0] for n in names] if len(names) > 1 else names
 
 
 def main():

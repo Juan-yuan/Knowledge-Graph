@@ -29,6 +29,7 @@ class Config:
 
         self.HERBS_BASE_URL = os.getenv("HERBS_BASE_URL")
         self.HERBS_LIST_URL = os.getenv("HERBS_LIST_URL")
+        self.FORMULAS_LIST_URL = os.getenv("FORMULAS_LIST_URL")
         self.CRAWLER_USER_AGENT = os.getenv("CRAWLER_USER_AGENT")
 
         self.ENTITY_INDEX_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss.index")
