@@ -54,28 +54,28 @@ def safe_filename(name):
     return re.sub(r'[\\/:*?"<>|]+', "-", name).strip(" .-")
 
 
-def build_tasks(rows):
+def build_tasks(rows, name_column, output_dir):
     """
     Map each csv row to an output file path. Names that collide get a numeric suffix;
     the csv order is fixed, so the mapping is stable across runs (needed for resuming).
 
     Returns:
-        List of (herb_name, url, file_path)
+        List of (name, url, file_path)
     """
     tasks, used = [], set()
     for row in rows:
-        base = safe_filename(row["Herb Name"])
+        base = safe_filename(row[name_column])
         filename, n = base, 2
         while filename.lower() in used:
             filename, n = f"{base} ({n})", n + 1
         used.add(filename.lower())
-        tasks.append((row["Herb Name"], row["Detail URL"], os.path.join(OUTPUT_DIR, f"{filename}.txt")))
+        tasks.append((row[name_column], row["Detail URL"], os.path.join(output_dir, f"{filename}.txt")))
     return tasks
 
 
 def fetch_detail(url):
     """
-    Fetch a herb detail page and extract its text content.
+    Fetch a detail page (herb or formula) and extract its text content.
 
     Returns:
         Lines of Chinese text, without the publish time or blank lines
@@ -100,6 +100,10 @@ def fetch_detail(url):
     # Drop images, ads and scripts; the publish time lives in the header, which we skip
     for tag in content.select("figure, script, ins, style"):
         tag.decompose()
+    # Unwrap inline tags so e.g. a linked ingredient stays on the same line as its dosage
+    for tag in content.select("a, strong, b, em, span"):
+        tag.unwrap()
+    content.smooth()
 
     title = soup.select_one(".p_title")
     lines = [title.get_text(strip=True)] if title else []
@@ -124,7 +128,7 @@ def split_chunks(lines):
     return chunks
 
 
-def translate_text(lines):
+def translate_text(lines, system_prompt=SYSTEM_PROMPT):
     """
     Translate lines of Chinese text into English with the LLM, chunk by chunk.
 
@@ -133,7 +137,7 @@ def translate_text(lines):
     """
     result = []
     for chunk in split_chunks(lines):
-        messages = [SystemMessage(content=SYSTEM_PROMPT), HumanMessage(content="\n".join(chunk))]
+        messages = [SystemMessage(content=system_prompt), HumanMessage(content="\n".join(chunk))]
         for attempt in range(1, MAX_RETRIES + 1):
             text = my_llm.invoke(messages).content
             # Retry if Chinese slipped through, otherwise accept the last attempt
@@ -143,15 +147,52 @@ def translate_text(lines):
     return result
 
 
-def crawl_one(task):
-    """Crawl, translate and save one herb. Writes to a temp file first so an
+def crawl_one(task, system_prompt=SYSTEM_PROMPT):
+    """Crawl, translate and save one item. Writes to a temp file first so an
     interrupted run never leaves a half-written file that would be skipped later."""
-    herb_name, url, file_path = task
-    english_lines = translate_text(fetch_detail(url))
+    name, url, file_path = task
+    english_lines = translate_text(fetch_detail(url), system_prompt)
     tmp_path = file_path + ".tmp"
     with open(tmp_path, "w", encoding="utf-8") as f:
-        f.write("\n".join([herb_name, f"Source: {url}"] + english_lines[1:]) + "\n")
+        f.write("\n".join([name, f"Source: {url}"] + english_lines[1:]) + "\n")
     os.replace(tmp_path, file_path)
+
+
+def run(csv_path, name_column, output_dir, system_prompt, limit, workers, unit):
+    """
+    Crawl the detail pages listed in a csv, translate them and save one txt per row.
+    Rows that already have a non-empty file are skipped, so the run can be resumed.
+
+    Args:
+        csv_path: list csv with a name column and a "Detail URL" column
+        name_column: header of the English name column
+        output_dir: directory for the txt files
+        system_prompt: translation instructions for the LLM
+        limit: only crawl the first N rows (0 or None = all)
+        workers: number of threads
+        unit: label for the progress bar
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    with open(csv_path, encoding="utf-8") as f:
+        tasks = build_tasks(list(csv.DictReader(f)), name_column, output_dir)
+    if limit:
+        tasks = tasks[:limit]
+
+    pending = [t for t in tasks if not (os.path.exists(t[2]) and os.path.getsize(t[2]) > 0)]
+    print(f"Total {len(tasks)}, done {len(tasks) - len(pending)}, pending {len(pending)}")
+
+    failed = []
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(crawl_one, t, system_prompt): t for t in pending}
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Crawling", unit=unit):
+            try:
+                future.result()
+            except Exception as e:
+                name, url, _ = futures[future]
+                failed.append(name)
+                tqdm.write(f"Failed: {name} ({url}): {e}")
+
+    print(f"Finished. Failed {len(failed)}; rerun the script to retry them.")
 
 
 def main():
@@ -159,29 +200,7 @@ def main():
     parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT, help="crawl the first N herbs (0 = all)")
     parser.add_argument("--workers", type=int, default=MAX_WORKERS)
     args = parser.parse_args()
-
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    with open(OUTPUT_CSV, encoding="utf-8") as f:
-        tasks = build_tasks(list(csv.DictReader(f)))
-    if args.limit:
-        tasks = tasks[:args.limit]
-
-    # Resume: skip herbs that already have a non-empty file
-    pending = [t for t in tasks if not (os.path.exists(t[2]) and os.path.getsize(t[2]) > 0)]
-    print(f"Total {len(tasks)}, done {len(tasks) - len(pending)}, pending {len(pending)}")
-
-    failed = []
-    with ThreadPoolExecutor(max_workers=args.workers) as executor:
-        futures = {executor.submit(crawl_one, t): t for t in pending}
-        for future in tqdm(as_completed(futures), total=len(futures), desc="Crawling", unit="herb"):
-            try:
-                future.result()
-            except Exception as e:
-                herb_name, url, _ = futures[future]
-                failed.append(herb_name)
-                tqdm.write(f"Failed: {herb_name} ({url}): {e}")
-
-    print(f"Finished. Failed {len(failed)}; rerun the script to retry them.")
+    run(OUTPUT_CSV, "Herb Name", OUTPUT_DIR, SYSTEM_PROMPT, args.limit, args.workers, "herb")
 
 
 if __name__ == "__main__":
