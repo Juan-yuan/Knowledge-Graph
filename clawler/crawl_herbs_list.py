@@ -1,6 +1,8 @@
 import csv
 import json
 import sys
+import unicodedata
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import quote, urljoin
 
@@ -22,6 +24,7 @@ OUTPUT_CSV = get_file_path("clawler/medicinal_herbs_list.csv")
 HEADERS = {"User-Agent": _conf.CRAWLER_USER_AGENT}
 BATCH_SIZE = 50
 MAX_RETRIES = 3
+TRANSLATE_WORKERS = 10
 
 SYSTEM_PROMPT = (
     "You are a translator specializing in Traditional Chinese Medicine. "
@@ -56,6 +59,12 @@ def fetch_herb_list():
     return herbs
 
 
+def to_ascii(text):
+    """Fold LLM output (e.g. non-breaking hyphens, accented pinyin) into plain ASCII."""
+    text = unicodedata.normalize("NFKD", text).replace("\u2011", "-").replace("\u2010", "-")
+    return text.encode("ascii", "ignore").decode().strip()
+
+
 def translate_batch(names):
     """
     Translate a batch of Chinese herb names into English with the LLM.
@@ -74,7 +83,7 @@ def translate_batch(names):
             content = content.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
             result = json.loads(content)
             if isinstance(result, list) and len(result) == len(names):
-                return [str(r).strip() for r in result]
+                return [to_ascii(str(r)) for r in result]
             print(f"Length mismatch ({len(result)} vs {len(names)}), retry {attempt}")
         except Exception as e:
             print(f"Translate failed: {e}, retry {attempt}")
@@ -87,9 +96,11 @@ def main():
     print(f"Found {len(herbs)} herbs")
 
     names = [name for name, _ in herbs]
-    english_names = []
-    for i in tqdm(range(0, len(names), BATCH_SIZE), desc="Translating"):
-        english_names.extend(translate_batch(names[i:i + BATCH_SIZE]))
+    batches = [names[i:i + BATCH_SIZE] for i in range(0, len(names), BATCH_SIZE)]
+    # Translate batches concurrently; map() keeps the original order
+    with ThreadPoolExecutor(max_workers=TRANSLATE_WORKERS) as executor:
+        results = list(tqdm(executor.map(translate_batch, batches), total=len(batches), desc="Translating"))
+    english_names = [name for batch in results for name in batch]
 
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
