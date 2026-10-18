@@ -101,8 +101,7 @@ embeddings/
 *.safetensors
 *.h5
 *.msgpack
-models/Qwen3-Embedding-0.6B/
-models/bert-base-chinese/
+models/bge-m3
 .neo4j/
 
 # =========================

@@ -33,7 +33,13 @@ class EmbeddingModel:
         model_path = resolve_model_path(config.EMBEDDING_MODEL_PATH)
         self.model = SentenceTransformer(model_path, device=device)
 
-    def encode(self, texts: List[str], convert_to_numpy=False, normalize_embeddings=False) -> List[List[float]]:
+    def encode(
+        self,
+        texts: List[str],
+        convert_to_numpy=False,
+        normalize_embeddings=False,
+        **kwargs,
+    ) -> List[List[float]]:
         """
         Convert a list of texts into vectors.
 
@@ -41,6 +47,7 @@ class EmbeddingModel:
             texts: texts to encode
             convert_to_numpy: whether to return a numpy array
             normalize_embeddings: whether to normalize each vector
+            **kwargs: forwarded to SentenceTransformer.encode (e.g. batch_size)
 
         Returns:
             One vector per text, as a list or a numpy array
@@ -49,6 +56,7 @@ class EmbeddingModel:
             texts,
             convert_to_numpy=convert_to_numpy,
             normalize_embeddings=normalize_embeddings,
+            **kwargs,
         )
 
 
