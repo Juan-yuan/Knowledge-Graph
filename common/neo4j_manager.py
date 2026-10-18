@@ -198,6 +198,9 @@ class Neo4jClient:
 neo4j_client = Neo4jClient(conf.NEO4J_URI, conf.NEO4J_USER, conf.NEO4J_PASSWORD)
 
 if __name__ == "__main__":
-    result = neo4j_client.run_cypher("MATCH (n) RETURN count(n) AS count")
-    print(result)
-    neo4j_client.close()
+    try:
+        names = neo4j_client.get_all_node_names("Herb")
+        print(f"Herb nodes: {len(names)}")
+        print(names[:5])
+    finally:
+        neo4j_client.close()

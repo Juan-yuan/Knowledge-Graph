@@ -1,0 +1,244 @@
+{
+  "labels": [
+    {
+      "name": "Disease",
+      "description": "A disease, syndrome, or pathological pattern in Traditional Chinese Medicine or biomedicine (e.g. common cold, exterior wind-cold, qi deficiency).",
+      "properties": [
+        {
+          "name": "name",
+          "description": "Canonical display name of the disease or pattern."
+        }
+      ]
+    },
+    {
+      "name": "Effect",
+      "description": "A therapeutic action or function claimed for a herb or formula (e.g. tonify qi, induce sweating, clear heat).",
+      "properties": [
+        {
+          "name": "name",
+          "description": "Canonical display name of the therapeutic effect."
+        }
+      ]
+    },
+    {
+      "name": "Formula",
+      "description": "A multi-herb prescription / decoction used in Traditional Chinese Medicine (e.g. Ephedra Decoction / Ma Huang Tang).",
+      "properties": [
+        {
+          "name": "classification",
+          "description": "Formula category in TCM formulary taxonomy (e.g. exterior-releasing, tonifying)."
+        },
+        {
+          "name": "contraindications",
+          "description": "Conditions, patient types, or situations in which the formula should not be used."
+        },
+        {
+          "name": "dosage",
+          "description": "Administration and dosage instructions for the formula."
+        },
+        {
+          "name": "key_diagnostic_points",
+          "description": "Key clinical signs and diagnostic criteria that indicate use of the formula."
+        },
+        {
+          "name": "name",
+          "description": "Canonical display name of the formula, usually English with Pinyin in parentheses."
+        }
+      ]
+    },
+    {
+      "name": "Herb",
+      "description": "A medicinal herb or materia medica item used alone or as a formula ingredient (e.g. Ephedra / Ma Huang).",
+      "properties": [
+        {
+          "name": "contraindications",
+          "description": "Conditions or patient types for which the herb is contraindicated or should be used with caution."
+        },
+        {
+          "name": "dosage",
+          "description": "Typical dosage and usage instructions for the herb."
+        },
+        {
+          "name": "flavor",
+          "description": "Taste / flavor property in TCM (e.g. bitter, sweet, acrid)."
+        },
+        {
+          "name": "meridians",
+          "description": "Channels / meridians the herb enters (list of meridian names)."
+        },
+        {
+          "name": "name",
+          "description": "Canonical display name of the herb, usually English with Pinyin in parentheses."
+        },
+        {
+          "name": "nature",
+          "description": "Temperature / nature property in TCM (e.g. hot, warm, neutral, cool, cold)."
+        },
+        {
+          "name": "preparation_method",
+          "description": "Cultivation, processing, or preparation method of the medicinal material."
+        },
+        {
+          "name": "scientific_name",
+          "description": "Latin / botanical scientific name of the plant or material."
+        }
+      ]
+    },
+    {
+      "name": "Source",
+      "description": "A classical or modern textual source that cites a herb or formula (e.g. Treatise on Cold Damage / Shang Han Lun).",
+      "properties": [
+        {
+          "name": "name",
+          "description": "Canonical display name of the textual source."
+        }
+      ]
+    },
+    {
+      "name": "Symptom",
+      "description": "A clinical symptom or sign (e.g. fever, aversion to cold, wheezing, headache).",
+      "properties": [
+        {
+          "name": "name",
+          "description": "Canonical display name of the symptom or sign."
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "type": "TREATS_DISEASE",
+      "description": "A Formula or Herb is indicated for treating a Disease or pattern.",
+      "properties": []
+    },
+    {
+      "type": "HAS_SYMPTOM",
+      "description": "A Disease (or pattern) presents with a Symptom, or is clinically associated with another Disease-level presentation.",
+      "properties": []
+    },
+    {
+      "type": "ALLEVIATES_SYMPTOM",
+      "description": "A Formula or Herb relieves or improves a Symptom (or a disease-like presentation labeled as such in the source text).",
+      "properties": []
+    },
+    {
+      "type": "HAS_EFFECT",
+      "description": "A Formula or Herb possesses a therapeutic Effect / function.",
+      "properties": []
+    },
+    {
+      "type": "FROM_SOURCE",
+      "description": "A Formula or Herb is recorded in or cited from a textual Source.",
+      "properties": []
+    },
+    {
+      "type": "HAS_INGREDIENT",
+      "description": "A Formula (or compound preparation) contains a Herb ingredient, or nests another Formula as a component.",
+      "properties": []
+    }
+  ],
+  "triples": [
+    {
+      "from": "Disease",
+      "rel_type": "HAS_SYMPTOM",
+      "to": "Symptom",
+      "description": "A disease or pattern presents with a given clinical symptom."
+    },
+    {
+      "from": "Disease",
+      "rel_type": "HAS_SYMPTOM",
+      "to": "Disease",
+      "description": "A disease or pattern is associated with another disease-level presentation (e.g. nested or overlapping patterns in the source text)."
+    },
+    {
+      "from": "Formula",
+      "rel_type": "FROM_SOURCE",
+      "to": "Source",
+      "description": "A formula is recorded in or attributed to a classical or modern textual source."
+    },
+    {
+      "from": "Formula",
+      "rel_type": "HAS_INGREDIENT",
+      "to": "Herb",
+      "description": "A formula contains a medicinal herb as an ingredient."
+    },
+    {
+      "from": "Formula",
+      "rel_type": "TREATS_DISEASE",
+      "to": "Disease",
+      "description": "A formula is indicated for treating a disease or pattern."
+    },
+    {
+      "from": "Formula",
+      "rel_type": "ALLEVIATES_SYMPTOM",
+      "to": "Symptom",
+      "description": "A formula relieves or improves a clinical symptom."
+    },
+    {
+      "from": "Formula",
+      "rel_type": "HAS_EFFECT",
+      "to": "Effect",
+      "description": "A formula has a stated therapeutic effect or function."
+    },
+    {
+      "from": "Formula",
+      "rel_type": "HAS_INGREDIENT",
+      "to": "Formula",
+      "description": "A formula incorporates another formula as a component (nested prescription)."
+    },
+    {
+      "from": "Formula",
+      "rel_type": "TREATS_DISEASE",
+      "to": "Symptom",
+      "description": "A formula is indicated against a symptom-like presentation that was typed as a treatment target in the source extraction."
+    },
+    {
+      "from": "Herb",
+      "rel_type": "TREATS_DISEASE",
+      "to": "Disease",
+      "description": "A herb is indicated for treating a disease or pattern."
+    },
+    {
+      "from": "Herb",
+      "rel_type": "HAS_EFFECT",
+      "to": "Effect",
+      "description": "A herb has a stated therapeutic effect or function."
+    },
+    {
+      "from": "Herb",
+      "rel_type": "ALLEVIATES_SYMPTOM",
+      "to": "Symptom",
+      "description": "A herb relieves or improves a clinical symptom."
+    },
+    {
+      "from": "Herb",
+      "rel_type": "FROM_SOURCE",
+      "to": "Source",
+      "description": "A herb is recorded in or attributed to a classical or modern textual source."
+    },
+    {
+      "from": "Herb",
+      "rel_type": "ALLEVIATES_SYMPTOM",
+      "to": "Disease",
+      "description": "A herb is described as relieving a disease-level presentation that appears under an alleviation relation in the source text."
+    },
+    {
+      "from": "Herb",
+      "rel_type": "TREATS_DISEASE",
+      "to": "Symptom",
+      "description": "A herb is indicated against a symptom-like presentation typed as a treatment target in the source extraction."
+    },
+    {
+      "from": "Herb",
+      "rel_type": "HAS_INGREDIENT",
+      "to": "Herb",
+      "description": "A herb preparation includes another herb as a component (e.g. processed product or pair)."
+    },
+    {
+      "from": "Symptom",
+      "rel_type": "HAS_SYMPTOM",
+      "to": "Disease",
+      "description": "A symptom is linked to a disease or pattern it commonly accompanies (direction as stored in the graph)."
+    }
+  ]
+}
