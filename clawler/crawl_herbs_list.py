@@ -25,14 +25,7 @@ HEADERS = {"User-Agent": _conf.CRAWLER_USER_AGENT}
 BATCH_SIZE = 50
 MAX_RETRIES = 3
 TRANSLATE_WORKERS = 10
-
-SYSTEM_PROMPT = (
-    "You are a translator specializing in Traditional Chinese Medicine. "
-    "Translate each Chinese medicinal herb name into English. Use the standard English "
-    "name when one exists, followed by the Pinyin in parentheses, e.g. "
-    "\"Ephedra (Ma Huang)\". Return ONLY a JSON array of strings, with the same length "
-    "and order as the input."
-)
+SYSTEM_PROMPT = _conf.require("CRAWLER_HERBS_LIST_PROMPT")
 
 
 def fetch_herb_list(list_url=LIST_URL):

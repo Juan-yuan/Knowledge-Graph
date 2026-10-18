@@ -6,20 +6,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from clawler.crawl_formulas_list import OUTPUT_CSV
 from clawler.crawl_herbs_detail import MAX_WORKERS, run
+from common.config import Config
 from common.path_utils import get_file_path
 
 OUTPUT_DIR = get_file_path("clawler/herbal_formulas")
 DEFAULT_LIMIT = 10
-
-SYSTEM_PROMPT = (
-    "You are a translator specializing in Traditional Chinese Medicine. "
-    "Translate the following Chinese text about an herbal formula into English. "
-    "Keep the line structure: one output line per input line, no blank lines. "
-    "Use standard English names for formulas and herbs with Pinyin in parentheses, "
-    "translate book titles with Pinyin in parentheses, keep dosages and units exact, "
-    "and translate every Chinese character - the output must contain no Chinese. "
-    "Return only the translation."
-)
+SYSTEM_PROMPT = Config().require("CRAWLER_FORMULAS_DETAIL_PROMPT")
 
 
 def main():

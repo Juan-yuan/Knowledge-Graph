@@ -17,6 +17,7 @@ from tqdm import tqdm
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from clawler.crawl_herbs_list import HEADERS, OUTPUT_CSV
+from common.config import Config
 from common.llm import my_llm
 from common.path_utils import get_file_path
 
@@ -28,15 +29,7 @@ MAX_RETRIES = 3
 REQUEST_DELAY = (0.5, 1.5)
 CHUNK_SIZE = 4000
 CJK_PATTERN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff]")
-
-SYSTEM_PROMPT = (
-    "You are a translator specializing in Traditional Chinese Medicine. "
-    "Translate the following Chinese text about a medicinal herb into English. "
-    "Keep the line structure: one output line per input line, no blank lines. "
-    "Use standard English names for herbs with Pinyin in parentheses, and translate "
-    "every Chinese character - the output must contain no Chinese. "
-    "Return only the translation."
-)
+SYSTEM_PROMPT = Config().require("CRAWLER_HERBS_DETAIL_PROMPT")
 
 _local = threading.local()
 

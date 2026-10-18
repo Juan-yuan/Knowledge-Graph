@@ -12,16 +12,10 @@ from clawler.crawl_herbs_list import BATCH_SIZE, TRANSLATE_WORKERS, fetch_herb_l
 from common.config import Config
 from common.path_utils import get_file_path
 
-LIST_URL = Config().FORMULAS_LIST_URL
+_conf = Config()
+LIST_URL = _conf.FORMULAS_LIST_URL
 OUTPUT_CSV = get_file_path("clawler/herbal_formulas_list.csv")
-
-SYSTEM_PROMPT = (
-    "You are a translator specializing in Traditional Chinese Medicine. "
-    "Translate each Chinese herbal formula name into English. Use the standard English "
-    "name when one exists, followed by the Pinyin in parentheses, e.g. "
-    "\"Ephedra Decoction (Ma Huang Tang)\". Return ONLY a JSON array of strings, with the "
-    "same length and order as the input."
-)
+SYSTEM_PROMPT = _conf.require("CRAWLER_FORMULAS_LIST_PROMPT")
 
 
 def main():
