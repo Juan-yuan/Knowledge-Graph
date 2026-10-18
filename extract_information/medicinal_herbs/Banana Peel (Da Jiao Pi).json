@@ -1,0 +1,83 @@
+{
+  "filename": "Banana Peel (Da Jiao Pi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Banana Peel (Da Jiao Pi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Pericarp of Musaceae plants (e.g., Common Banana, Da Jiao)",
+          "nature": "cold",
+          "flavor": "sweet; astringent",
+          "dosage": "Internal: decoction, 30–60 g. External: decoct for washing; or grind to powder and apply topically.",
+          "preparation_method": "Collected in autumn and sun-dried; dried, clean specimens preferred."
+        }
+      },
+      {
+        "name": "dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "cholera",
+        "type": "Disease"
+      },
+      {
+        "name": "hypertension",
+        "type": "Disease"
+      },
+      {
+        "name": "nasal ulcers",
+        "type": "Disease"
+      },
+      {
+        "name": "skin itching",
+        "type": "Symptom"
+      },
+      {
+        "name": "Clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "Lowers blood pressure",
+        "type": "Effect"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Banana Peel (Da Jiao Pi)",
+        "target": "dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Banana Peel (Da Jiao Pi)",
+        "target": "cholera",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Banana Peel (Da Jiao Pi)",
+        "target": "hypertension",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Banana Peel (Da Jiao Pi)",
+        "target": "nasal ulcers",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Banana Peel (Da Jiao Pi)",
+        "target": "skin itching",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Banana Peel (Da Jiao Pi)",
+        "target": "Clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Banana Peel (Da Jiao Pi)",
+        "target": "Lowers blood pressure",
+        "type": "HAS_EFFECT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "filename": "Clam Shell Powder (Bang Fen).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Clam Shell Powder (Bang Fen)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Shells of Unionidae family mollusks (e.g. dorsal-horn toothless mussel, corrugated crown mussel, triangular-sail mussel)",
+          "nature": "cold",
+          "flavor": "salty",
+          "meridians": [
+            "Lung",
+            "Liver",
+            "Stomach"
+          ],
+          "dosage": "Internal: 3–6 g; External: apply as dry powder or as a paste",
+          "preparation_method": "Shells washed clean, black skin scraped off, then ground into powder or calcined to ash"
+        }
+      },
+      {
+        "name": "Transforms phlegm and reduces accumulations",
+        "type": "Effect"
+      },
+      {
+        "name": "Clears heat and dries dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "phlegm-fluid retention",
+        "type": "Disease"
+      },
+      {
+        "name": "abscesses",
+        "type": "Disease"
+      },
+      {
+        "name": "swellings",
+        "type": "Disease"
+      },
+      {
+        "name": "damp sores",
+        "type": "Disease"
+      },
+      {
+        "name": "dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "infantile malnutrition (gan)",
+        "type": "Disease"
+      },
+      {
+        "name": "stubborn phlegm",
+        "type": "Disease"
+      },
+      {
+        "name": "water-related cough",
+        "type": "Disease"
+      },
+      {
+        "name": "genital sores",
+        "type": "Disease"
+      },
+      {
+        "name": "itchy carbuncles",
+        "type": "Disease"
+      },
+      {
+        "name": "damp rot of the toes",
+        "type": "Disease"
+      },
+      {
+        "name": "cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "stomach pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "nausea",
+        "type": "Symptom"
+      },
+      {
+        "name": "vomiting",
+        "type": "Symptom"
+      },
+      {
+        "name": "leukorrhea",
+        "type": "Symptom"
+      },
+      {
+        "name": "Prescriptions Worth a Thousand Gold (Qianjin Fang)",
+        "type": "Source"
+      },
+      {
+        "name": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Shu",
+        "type": "Source"
+      },
+      {
+        "name": "Chinese Medical Dictionary",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Shiyi",
+        "type": "Source"
+      },
+      {
+        "name": "Ri Huazi Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Yilin Zuanyao",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Transforms phlegm and reduces accumulations",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Clears heat and dries dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "phlegm-fluid retention",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "abscesses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "swellings",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "damp sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "infantile malnutrition (gan)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "stubborn phlegm",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "water-related cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "genital sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "itchy carbuncles",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "damp rot of the toes",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "stomach pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "nausea",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "vomiting",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "leukorrhea",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Prescriptions Worth a Thousand Gold (Qianjin Fang)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Ben Cao Shu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Chinese Medical Dictionary",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Ben Cao Shiyi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Ri Huazi Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Clam Shell Powder (Bang Fen)",
+        "target": "Yilin Zuanyao",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

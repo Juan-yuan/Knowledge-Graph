@@ -1,0 +1,284 @@
+{
+  "filename": "Cinnamon twig (Gui Zhi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Cassia Twig (Guizhi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Cinnamomum cassia",
+          "nature": "warm",
+          "flavor": "pungent; sweet",
+          "meridians": [
+            "Bladder",
+            "Heart",
+            "Lung"
+          ],
+          "dosage": "decoction 1.5–6 g; large doses up to 15–30 g; or in pills/powders",
+          "preparation_method": "young twigs harvested July–August, trimmed into sections and sun-dried",
+          "contraindications": "contraindicated in febrile diseases with high fever, yin deficiency with exuberant fire, and reckless movement of blood due to blood-heat"
+        }
+      },
+      {
+        "name": "Induces sweating and relieves the muscles",
+        "type": "Effect"
+      },
+      {
+        "name": "Warms the meridians and unblocks the channels",
+        "type": "Effect"
+      },
+      {
+        "name": "Wind-cold exterior syndrome",
+        "type": "Disease"
+      },
+      {
+        "name": "Chest impediment with phlegm-fluid",
+        "type": "Disease"
+      },
+      {
+        "name": "Amenorrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "Abdominal masses",
+        "type": "Disease"
+      },
+      {
+        "name": "soreness and pain of shoulders, back and joints",
+        "type": "Symptom"
+      },
+      {
+        "name": "Guizhi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Guizhi Fuzi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Guizhi Baishao Zhimu Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Guizhi Shengjiang Zhishi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Fuling Guizhi Gancao Dazao Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Huangqi Guizhi Five-Substance Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Guizhi Longgu Muli Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Xiao Jian Zhong Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Guizhi Fuling Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "type": "Formula"
+      },
+      {
+        "name": "Cinnamon Bark (Rougui)",
+        "type": "Herb"
+      },
+      {
+        "name": "Honey-fried Licorice (Zhi Gancao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Strengthens heart yang, raises blood pressure",
+        "type": "Effect"
+      },
+      {
+        "name": "dizziness",
+        "type": "Symptom"
+      },
+      {
+        "name": "mental fatigue",
+        "type": "Symptom"
+      },
+      {
+        "name": "limb weakness",
+        "type": "Symptom"
+      },
+      {
+        "name": "low blood pressure due to heart yang deficiency",
+        "type": "Disease"
+      },
+      {
+        "name": "Shanghan Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Jinkui Yaolue",
+        "type": "Source"
+      },
+      {
+        "name": "Xin Zhong Yi supplement 1980",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Cassia Twig (Guizhi)",
+        "target": "Induces sweating and relieves the muscles",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cassia Twig (Guizhi)",
+        "target": "Warms the meridians and unblocks the channels",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cassia Twig (Guizhi)",
+        "target": "Wind-cold exterior syndrome",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cassia Twig (Guizhi)",
+        "target": "Chest impediment with phlegm-fluid",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cassia Twig (Guizhi)",
+        "target": "Amenorrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cassia Twig (Guizhi)",
+        "target": "Abdominal masses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cassia Twig (Guizhi)",
+        "target": "soreness and pain of shoulders, back and joints",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Guizhi Tang",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Guizhi Tang",
+        "target": "Shanghan Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Guizhi Fuzi Tang",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Guizhi Fuzi Tang",
+        "target": "Shanghan Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Guizhi Baishao Zhimu Tang",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Guizhi Baishao Zhimu Tang",
+        "target": "Jinkui Yaolue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Guizhi Shengjiang Zhishi Tang",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Guizhi Shengjiang Zhishi Tang",
+        "target": "Jinkui Yaolue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Fuling Guizhi Gancao Dazao Tang",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Fuling Guizhi Gancao Dazao Tang",
+        "target": "Shanghan Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Huangqi Guizhi Five-Substance Decoction",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Guizhi Longgu Muli Tang",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Xiao Jian Zhong Tang",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Guizhi Fuling Wan",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Guizhi Fuling Wan",
+        "target": "Jinkui Yaolue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "Cassia Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "Cinnamon Bark (Rougui)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "Honey-fried Licorice (Zhi Gancao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "Strengthens heart yang, raises blood pressure",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "dizziness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "mental fatigue",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "limb weakness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Blood-Pressure-Elevating Tea (Shengya Cha)",
+        "target": "low blood pressure due to heart yang deficiency",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

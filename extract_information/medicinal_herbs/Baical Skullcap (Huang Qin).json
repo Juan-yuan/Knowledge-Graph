@@ -1,0 +1,336 @@
+{
+  "filename": "Baical Skullcap (Huang Qin).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Baical Skullcap (Huang Qin)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Scutellaria baicalensis",
+          "nature": "cold",
+          "flavor": "bitter",
+          "meridians": [
+            "Lung",
+            "Gallbladder",
+            "Spleen",
+            "Large Intestine",
+            "Small Intestine"
+          ],
+          "dosage": "Internal: 3–9 g (decoction); or in pills/powders. External: appropriate amount decocted for washing or as topical powder/paste.",
+          "preparation_method": "Sliced (sun-dried); wine-processed (sprayed with yellow rice wine and lightly stir-fried); stir-fried; charred (high-heat charred).",
+          "contraindications": "Contraindicated in spleen and lung deficiency-heat; contraindicated in middle-jiao cold causing diarrhea, cold abdominal pain, lower abdominal pain due to liver/kidney deficiency, abdominal pain from blood deficiency, spleen-deficiency diarrhea, kidney-deficiency loose stools, spleen-deficiency edema, amenorrhea from blood depletion, qi-deficiency with impaired urination, lung invaded by cold causing wheezing/cough, fetal restlessness from blood deficiency, and yin-deficiency leucorrhea."
+        }
+      },
+      {
+        "name": "Clear heat and drain fire",
+        "type": "Effect"
+      },
+      {
+        "name": "Clear damp-heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Stop bleeding",
+        "type": "Effect"
+      },
+      {
+        "name": "Calm the fetus",
+        "type": "Effect"
+      },
+      {
+        "name": "Promote urination",
+        "type": "Effect"
+      },
+      {
+        "name": "Promote pus discharge / resolve toxin",
+        "type": "Effect"
+      },
+      {
+        "name": "Descend qi",
+        "type": "Effect"
+      },
+      {
+        "name": "Antiseptic (external use)",
+        "type": "Effect"
+      },
+      {
+        "name": "Lung-heat cough",
+        "type": "Disease"
+      },
+      {
+        "name": "Damp-heat dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "Jaundice",
+        "type": "Disease"
+      },
+      {
+        "name": "Heat strangury (hot painful urinary dribbling)",
+        "type": "Disease"
+      },
+      {
+        "name": "Restless fetus",
+        "type": "Disease"
+      },
+      {
+        "name": "Carbuncles and sores (suppurative swellings and sores)",
+        "type": "Disease"
+      },
+      {
+        "name": "Vomiting",
+        "type": "Symptom"
+      },
+      {
+        "name": "Epistaxis",
+        "type": "Symptom"
+      },
+      {
+        "name": "Uterine bleeding",
+        "type": "Symptom"
+      },
+      {
+        "name": "Red, swollen, painful eyes",
+        "type": "Symptom"
+      },
+      {
+        "name": "High fever with irritability and thirst",
+        "type": "Symptom"
+      },
+      {
+        "name": "Huang Qin Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Huang Qin Powder",
+        "type": "Formula"
+      },
+      {
+        "name": "Qing Jin Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Ban Xia Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Ben Jing",
+        "type": "Source"
+      },
+      {
+        "name": "Bie Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Gang Mu",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Zheng",
+        "type": "Source"
+      },
+      {
+        "name": "Dian Nan Ben Cao",
+        "type": "Source"
+      },
+      {
+        "name": "Sheng Ji Zong Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Shang Han Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Danxi Xin Fa",
+        "type": "Source"
+      },
+      {
+        "name": "Za Bing Yuan Liu Xi Zhu",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Clear heat and drain fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Clear damp-heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Stop bleeding",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Calm the fetus",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Promote urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Promote pus discharge / resolve toxin",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Descend qi",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Antiseptic (external use)",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Lung-heat cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Damp-heat dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Jaundice",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Heat strangury (hot painful urinary dribbling)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Restless fetus",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Carbuncles and sores (suppurative swellings and sores)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Vomiting",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Epistaxis",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Uterine bleeding",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Red, swollen, painful eyes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "High fever with irritability and thirst",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Huang Qin Tang",
+        "target": "Baical Skullcap (Huang Qin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Huang Qin Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Huang Qin Powder",
+        "target": "Baical Skullcap (Huang Qin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Huang Qin Powder",
+        "target": "Sheng Ji Zong Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Qing Jin Wan",
+        "target": "Baical Skullcap (Huang Qin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Qing Jin Wan",
+        "target": "Danxi Xin Fa",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ban Xia Wan",
+        "target": "Baical Skullcap (Huang Qin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ban Xia Wan",
+        "target": "Za Bing Yuan Liu Xi Zhu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Ben Jing",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Bie Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Ben Cao Gang Mu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Ben Cao Zheng",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Dian Nan Ben Cao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Sheng Ji Zong Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Danxi Xin Fa",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Baical Skullcap (Huang Qin)",
+        "target": "Za Bing Yuan Liu Xi Zhu",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

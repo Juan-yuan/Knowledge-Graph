@@ -1,0 +1,69 @@
+{
+  "filename": "Cherry pit (Ying Tao He).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Cherry pit (Ying Tao He)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Cherry (Yingtao) of the Rosaceae family",
+          "nature": "neutral",
+          "flavor": "pungent",
+          "meridians": [
+            "Lung"
+          ],
+          "dosage": "Internal: 4.5–9 g as a decoction, crushed at time of use; External: apply pressed juice topically or use decoction to wash.",
+          "preparation_method": "Decoction; crushed at time of use; external application of pressed juice",
+          "contraindications": "Avoid in yang-type pox conditions."
+        }
+      },
+      {
+        "name": "disperse and promote eruption of rashes",
+        "type": "Effect"
+      },
+      {
+        "name": "detoxify",
+        "type": "Effect"
+      },
+      {
+        "name": "measles (early-stage with incomplete eruption)",
+        "type": "Disease"
+      },
+      {
+        "name": "incomplete eruption",
+        "type": "Symptom"
+      },
+      {
+        "name": "Illustrated Materia Medica of Southern Yunnan",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Cherry pit (Ying Tao He)",
+        "target": "disperse and promote eruption of rashes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cherry pit (Ying Tao He)",
+        "target": "detoxify",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cherry pit (Ying Tao He)",
+        "target": "measles (early-stage with incomplete eruption)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "measles (early-stage with incomplete eruption)",
+        "target": "incomplete eruption",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Cherry pit (Ying Tao He)",
+        "target": "Illustrated Materia Medica of Southern Yunnan",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "filename": "Bupleurum (Chai Hu).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Bupleurum (Chai Hu)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Bupleurum chinense; Bupleurum scorzonerifolium",
+          "nature": "slightly cold",
+          "flavor": "bitter",
+          "meridians": [
+            "Liver Channel",
+            "Gallbladder Channel"
+          ],
+          "dosage": "Internal: decoction 3–10 g; External: appropriate amount for wash or poultice.",
+          "preparation_method": "Sliced and sun-dried; processed forms include vinegar-processed, wine-processed, turtle-blood processed, charred, honey-processed.",
+          "contraindications": "Contraindicated in true yin deficiency and ascendant Liver yang; avoid in exhausted original qi or yin deficit with profuse sweating; contraindicated in yin deficiency with blazing fire ascending; do not use for malaria not of the Shaoyang channel."
+        }
+      },
+      {
+        "name": "Harmonizes the exterior and interior",
+        "type": "Effect"
+      },
+      {
+        "name": "Spreads the Liver",
+        "type": "Effect"
+      },
+      {
+        "name": "Raises yang",
+        "type": "Effect"
+      },
+      {
+        "name": "Soothes the Liver and relieves constraint",
+        "type": "Effect"
+      },
+      {
+        "name": "Releases the exterior and reduces fever",
+        "type": "Effect"
+      },
+      {
+        "name": "Alternating chills and fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "Chest fullness",
+        "type": "Symptom"
+      },
+      {
+        "name": "Hypochondriac pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Bitter taste in the mouth",
+        "type": "Symptom"
+      },
+      {
+        "name": "Deafness",
+        "type": "Symptom"
+      },
+      {
+        "name": "Headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Vertigo",
+        "type": "Symptom"
+      },
+      {
+        "name": "Malaria",
+        "type": "Disease"
+      },
+      {
+        "name": "Diarrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "Rectal prolapse",
+        "type": "Disease"
+      },
+      {
+        "name": "Irregular menses",
+        "type": "Disease"
+      },
+      {
+        "name": "Uterine prolapse",
+        "type": "Disease"
+      },
+      {
+        "name": "Xiao Chai Hu Tang",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Xiao Yao San",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Chai Hu San",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Shang Han Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Gang Mu (Compendium of Materia Medica)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Harmonizes the exterior and interior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Spreads the Liver",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Raises yang",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Soothes the Liver and relieves constraint",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Releases the exterior and reduces fever",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Alternating chills and fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Chest fullness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Hypochondriac pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Bitter taste in the mouth",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Deafness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Vertigo",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Malaria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Diarrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Rectal prolapse",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Irregular menses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Uterine prolapse",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Xiao Chai Hu Tang",
+        "target": "Bupleurum (Chai Hu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Xiao Chai Hu Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Xiao Yao San",
+        "target": "Bupleurum (Chai Hu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Chai Hu San",
+        "target": "Bupleurum (Chai Hu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bupleurum (Chai Hu)",
+        "target": "Ben Cao Gang Mu (Compendium of Materia Medica)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

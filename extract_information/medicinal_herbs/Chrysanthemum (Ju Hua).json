@@ -1,0 +1,178 @@
+{
+  "filename": "Chrysanthemum (Ju Hua).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Chrysanthemum (Ju Hua)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Chrysanthemum, Asteraceae family (capitulum/head inflorescence)",
+          "nature": "slightly cold",
+          "flavor": "sweet; bitter",
+          "meridians": [
+            "Lung",
+            "Liver"
+          ],
+          "dosage": "Internal decoction 10–15 g; or used in pills or powders; or steeped as tea. External: appropriate amount, decocted water for washing; or pounded into a poultice.",
+          "preparation_method": "Harvest when flowers are in full bloom before first frost. Processing methods vary by producing area and material type (e.g., White chrysanthemum: hang-dry; Chu chrysanthemum: sulfur-fumigate and sun-dry; Gong Ju: bake-dry; Hang Ju: steam then sun-dry or charcoal-dry).",
+          "contraindications": "Use sparingly in qi deficiency with cold stomach, poor appetite, and diarrhea. Contraindicated in yang deficiency or headache with aversion to cold."
+        }
+      },
+      {
+        "name": "dispels wind",
+        "type": "Effect"
+      },
+      {
+        "name": "clears heat",
+        "type": "Effect"
+      },
+      {
+        "name": "brightens the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "dizziness",
+        "type": "Symptom"
+      },
+      {
+        "name": "red eyes",
+        "type": "Symptom"
+      },
+      {
+        "name": "vexation and heat in the chest",
+        "type": "Symptom"
+      },
+      {
+        "name": "sores and abscesses",
+        "type": "Disease"
+      },
+      {
+        "name": "carbuncles",
+        "type": "Disease"
+      },
+      {
+        "name": "hypertension",
+        "type": "Disease"
+      },
+      {
+        "name": "common warts",
+        "type": "Disease"
+      },
+      {
+        "name": "Ben Jing (Classic Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Bie Lu (Supplemental Records)",
+        "type": "Source"
+      },
+      {
+        "name": "Yao Xing Lun (Treatise on Medicinal Properties)",
+        "type": "Source"
+      },
+      {
+        "name": "Ri Hua Zi Ben Cao (Daily Flower Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Gang Mu Shi Yi (Supplement to the Compendium)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "dispels wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "clears heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "brightens the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "dizziness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "red eyes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "vexation and heat in the chest",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "sores and abscesses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "carbuncles",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "hypertension",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chrysanthemum (Ju Hua)",
+        "target": "common warts",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ben Jing (Classic Materia Medica)",
+        "target": "Chrysanthemum (Ju Hua)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Bie Lu (Supplemental Records)",
+        "target": "Chrysanthemum (Ju Hua)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Yao Xing Lun (Treatise on Medicinal Properties)",
+        "target": "Chrysanthemum (Ju Hua)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ri Hua Zi Ben Cao (Daily Flower Materia Medica)",
+        "target": "Chrysanthemum (Ju Hua)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Gang Mu Shi Yi (Supplement to the Compendium)",
+        "target": "Chrysanthemum (Ju Hua)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

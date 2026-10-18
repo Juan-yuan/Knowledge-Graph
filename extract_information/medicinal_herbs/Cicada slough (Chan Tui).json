@@ -1,0 +1,235 @@
+{
+  "filename": "Cicada slough (Chan Tui).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Cicada Slough (Chan Tui)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Shed exoskeleton of the larvae of the cicada Cryptotympana pustulata Fabricius (family Cicadidae)",
+          "nature": "cold",
+          "flavor": "sweet; salty",
+          "meridians": [
+            "Lung meridian",
+            "Liver meridian"
+          ],
+          "dosage": "Internal: 3–6 g decoction; External: topical as needed (wash or powder paste)",
+          "preparation_method": "Remove dirt and sand and sun-dry; common processing removes head, wings and feet; may be washed with boiling water to remove soil",
+          "contraindications": "Use with caution during pregnancy"
+        }
+      },
+      {
+        "name": "disperse wind-heat",
+        "type": "Effect"
+      },
+      {
+        "name": "release the lungs",
+        "type": "Effect"
+      },
+      {
+        "name": "stop spasms",
+        "type": "Effect"
+      },
+      {
+        "name": "dispel wind and clear heat",
+        "type": "Effect"
+      },
+      {
+        "name": "calm convulsions",
+        "type": "Effect"
+      },
+      {
+        "name": "externally contracted wind-heat",
+        "type": "Disease"
+      },
+      {
+        "name": "measles failing to surface",
+        "type": "Disease"
+      },
+      {
+        "name": "carbuncles and toxic swellings",
+        "type": "Disease"
+      },
+      {
+        "name": "tetanus",
+        "type": "Disease"
+      },
+      {
+        "name": "pediatric convulsions",
+        "type": "Disease"
+      },
+      {
+        "name": "cough with hoarseness",
+        "type": "Symptom"
+      },
+      {
+        "name": "urticarial itching",
+        "type": "Symptom"
+      },
+      {
+        "name": "eye redness",
+        "type": "Symptom"
+      },
+      {
+        "name": "eye opacities",
+        "type": "Symptom"
+      },
+      {
+        "name": "aphonia",
+        "type": "Symptom"
+      },
+      {
+        "name": "Bie Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Yao Xing Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Shi Yi",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Yan Yi",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Gang Mu",
+        "type": "Source"
+      },
+      {
+        "name": "Mulberry-Chrysanthemum-Cicada Slough Drink (Sang Ju Chantui Yin)",
+        "type": "Formula",
+        "formula_attributes": {
+          "key_diagnostic_points": "Indicated for pediatric convulsions with fever, headache, cough, runny nose; functions: dispel wind and clear heat, calm convulsions"
+        }
+      },
+      {
+        "name": "Mulberry Leaf (Sangye)",
+        "type": "Herb"
+      },
+      {
+        "name": "Chrysanthemum Flower (Juhua)",
+        "type": "Herb"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "disperse wind-heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "release the lungs",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "stop spasms",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "externally contracted wind-heat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "measles failing to surface",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "carbuncles and toxic swellings",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "tetanus",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "pediatric convulsions",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "cough with hoarseness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "urticarial itching",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "eye redness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "eye opacities",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "aphonia",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "Bie Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "Yao Xing Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "Ben Cao Shi Yi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "Ben Cao Yan Yi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cicada Slough (Chan Tui)",
+        "target": "Ben Cao Gang Mu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Mulberry-Chrysanthemum-Cicada Slough Drink (Sang Ju Chantui Yin)",
+        "target": "Cicada Slough (Chan Tui)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mulberry-Chrysanthemum-Cicada Slough Drink (Sang Ju Chantui Yin)",
+        "target": "Mulberry Leaf (Sangye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mulberry-Chrysanthemum-Cicada Slough Drink (Sang Ju Chantui Yin)",
+        "target": "Chrysanthemum Flower (Juhua)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mulberry-Chrysanthemum-Cicada Slough Drink (Sang Ju Chantui Yin)",
+        "target": "dispel wind and clear heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mulberry-Chrysanthemum-Cicada Slough Drink (Sang Ju Chantui Yin)",
+        "target": "calm convulsions",
+        "type": "HAS_EFFECT"
+      }
+    ]
+  }
+}

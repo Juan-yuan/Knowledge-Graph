@@ -1,0 +1,128 @@
+{
+  "filename": "Chicory (Fen Bao Ju).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Chicory (Fen Bao Ju)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Slender-leaf Ixeris (xi ye ku mai)",
+          "nature": "slightly cold",
+          "flavor": "bitter",
+          "dosage": "Internal: decoction, 6–12 g; External: pounded and applied as a poultice as needed",
+          "preparation_method": "Harvest July–August; washed, sun-dried or used fresh; external use pounded as poultice"
+        }
+      },
+      {
+        "name": "clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "relieves pain",
+        "type": "Effect"
+      },
+      {
+        "name": "anti-inflammatory",
+        "type": "Effect"
+      },
+      {
+        "name": "analgesic",
+        "type": "Effect"
+      },
+      {
+        "name": "jaundice-type hepatitis",
+        "type": "Disease"
+      },
+      {
+        "name": "conjunctivitis",
+        "type": "Disease"
+      },
+      {
+        "name": "boils",
+        "type": "Disease"
+      },
+      {
+        "name": "skin ulcers/sores",
+        "type": "Disease"
+      },
+      {
+        "name": "cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Commonly Used Tibetan Medicinal Herbs",
+        "type": "Source"
+      },
+      {
+        "name": "Flora of Guangxi",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "relieves pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "anti-inflammatory",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "analgesic",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "jaundice-type hepatitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "conjunctivitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "boils",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "skin ulcers/sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "Commonly Used Tibetan Medicinal Herbs",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Chicory (Fen Bao Ju)",
+        "target": "Flora of Guangxi",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

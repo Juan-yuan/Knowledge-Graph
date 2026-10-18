@@ -1,0 +1,250 @@
+{
+  "filename": "Burdock seed (Niu Bang Zi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Great Burdock Achene (Niubangzi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Arctium (burdock)",
+          "nature": "cold",
+          "flavor": "pungent, bitter",
+          "meridians": [
+            "Lung",
+            "Stomach"
+          ],
+          "dosage": "Internal: decoct, 5–10 g; External: appropriate amount, decocted for gargling.",
+          "preparation_method": "Can be used raw or stir-fried until yellow (stir-fry until slightly puffed and outer becomes slightly yellow and fragrant).",
+          "contraindications": "Do not use recklessly in cases of qi deficiency with a pale complexion and spontaneous bowel movements or diarrhea; inappropriate for already suppurated carbuncles unless there is constipation."
+        }
+      },
+      {
+        "name": "Disperse wind-heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Open the lungs",
+        "type": "Effect"
+      },
+      {
+        "name": "Expel rashes",
+        "type": "Effect"
+      },
+      {
+        "name": "Reduce swelling",
+        "type": "Effect"
+      },
+      {
+        "name": "Detoxify",
+        "type": "Effect"
+      },
+      {
+        "name": "Brighten the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "Tonify the middle",
+        "type": "Effect"
+      },
+      {
+        "name": "Wind-heat cough",
+        "type": "Disease"
+      },
+      {
+        "name": "Swollen and painful throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "Rashes that fail to surface",
+        "type": "Symptom"
+      },
+      {
+        "name": "Itchy urticaria",
+        "type": "Disease"
+      },
+      {
+        "name": "Carbuncles and sores with toxin",
+        "type": "Disease"
+      },
+      {
+        "name": "Qi Guan San",
+        "type": "Formula"
+      },
+      {
+        "name": "Niubangzi San",
+        "type": "Formula"
+      },
+      {
+        "name": "Niubang Jieji Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Eshi San",
+        "type": "Formula"
+      },
+      {
+        "name": "Shegan Shuzhanzi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Puji Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Shi Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Yangke Xinde Ji",
+        "type": "Source"
+      },
+      {
+        "name": "Shengji Zonglu",
+        "type": "Source"
+      },
+      {
+        "name": "Pediatric Smallpox Formulas",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Gangmu (Compendium of Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Jingshu (Commentary on the Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Huiyan",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Disperse wind-heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Open the lungs",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Expel rashes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Reduce swelling",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Detoxify",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Brighten the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Tonify the middle",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Wind-heat cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Swollen and painful throat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Rashes that fail to surface",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Itchy urticaria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Carbuncles and sores with toxin",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Qi Guan San",
+        "target": "Great Burdock Achene (Niubangzi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Qi Guan San",
+        "target": "Puji Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Niubangzi San",
+        "target": "Great Burdock Achene (Niubangzi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Niubangzi San",
+        "target": "Ben Shi Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Niubang Jieji Tang",
+        "target": "Great Burdock Achene (Niubangzi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Niubang Jieji Tang",
+        "target": "Yangke Xinde Ji",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Eshi San",
+        "target": "Great Burdock Achene (Niubangzi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Eshi San",
+        "target": "Shengji Zonglu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Shegan Shuzhanzi Tang",
+        "target": "Great Burdock Achene (Niubangzi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Shegan Shuzhanzi Tang",
+        "target": "Pediatric Smallpox Formulas",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Bencao Gangmu (Compendium of Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Bencao Jingshu (Commentary on the Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Great Burdock Achene (Niubangzi)",
+        "target": "Bencao Huiyan",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

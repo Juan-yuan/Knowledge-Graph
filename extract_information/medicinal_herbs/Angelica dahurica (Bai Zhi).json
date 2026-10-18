@@ -1,0 +1,323 @@
+{
+  "filename": "Angelica dahurica (Bai Zhi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Angelica dahurica (Bai Zhi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Angelica dahurica (Fisch. ex Hoffm.) Benth. et Hook.f.; Hangzhou variety: Angelica dahurica var. formosana (Boiss.) Shan et Yuan",
+          "nature": "warm",
+          "flavor": "pungent, slightly bitter",
+          "meridians": [
+            "Lung meridian",
+            "Spleen meridian",
+            "Stomach meridian"
+          ],
+          "dosage": "Internal decoction 3–10 g; external: appropriate amount powdered for topical use or poultice",
+          "preparation_method": "Decoct for internal use; used in pills or powders; externally grind to powder and sprinkle or mix into a poultice",
+          "contraindications": "Contraindicated for those with yin deficiency and blood-heat; incompatible with Xuan Fu Hua (per Bencao Jing Jizhu); contraindicated when vomiting is due to excess fire; do not use for red or white vaginal discharge caused by yin deficiency with blazing fire and blood heat; when an abscess has ulcerated, gradually reduce and stop"
+        }
+      },
+      {
+        "name": "Expels wind",
+        "type": "Effect"
+      },
+      {
+        "name": "Dries dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "Reduces swelling",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieves pain",
+        "type": "Effect"
+      },
+      {
+        "name": "Promotes pus discharge",
+        "type": "Effect"
+      },
+      {
+        "name": "Generates flesh",
+        "type": "Effect"
+      },
+      {
+        "name": "Disperses wind and opens the orifices",
+        "type": "Effect"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "supraorbital ridge pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "toothache",
+        "type": "Symptom"
+      },
+      {
+        "name": "nasal obstruction",
+        "type": "Symptom"
+      },
+      {
+        "name": "cold-damp abdominal pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "dry itchy skin",
+        "type": "Symptom"
+      },
+      {
+        "name": "red or white vaginal discharge",
+        "type": "Symptom"
+      },
+      {
+        "name": "sinusitis",
+        "type": "Disease"
+      },
+      {
+        "name": "intestinal wind",
+        "type": "Disease"
+      },
+      {
+        "name": "hemorrhoids",
+        "type": "Disease"
+      },
+      {
+        "name": "anal fistula",
+        "type": "Disease"
+      },
+      {
+        "name": "carbuncle",
+        "type": "Disease"
+      },
+      {
+        "name": "sores",
+        "type": "Disease"
+      },
+      {
+        "name": "scabies",
+        "type": "Disease"
+      },
+      {
+        "name": "tinea",
+        "type": "Disease"
+      },
+      {
+        "name": "arsenic poisoning",
+        "type": "Disease"
+      },
+      {
+        "name": "snakebite",
+        "type": "Disease"
+      },
+      {
+        "name": "knife or arrow wounds",
+        "type": "Disease"
+      },
+      {
+        "name": "Ben Jing",
+        "type": "Source"
+      },
+      {
+        "name": "Bie Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Yao Xing Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Ri Hua Zi Ben Cao",
+        "type": "Source"
+      },
+      {
+        "name": "Dian Nan Ben Cao",
+        "type": "Source"
+      },
+      {
+        "name": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Jing Jizhu",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Jing Shu",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Expels wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Dries dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Reduces swelling",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Relieves pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Promotes pus discharge",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Generates flesh",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Disperses wind and opens the orifices",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "supraorbital ridge pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "nasal obstruction",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "cold-damp abdominal pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "dry itchy skin",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "red or white vaginal discharge",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "sinusitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "intestinal wind",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "hemorrhoids",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "anal fistula",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "carbuncle",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "scabies",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "tinea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "arsenic poisoning",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "snakebite",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "knife or arrow wounds",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Ben Jing",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Bie Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Yao Xing Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Ri Hua Zi Ben Cao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Dian Nan Ben Cao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Bencao Jing Jizhu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Angelica dahurica (Bai Zhi)",
+        "target": "Bencao Jing Shu",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

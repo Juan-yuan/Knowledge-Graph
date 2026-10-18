@@ -1,0 +1,90 @@
+{
+  "filename": "Che Sang Zi Root (Che Sang Zi Gen).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Che Sang Zi Root (Che Sang Zi Gen)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Hopbush (po liu), Sapindaceae (soapberry) family",
+          "nature": "cold",
+          "flavor": "bitter",
+          "dosage": "Decoction 15–30 g; fresh material 30–60 g",
+          "preparation_method": "Used fresh or sun-dried; decoction for internal use; can be stewed with lean pork (broth) or leaves mashed with brown sugar for topical application"
+        }
+      },
+      {
+        "name": "Drains fire",
+        "type": "Effect"
+      },
+      {
+        "name": "Detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "wind-toxin streaming down",
+        "type": "Disease"
+      },
+      {
+        "name": "toothache",
+        "type": "Symptom"
+      },
+      {
+        "name": "For toothache",
+        "type": "Formula",
+        "formula_attributes": {
+          "dosage": "One to two liang of fresh Che sang zai root, decocted with water for oral administration."
+        }
+      },
+      {
+        "name": "For wind-toxin streaming down",
+        "type": "Formula",
+        "formula_attributes": {
+          "dosage": "One to two liang of dried Che sang zai root, stewed with lean pork and taken as a broth; fresh leaves mashed with brown sugar and applied topically."
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "Che Sang Zi Root (Che Sang Zi Gen)",
+        "target": "Drains fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Che Sang Zi Root (Che Sang Zi Gen)",
+        "target": "Detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Che Sang Zi Root (Che Sang Zi Gen)",
+        "target": "toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Che Sang Zi Root (Che Sang Zi Gen)",
+        "target": "wind-toxin streaming down",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "For toothache",
+        "target": "Che Sang Zi Root (Che Sang Zi Gen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "For toothache",
+        "target": "toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "For wind-toxin streaming down",
+        "target": "Che Sang Zi Root (Che Sang Zi Gen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "For wind-toxin streaming down",
+        "target": "wind-toxin streaming down",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

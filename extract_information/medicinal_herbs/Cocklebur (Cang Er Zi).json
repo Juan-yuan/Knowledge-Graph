@@ -1,0 +1,286 @@
+{
+  "filename": "Cocklebur (Cang Er Zi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Xanthium sibiricum Patr.",
+          "nature": "warm; slight toxicity",
+          "flavor": "bitter; sweet; acrid",
+          "meridians": [
+            "Lung",
+            "Liver"
+          ],
+          "dosage": "Internal: decoction 3–10 g; or used in pills or powders. External: appropriate amount, pound and apply; or decoct in water for washing.",
+          "preparation_method": "Remove impurities, remove spines, sift off ash and debris, lightly stir-fry until yellow, remove and cool.",
+          "contraindications": "Toxic (fruit most toxic) — use only under medical instruction. Do not use for headaches or bi pain due to blood deficiency. Avoid pork, horse meat, and rice-washing water. Disperses qi and consumes blood; persons who are deficient should not take it."
+        }
+      },
+      {
+        "name": "dispels wind",
+        "type": "Effect"
+      },
+      {
+        "name": "relieves pain",
+        "type": "Effect"
+      },
+      {
+        "name": "expels dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "kills parasites",
+        "type": "Effect"
+      },
+      {
+        "name": "disperses wind and opens the orifices",
+        "type": "Effect"
+      },
+      {
+        "name": "nasal obstruction (rhinitis/sinusitis)",
+        "type": "Disease"
+      },
+      {
+        "name": "wind-cold headache",
+        "type": "Disease"
+      },
+      {
+        "name": "wind-cold-damp painful obstruction",
+        "type": "Disease"
+      },
+      {
+        "name": "scabies",
+        "type": "Disease"
+      },
+      {
+        "name": "leprosy",
+        "type": "Disease"
+      },
+      {
+        "name": "carbuncles and toxic swellings",
+        "type": "Disease"
+      },
+      {
+        "name": "hemorrhoids",
+        "type": "Disease"
+      },
+      {
+        "name": "chronic malaria",
+        "type": "Disease"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "toothache",
+        "type": "Symptom"
+      },
+      {
+        "name": "pruritus",
+        "type": "Symptom"
+      },
+      {
+        "name": "limb contracture pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Ben Jing (Classic of Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Shi Yi (Supplement to Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Ri Hua Zi Ben Cao (Rihuazi Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Meng Quan (Materia Medica Primer)",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Bei Yao (Essentials of Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Tang Ben Cao (Tang Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Mint, Siberian Cocklebur, Magnolia Bud and Angelica Dahurica Tea",
+        "type": "Formula"
+      },
+      {
+        "name": "Mint (Bo He)",
+        "type": "Herb"
+      },
+      {
+        "name": "Magnolia Bud (Xin Yi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Angelica Dahurica Root (Bai Zhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "scallion white (Cong Bai)",
+        "type": "Herb"
+      },
+      {
+        "name": "tea leaves",
+        "type": "Herb"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "dispels wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "relieves pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "expels dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "kills parasites",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "disperses wind and opens the orifices",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "nasal obstruction (rhinitis/sinusitis)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "wind-cold headache",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "wind-cold-damp painful obstruction",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "scabies",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "leprosy",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "carbuncles and toxic swellings",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "hemorrhoids",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "chronic malaria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "pruritus",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "limb contracture pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "Ben Jing (Classic of Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "Ben Cao Shi Yi (Supplement to Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "Ri Hua Zi Ben Cao (Rihuazi Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "Ben Cao Meng Quan (Materia Medica Primer)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "Ben Cao Bei Yao (Essentials of Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "target": "Tang Ben Cao (Tang Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Mint, Siberian Cocklebur, Magnolia Bud and Angelica Dahurica Tea",
+        "target": "Mint (Bo He)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Siberian Cocklebur, Magnolia Bud and Angelica Dahurica Tea",
+        "target": "Siberian Cocklebur Fruit (Cang Er Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Siberian Cocklebur, Magnolia Bud and Angelica Dahurica Tea",
+        "target": "Magnolia Bud (Xin Yi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Siberian Cocklebur, Magnolia Bud and Angelica Dahurica Tea",
+        "target": "Angelica Dahurica Root (Bai Zhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Siberian Cocklebur, Magnolia Bud and Angelica Dahurica Tea",
+        "target": "scallion white (Cong Bai)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Siberian Cocklebur, Magnolia Bud and Angelica Dahurica Tea",
+        "target": "tea leaves",
+        "type": "HAS_INGREDIENT"
+      }
+    ]
+  }
+}

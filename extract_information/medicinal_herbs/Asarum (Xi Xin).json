@@ -1,0 +1,351 @@
+{
+  "filename": "Asarum (Xi Xin).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Asarum (Xi Xin)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": null,
+          "nature": "warm",
+          "flavor": "acrid",
+          "meridians": [
+            "Lung meridian",
+            "Kidney meridian",
+            "Heart meridian",
+            "Liver meridian",
+            "Gallbladder meridian",
+            "Spleen meridian"
+          ],
+          "dosage": "decocted 1.5–9 g; ground to powder 1–3 g",
+          "preparation_method": "Remove impurities, spray with water to moisten, cut into sections and air-dry; traditional processing includes removing paired leaves and other soaking/drying steps.",
+          "contraindications": "Contraindicated in qi deficiency with spontaneous sweating, headache due to blood deficiency, cough due to yin deficiency; contraindicated with wolf’s bane, Cornus officinalis, Astragalus membranaceus; avoid talc and xiaoshi; opposes Aconitum; avoid raw lettuce; contraindicated in wind-heat or yin deficiency."
+        }
+      },
+      {
+        "name": "Dispel wind",
+        "type": "Effect"
+      },
+      {
+        "name": "Disperse cold",
+        "type": "Effect"
+      },
+      {
+        "name": "Promote urination",
+        "type": "Effect"
+      },
+      {
+        "name": "Resolve fluid retention",
+        "type": "Effect"
+      },
+      {
+        "name": "Open orifices",
+        "type": "Effect"
+      },
+      {
+        "name": "Warm the channels and relieve pain",
+        "type": "Effect"
+      },
+      {
+        "name": "Warm and transform cold phlegm",
+        "type": "Effect"
+      },
+      {
+        "name": "Open the lung orifices",
+        "type": "Effect"
+      },
+      {
+        "name": "wind-cold headache",
+        "type": "Disease"
+      },
+      {
+        "name": "nasal obstruction/sinusitis",
+        "type": "Disease"
+      },
+      {
+        "name": "toothache",
+        "type": "Disease"
+      },
+      {
+        "name": "phlegm-fluid cough with counterflow",
+        "type": "Disease"
+      },
+      {
+        "name": "wind-damp painful obstruction",
+        "type": "Disease"
+      },
+      {
+        "name": "nasal congestion",
+        "type": "Symptom"
+      },
+      {
+        "name": "cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Xi Xin San",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Ling San",
+        "type": "Formula"
+      },
+      {
+        "name": "Xiao Qing Long Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Xi Xin Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Ling Gan Wu Wei Jiang Xin Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Ma Huang Fu Zi Xi Xin Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Cong Er Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Pu Ji Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Sheng Ji Zong Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Shang Han Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Jin Kui Yao Lue",
+        "type": "Source"
+      },
+      {
+        "name": "Gong Shi Ying Yuan Fang",
+        "type": "Source"
+      },
+      {
+        "name": "migraine",
+        "type": "Disease"
+      },
+      {
+        "name": "externally contracted cold with water accumulation",
+        "type": "Disease"
+      },
+      {
+        "name": "Shao Yin disease (early stage, with subsequent fever and submerged pulse)",
+        "type": "Disease"
+      },
+      {
+        "name": "phlegm-fluid cough with downward qi counterflow",
+        "type": "Disease"
+      },
+      {
+        "name": "deafness",
+        "type": "Disease"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Dispel wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Disperse cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Promote urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Resolve fluid retention",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Open orifices",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Warm the channels and relieve pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Warm and transform cold phlegm",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "Open the lung orifices",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "wind-cold headache",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "nasal obstruction/sinusitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "toothache",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "phlegm-fluid cough with counterflow",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "wind-damp painful obstruction",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "nasal congestion",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Xi Xin)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Xi Xin San",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Xi Xin San",
+        "target": "Pu Ji Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Xi Xin San",
+        "target": "wind-cold headache",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Zhi Ling San",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Ling San",
+        "target": "Sheng Ji Zong Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Ling San",
+        "target": "migraine",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Xiao Qing Long Tang",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Xiao Qing Long Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Xiao Qing Long Tang",
+        "target": "externally contracted cold with water accumulation",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Xi Xin Tang",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Xi Xin Tang",
+        "target": "Sheng Ji Zong Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Xi Xin Tang",
+        "target": "toothache",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ling Gan Wu Wei Jiang Xin Tang",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ling Gan Wu Wei Jiang Xin Tang",
+        "target": "Jin Kui Yao Lue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ling Gan Wu Wei Jiang Xin Tang",
+        "target": "phlegm-fluid cough with downward qi counterflow",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ma Huang Fu Zi Xi Xin Tang",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ma Huang Fu Zi Xi Xin Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ma Huang Fu Zi Xi Xin Tang",
+        "target": "Shao Yin disease (early stage, with subsequent fever and submerged pulse)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cong Er Wan",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cong Er Wan",
+        "target": "Gong Shi Ying Yuan Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cong Er Wan",
+        "target": "deafness",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

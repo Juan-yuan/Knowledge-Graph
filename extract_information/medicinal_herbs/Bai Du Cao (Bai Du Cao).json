@@ -1,0 +1,83 @@
+{
+  "filename": "Bai Du Cao (Bai Du Cao).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Bai Du Cao (Bai Du Cao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Ear-leaved Golden-hair Bracken (Er ye jin mao luo jue), family Dennstaedtiaceae",
+          "nature": "cold",
+          "flavor": "bitter",
+          "dosage": "Internal: decoction, rhizome 9–15 g; External: whole herb as appropriate, decocted for washing.",
+          "preparation_method": "decoction; external decoction for washing"
+        }
+      },
+      {
+        "name": "Detoxify",
+        "type": "Effect"
+      },
+      {
+        "name": "Dry dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieve itching",
+        "type": "Effect"
+      },
+      {
+        "name": "Wind-toxin sores and itching",
+        "type": "Disease"
+      },
+      {
+        "name": "Eczema",
+        "type": "Disease"
+      },
+      {
+        "name": "Vaginal discharge",
+        "type": "Disease"
+      },
+      {
+        "name": "Itching",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Bai Du Cao (Bai Du Cao)",
+        "target": "Detoxify",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bai Du Cao (Bai Du Cao)",
+        "target": "Dry dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bai Du Cao (Bai Du Cao)",
+        "target": "Relieve itching",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Bai Du Cao (Bai Du Cao)",
+        "target": "Wind-toxin sores and itching",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bai Du Cao (Bai Du Cao)",
+        "target": "Eczema",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bai Du Cao (Bai Du Cao)",
+        "target": "Vaginal discharge",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bai Du Cao (Bai Du Cao)",
+        "target": "Itching",
+        "type": "ALLEVIATES_SYMPTOM"
+      }
+    ]
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "filename": "Anemarrhena Rhizome (Zhi Mu).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Anemarrhena asphodeloides",
+          "nature": "cold",
+          "flavor": "bitter",
+          "meridians": [
+            "Lung channel",
+            "Stomach channel",
+            "Kidney channel"
+          ],
+          "dosage": "decocted 6–12 g, or used in pills or powders",
+          "preparation_method": "Best used raw to clear heat and drain fire; use salt-processed Zhi Mu to enter the kidney to reduce fire and nourish yin",
+          "contraindications": "Contraindicated in spleen and stomach cold deficiency with loose stools; avoid in cold cough, kidney qi collapse, or cases without heat; excessive dosage may cause diarrhea; avoid when there is an unresolved exterior syndrome; contraindicated in certain impotence and diarrhea-from-spleen-weakness cases."
+        }
+      },
+      {
+        "name": "Nourishes yin",
+        "type": "Effect"
+      },
+      {
+        "name": "Reduces fire",
+        "type": "Effect"
+      },
+      {
+        "name": "Moistens dryness",
+        "type": "Effect"
+      },
+      {
+        "name": "Lubricates the intestines",
+        "type": "Effect"
+      },
+      {
+        "name": "Clears heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Drains fire",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieves vexation",
+        "type": "Effect"
+      },
+      {
+        "name": "Generates fluids",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieves thirst",
+        "type": "Effect"
+      },
+      {
+        "name": "Clears and drains lung heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Nourishes yin to moisten the lungs",
+        "type": "Effect"
+      },
+      {
+        "name": "vexing heat and excessive thirst",
+        "type": "Disease"
+      },
+      {
+        "name": "steaming bone disorder",
+        "type": "Disease"
+      },
+      {
+        "name": "consumptive heat",
+        "type": "Disease"
+      },
+      {
+        "name": "lung-heat cough",
+        "type": "Disease"
+      },
+      {
+        "name": "dry and hard stools",
+        "type": "Disease"
+      },
+      {
+        "name": "difficult urination",
+        "type": "Disease"
+      },
+      {
+        "name": "warm-heat diseases",
+        "type": "Disease"
+      },
+      {
+        "name": "yin-deficiency diabetes-type thirst",
+        "type": "Disease"
+      },
+      {
+        "name": "Bai Hu Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Er Mu San",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Bai Di Huang Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Yu Ye Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Mu Bie Jia Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Bai Bu Xue Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Bai Shen Dong Yin",
+        "type": "Formula"
+      },
+      {
+        "name": "Er Mu Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Mu Gan Jie Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Mu Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Mu Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Mu Huang Qin Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Da Bu Yin Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Tong Guan Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Bai He Zhi Mu Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Mu San",
+        "type": "Formula"
+      },
+      {
+        "name": "Kan Li Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Bai Hu Jia Gui Zhi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhan Meng Dan",
+        "type": "Formula"
+      },
+      {
+        "name": "Yan Nian Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Zheng Yin Mai Zhi",
+        "type": "Source"
+      },
+      {
+        "name": "Yi Xue Zhong Zhong Can Xi Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Ji Sheng Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Sheng Hui Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Shang Han Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Sheng Ji Zong Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Bian Que Xin Shu",
+        "type": "Source"
+      },
+      {
+        "name": "Yi Fang Ji Jie",
+        "type": "Source"
+      },
+      {
+        "name": "Dan Xi Xin Fa",
+        "type": "Source"
+      },
+      {
+        "name": "Lan Shi Mi Cang",
+        "type": "Source"
+      },
+      {
+        "name": "Jin Kui Yao Lue",
+        "type": "Source"
+      },
+      {
+        "name": "Pu Ji Fang",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Nourishes yin",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Reduces fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Moistens dryness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Lubricates the intestines",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Clears heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Drains fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Relieves vexation",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Generates fluids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Relieves thirst",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Clears and drains lung heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "Nourishes yin to moisten the lungs",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "vexing heat and excessive thirst",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "steaming bone disorder",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "consumptive heat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "lung-heat cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "dry and hard stools",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "difficult urination",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "warm-heat diseases",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Anemarrhena Rhizome (Zhi Mu)",
+        "target": "yin-deficiency diabetes-type thirst",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bai Hu Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bai Hu Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Er Mu San",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Er Mu San",
+        "target": "Yi Fang Ji Jie",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Bai Di Huang Wan",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yu Ye Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yu Ye Tang",
+        "target": "Yi Xue Zhong Zhong Can Xi Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Mu Bie Jia Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Mu Bie Jia Tang",
+        "target": "Yan Nian Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Bai Bu Xue Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Bai Bu Xue Tang",
+        "target": "Zheng Yin Mai Zhi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Bai Shen Dong Yin",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Bai Shen Dong Yin",
+        "target": "Zheng Yin Mai Zhi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Er Mu Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Er Mu Tang",
+        "target": "Ji Sheng Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Mu Gan Jie Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Mu Gan Jie Tang",
+        "target": "Zheng Yin Mai Zhi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Mu Wan",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Mu Wan",
+        "target": "Sheng Hui Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Mu Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Mu Tang",
+        "target": "Sheng Ji Zong Lu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Mu Huang Qin Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Mu Huang Qin Tang",
+        "target": "Bian Que Xin Shu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Da Bu Yin Wan",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Da Bu Yin Wan",
+        "target": "Dan Xi Xin Fa",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Tong Guan Wan",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Tong Guan Wan",
+        "target": "Lan Shi Mi Cang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Bai He Zhi Mu Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bai He Zhi Mu Tang",
+        "target": "Jin Kui Yao Lue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Mu San",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Mu San",
+        "target": "Sheng Hui Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Kan Li Wan",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kan Li Wan",
+        "target": "Pu Ji Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Bai Hu Jia Gui Zhi Tang",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bai Hu Jia Gui Zhi Tang",
+        "target": "Jin Kui Yao Lue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhan Meng Dan",
+        "target": "Anemarrhena Rhizome (Zhi Mu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhan Meng Dan",
+        "target": "Pu Ji Fang",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}
