@@ -1,0 +1,208 @@
+{
+  "filename": "Ephedra Decoction (Ma Huang Tang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Ephedra Decoction (Ma Huang Tang)",
+        "type": "Formula",
+        "formula_attributes": {
+          "classification": "Exterior-releasing formula - acrid-warm release of the exterior",
+          "dosage": "Decoct herbs in water and take warm; cover to induce slight sweating.",
+          "key_diagnostic_points": "Aversion to cold with fever, no sweating and wheezing, pulse floating and tight.",
+          "contraindications": "Contraindicated in patients with sore throat (indicates exterior heat); treating heat with warm-hot herbs may worsen condition."
+        }
+      },
+      {
+        "name": "Treatise on Cold Damage (Shang Han Lun: Bian Taiyang Bing Mai Zheng Bing Zhi Zhong)",
+        "type": "Source"
+      },
+      {
+        "name": "Induce sweating to release the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "Disseminate the Lung",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieve wheezing",
+        "type": "Effect"
+      },
+      {
+        "name": "Ephedra (Ma Huang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Cinnamon Twig (Gui Zhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Apricot Kernel (Xing Ren)",
+        "type": "Herb"
+      },
+      {
+        "name": "Honey-fried Licorice (Zhi Gan Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Exterior contraction of wind-cold",
+        "type": "Disease"
+      },
+      {
+        "name": "common cold",
+        "type": "Disease"
+      },
+      {
+        "name": "influenza",
+        "type": "Disease"
+      },
+      {
+        "name": "acute bronchitis",
+        "type": "Disease"
+      },
+      {
+        "name": "bronchial asthma",
+        "type": "Disease"
+      },
+      {
+        "name": "aversion to cold",
+        "type": "Symptom"
+      },
+      {
+        "name": "fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "body aches",
+        "type": "Symptom"
+      },
+      {
+        "name": "absence of sweating",
+        "type": "Symptom"
+      },
+      {
+        "name": "wheezing",
+        "type": "Symptom"
+      },
+      {
+        "name": "thin white tongue coating",
+        "type": "Symptom"
+      },
+      {
+        "name": "pulse floating and tight",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Treatise on Cold Damage (Shang Han Lun: Bian Taiyang Bing Mai Zheng Bing Zhi Zhong)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Induce sweating to release the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Disseminate the Lung",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Relieve wheezing",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Cinnamon Twig (Gui Zhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Apricot Kernel (Xing Ren)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Honey-fried Licorice (Zhi Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "Exterior contraction of wind-cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "common cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "influenza",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "acute bronchitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ephedra Decoction (Ma Huang Tang)",
+        "target": "bronchial asthma",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "aversion to cold",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "fever",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "headache",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "body aches",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "absence of sweating",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "wheezing",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "thin white tongue coating",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "pulse floating and tight",
+        "type": "HAS_SYMPTOM"
+      }
+    ]
+  }
+}

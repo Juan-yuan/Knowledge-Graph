@@ -1,0 +1,206 @@
+{
+  "filename": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "type": "Formula",
+        "formula_attributes": {
+          "dosage": "Trichosanthes root 6 g, Cinnamon twig 9 g, Peony root 9 g, Licorice root 6 g, Fresh ginger 9 g, Jujube 12 pieces; take the six ingredients with 900 ml water, boil down to 300 ml, divide into three doses and take warm (to produce slight sweating).",
+          "key_diagnostic_points": "Used for externally contracted wind-cold with fever and aversion to wind, headache with sweating, body rigidity with slight convulsions, and a pulse that is deep, slow, and forceful."
+        }
+      },
+      {
+        "name": "Trichosanthes root (gualou gen)",
+        "type": "Herb"
+      },
+      {
+        "name": "Cinnamon twig (guizhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Peony root (shaoyao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Licorice root (gancao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Fresh ginger (shengjiang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Jujube (dazao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Releases the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "Disperses pathogens",
+        "type": "Effect"
+      },
+      {
+        "name": "Generates fluids",
+        "type": "Effect"
+      },
+      {
+        "name": "Relaxes the sinews",
+        "type": "Effect"
+      },
+      {
+        "name": "Unblocks the meridians",
+        "type": "Effect"
+      },
+      {
+        "name": "Moistens dryness",
+        "type": "Effect"
+      },
+      {
+        "name": "Externally contracted wind-cold",
+        "type": "Disease"
+      },
+      {
+        "name": "Soft spasm (rou jing)",
+        "type": "Disease"
+      },
+      {
+        "name": "Fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "Aversion to wind",
+        "type": "Symptom"
+      },
+      {
+        "name": "Headache with sweating",
+        "type": "Symptom"
+      },
+      {
+        "name": "Body rigidity",
+        "type": "Symptom"
+      },
+      {
+        "name": "Slight convulsions",
+        "type": "Symptom"
+      },
+      {
+        "name": "Pulse deep, slow, and forceful",
+        "type": "Symptom"
+      },
+      {
+        "name": "Treatise on Cold Damage (Shanghan Lun)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Trichosanthes root (gualou gen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Cinnamon twig (guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Peony root (shaoyao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Licorice root (gancao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Fresh ginger (shengjiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Jujube (dazao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Releases the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Disperses pathogens",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Generates fluids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Relaxes the sinews",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Unblocks the meridians",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Moistens dryness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Externally contracted wind-cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Soft spasm (rou jing)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Aversion to wind",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Headache with sweating",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Body rigidity",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Slight convulsions",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Pulse deep, slow, and forceful",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Trichosanthes and Cinnamon Twig Decoction (Gua Lou Gui Zhi Tang)",
+        "target": "Treatise on Cold Damage (Shanghan Lun)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

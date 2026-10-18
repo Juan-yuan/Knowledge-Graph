@@ -1,0 +1,442 @@
+{
+  "filename": "Kudzu Decoction (Ge Gen Tang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Kudzu Decoction (Ge Gen Tang)",
+        "type": "Formula",
+        "formula_attributes": {
+          "dosage": "Prepare seven herbs in 1 sheng (1 L) water: first boil Ephedra (Ma Huang) and Kudzu root (Ge Gen) down to 800 ml, remove scum, add remaining herbs and boil down to 300 ml; take 150 ml warm each time, cover to induce slight sweating.",
+          "key_diagnostic_points": "Exterior excess due to wind-cold with aversion to cold and fever, headache, stiffness of the nape and back, body aches without sweating, slight abdominal pain or diarrhea or retching or slight shortness of breath; tongue pale with white coating; pulse floating and tight."
+        }
+      },
+      {
+        "name": "Kudzu root (Ge Gen)",
+        "type": "Herb"
+      },
+      {
+        "name": "Ephedra (Ma Huang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Cinnamon twig (Gui Zhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Fresh ginger (Sheng Jiang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Licorice (Gan Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Peony root (Shao Yao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Jujube (Da Zao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "Source"
+      },
+      {
+        "name": "induce sweating to release the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "raise body fluids",
+        "type": "Effect"
+      },
+      {
+        "name": "moisten the tendons and vessels",
+        "type": "Effect"
+      },
+      {
+        "name": "relax the tendons",
+        "type": "Effect"
+      },
+      {
+        "name": "disperse wind-cold",
+        "type": "Effect"
+      },
+      {
+        "name": "generate fluids and nourish the liquids",
+        "type": "Effect"
+      },
+      {
+        "name": "relax spasm and relieve pain",
+        "type": "Effect"
+      },
+      {
+        "name": "harmonize the Spleen and Stomach",
+        "type": "Effect"
+      },
+      {
+        "name": "stimulate the Spleen and Stomach to generate qi",
+        "type": "Effect"
+      },
+      {
+        "name": "relieve toxicity",
+        "type": "Effect"
+      },
+      {
+        "name": "exterior excess due to wind-cold",
+        "type": "Disease"
+      },
+      {
+        "name": "common cold",
+        "type": "Disease"
+      },
+      {
+        "name": "influenza",
+        "type": "Disease"
+      },
+      {
+        "name": "measles",
+        "type": "Disease"
+      },
+      {
+        "name": "dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "joint pain",
+        "type": "Disease"
+      },
+      {
+        "name": "aversion to cold",
+        "type": "Symptom"
+      },
+      {
+        "name": "fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "stiffness of the nape and back",
+        "type": "Symptom"
+      },
+      {
+        "name": "body aches without sweating",
+        "type": "Symptom"
+      },
+      {
+        "name": "slight abdominal pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "diarrhea",
+        "type": "Symptom"
+      },
+      {
+        "name": "retching",
+        "type": "Symptom"
+      },
+      {
+        "name": "slight shortness of breath",
+        "type": "Symptom"
+      },
+      {
+        "name": "pale tongue with white coating",
+        "type": "Symptom"
+      },
+      {
+        "name": "pulse floating and tight",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Kudzu root (Ge Gen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Cinnamon twig (Gui Zhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Fresh ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Licorice (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Peony root (Shao Yao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Jujube (Da Zao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "induce sweating to release the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "raise body fluids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "relax the tendons",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "relieve toxicity",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "disperse wind-cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "generate fluids and nourish the liquids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "relax spasm and relieve pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "harmonize the Spleen and Stomach",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "stimulate the Spleen and Stomach to generate qi",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "exterior excess due to wind-cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "common cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "influenza",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "measles",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "joint pain",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "aversion to cold",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "fever",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "headache",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "stiffness of the nape and back",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "body aches without sweating",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "slight abdominal pain",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "diarrhea",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "retching",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "slight shortness of breath",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "pale tongue with white coating",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior excess due to wind-cold",
+        "target": "pulse floating and tight",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "aversion to cold",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "stiffness of the nape and back",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "body aches without sweating",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "slight abdominal pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "diarrhea",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "retching",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction (Ge Gen Tang)",
+        "target": "slight shortness of breath",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Kudzu root (Ge Gen)",
+        "target": "raise body fluids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu root (Ge Gen)",
+        "target": "moisten the tendons and vessels",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "disperse wind-cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "induce sweating to release the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon twig (Gui Zhi)",
+        "target": "disperse wind-cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon twig (Gui Zhi)",
+        "target": "induce sweating to release the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Peony root (Shao Yao)",
+        "target": "generate fluids and nourish the liquids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Peony root (Shao Yao)",
+        "target": "relax spasm and relieve pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Licorice (Gan Cao)",
+        "target": "generate fluids and nourish the liquids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Licorice (Gan Cao)",
+        "target": "relax spasm and relieve pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Fresh ginger (Sheng Jiang)",
+        "target": "harmonize the Spleen and Stomach",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Fresh ginger (Sheng Jiang)",
+        "target": "stimulate the Spleen and Stomach to generate qi",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jujube (Da Zao)",
+        "target": "harmonize the Spleen and Stomach",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jujube (Da Zao)",
+        "target": "stimulate the Spleen and Stomach to generate qi",
+        "type": "HAS_EFFECT"
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -8,15 +9,14 @@ from tqdm import tqdm
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from common.config import Config
 from common.path_utils import get_file_path
 
 INPUT_DIR = get_file_path("clawler/medicinal_herbs")
 EXTRACT_DIR = get_file_path("extract_information/medicinal_herbs")
 OUTPUT_PATH = get_file_path("extract_information/herb_fine_tuning.json")
-INSTRUCTION = (
-    "Please extract the knowledge graph structure from the following "
-    "Traditional Chinese Medicine text, including entities and relations."
-)
+INSTRUCTION = Config().require("KG_FINETUNE_INSTRUCTION")
+CJK_PATTERN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff]")
 
 
 def load_existing_records(output_path):
@@ -67,6 +67,8 @@ def build_record(txt_path, json_path):
         text = f.read().strip()
     with open(json_path, encoding="utf-8") as f:
         extract_dict = json.load(f)["extract_dict"]
+    if CJK_PATTERN.search(text) or CJK_PATTERN.search(json.dumps(extract_dict, ensure_ascii=False)):
+        raise ValueError("record contains Chinese text; translate it before building")
     return {
         "instruction": INSTRUCTION,
         "input": text,
@@ -90,7 +92,7 @@ def run(input_dir, extract_dir, output_path):
 
     added, skipped, failed = 0, 0, []
     with open(output_path, "a", encoding="utf-8") as out:
-        for name in tqdm(json_names, desc="Building", unit="herb"):
+        for name in tqdm(json_names, desc="Building", unit="file"):
             txt_path = os.path.join(input_dir, Path(name).stem + ".txt")
             try:
                 record = build_record(txt_path, os.path.join(extract_dir, name))

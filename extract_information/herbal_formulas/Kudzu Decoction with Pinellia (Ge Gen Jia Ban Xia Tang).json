@@ -1,0 +1,201 @@
+{
+  "filename": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "type": "Formula",
+        "formula_attributes": {
+          "dosage": "Take 100 mL warm, cover and wait until slight sweating appears."
+        }
+      },
+      {
+        "name": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "Source"
+      },
+      {
+        "name": "Kudzu root (Ge Gen)",
+        "type": "Herb"
+      },
+      {
+        "name": "Ephedra (Ma Huang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Licorice root (Gan Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Peony root (Shao Yao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Cinnamon twig (Gui Zhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Fresh ginger (Sheng Jiang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Pinellia tuber (Ban Xia)",
+        "type": "Herb"
+      },
+      {
+        "name": "Chinese jujube (Da Zao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Induces sweating to release the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "relaxes the muscles",
+        "type": "Effect"
+      },
+      {
+        "name": "stops vomiting",
+        "type": "Effect"
+      },
+      {
+        "name": "Exterior contraction of wind-cold",
+        "type": "Disease"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "rigidity and stiffness of the nape and back",
+        "type": "Symptom"
+      },
+      {
+        "name": "absence of sweating",
+        "type": "Symptom"
+      },
+      {
+        "name": "no thirst",
+        "type": "Symptom"
+      },
+      {
+        "name": "nausea and counterflow vomiting",
+        "type": "Symptom"
+      },
+      {
+        "name": "white tongue coating",
+        "type": "Symptom"
+      },
+      {
+        "name": "floating pulse",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Kudzu root (Ge Gen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Licorice root (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Peony root (Shao Yao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Cinnamon twig (Gui Zhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Fresh ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Pinellia tuber (Ban Xia)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Chinese jujube (Da Zao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Induces sweating to release the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "relaxes the muscles",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "stops vomiting",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "Exterior contraction of wind-cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "headache",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "rigidity and stiffness of the nape and back",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "absence of sweating",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "no thirst",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "nausea and counterflow vomiting",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "white tongue coating",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Exterior contraction of wind-cold",
+        "target": "floating pulse",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Kudzu Decoction with Pinellia (Ge Gen Jia Ban Xia Tang)",
+        "target": "nausea and counterflow vomiting",
+        "type": "ALLEVIATES_SYMPTOM"
+      }
+    ]
+  }
+}

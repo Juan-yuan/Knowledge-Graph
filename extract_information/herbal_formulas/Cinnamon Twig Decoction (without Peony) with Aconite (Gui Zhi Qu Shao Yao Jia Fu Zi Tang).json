@@ -1,0 +1,154 @@
+{
+  "filename": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "type": "Formula",
+        "formula_attributes": {
+          "dosage": "Use the above five ingredients with 700 milliliters of water, decoct to obtain 300 milliliters, strain off dregs, take 100 milliliters warm.",
+          "key_diagnostic_points": "Used for Taiyang disease when, after mistaken application of purgative methods, the pulse is rapid, the chest is full, and there is slight aversion to cold."
+        }
+      },
+      {
+        "name": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "Source"
+      },
+      {
+        "name": "Cinnamon Twig (Guizhi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "dosage": "9 g",
+          "preparation_method": "peeled"
+        }
+      },
+      {
+        "name": "Licorice (Gancao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "dosage": "6 g",
+          "preparation_method": "honey-fried"
+        }
+      },
+      {
+        "name": "Jujube (Dazao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "dosage": "12 pieces",
+          "preparation_method": "split"
+        }
+      },
+      {
+        "name": "Fresh Ginger (Shengjiang)",
+        "type": "Herb",
+        "herb_attributes": {
+          "dosage": "9 g",
+          "preparation_method": "cut"
+        }
+      },
+      {
+        "name": "Prepared Aconite (Fuzi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "dosage": "5 g",
+          "preparation_method": "processed"
+        }
+      },
+      {
+        "name": "Releases the exterior and dispels wind",
+        "type": "Effect"
+      },
+      {
+        "name": "Warms and tonifies yang qi",
+        "type": "Effect"
+      },
+      {
+        "name": "Generates body fluids",
+        "type": "Effect"
+      },
+      {
+        "name": "Taiyang disease",
+        "type": "Disease"
+      },
+      {
+        "name": "rapid pulse",
+        "type": "Symptom"
+      },
+      {
+        "name": "chest fullness",
+        "type": "Symptom"
+      },
+      {
+        "name": "slight aversion to cold",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Cinnamon Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Licorice (Gancao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Jujube (Dazao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Fresh Ginger (Shengjiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Prepared Aconite (Fuzi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Releases the exterior and dispels wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Warms and tonifies yang qi",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Generates body fluids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Taiyang disease",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Taiyang disease",
+        "target": "rapid pulse",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Taiyang disease",
+        "target": "chest fullness",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Taiyang disease",
+        "target": "slight aversion to cold",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Cinnamon Twig Decoction (without Peony) with Aconite (Gui Zhi Qu Shao Yao Jia Fu Zi Tang)",
+        "target": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

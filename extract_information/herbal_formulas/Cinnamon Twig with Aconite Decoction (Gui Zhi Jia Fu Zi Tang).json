@@ -1,0 +1,231 @@
+{
+  "filename": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fu Zi Tang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "type": "Formula",
+        "formula_attributes": {
+          "dosage": "Combine the six ingredients, add 700 milliliters of water, decoct down to 300 milliliters; each dose 100 milliliters, taken warm.",
+          "key_diagnostic_points": "Taiyang-stage disorder with excessive/unceasing sweating after sweating, aversion to wind, scanty and obstructed urination, slight stiffness of the four limbs with difficulty flexing and extending."
+        }
+      },
+      {
+        "name": "Cinnamon Twig (Guizhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Peony (Shao Yao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Licorice (Gan Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Fresh Ginger (Sheng Jiang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Jujube (Da Zao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Aconite (Fuzi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Harmonize the Ying and Wei",
+        "type": "Effect"
+      },
+      {
+        "name": "secure the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "support Yang",
+        "type": "Effect"
+      },
+      {
+        "name": "Taiyang-stage disorder",
+        "type": "Disease"
+      },
+      {
+        "name": "exterior deficiency with leakage of sweat",
+        "type": "Disease"
+      },
+      {
+        "name": "sinus bradycardia",
+        "type": "Disease"
+      },
+      {
+        "name": "collapse in children from deficiency",
+        "type": "Disease"
+      },
+      {
+        "name": "hepatitis B",
+        "type": "Disease"
+      },
+      {
+        "name": "unceasing perspiration",
+        "type": "Symptom"
+      },
+      {
+        "name": "aversion to wind",
+        "type": "Symptom"
+      },
+      {
+        "name": "scanty and obstructed urination",
+        "type": "Symptom"
+      },
+      {
+        "name": "slight stiffness of the four limbs with difficulty flexing and extending",
+        "type": "Symptom"
+      },
+      {
+        "name": "leakage of sweat",
+        "type": "Symptom"
+      },
+      {
+        "name": "stubborn night sweats",
+        "type": "Symptom"
+      },
+      {
+        "name": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Treatise on Cold Damage (Shang Han Lun)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Cinnamon Twig (Guizhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Peony (Shao Yao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Licorice (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Fresh Ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Jujube (Da Zao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Aconite (Fuzi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Harmonize the Ying and Wei",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "secure the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "support Yang",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "Taiyang-stage disorder",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "exterior deficiency with leakage of sweat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "sinus bradycardia",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "collapse in children from deficiency",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "hepatitis B",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "unceasing perspiration",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "aversion to wind",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "scanty and obstructed urination",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "slight stiffness of the four limbs with difficulty flexing and extending",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "leakage of sweat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cinnamon Twig with Aconite Decoction (Gui Zhi Jia Fuzi Tang)",
+        "target": "stubborn night sweats",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Taiyang-stage disorder",
+        "target": "unceasing perspiration",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Taiyang-stage disorder",
+        "target": "aversion to wind",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Taiyang-stage disorder",
+        "target": "scanty and obstructed urination",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Taiyang-stage disorder",
+        "target": "slight stiffness of the four limbs with difficulty flexing and extending",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "exterior deficiency with leakage of sweat",
+        "target": "leakage of sweat",
+        "type": "HAS_SYMPTOM"
+      }
+    ]
+  }
+}

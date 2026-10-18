@@ -113,7 +113,7 @@ def run(input_dir, output_dir, limit, workers):
     failed = []
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {executor.submit(extract_one, *t): t for t in pending}
-        for future in tqdm(as_completed(futures), total=len(futures), desc="Extracting", unit="herb"):
+        for future in tqdm(as_completed(futures), total=len(futures), desc="Extracting", unit="file"):
             try:
                 future.result()
             except Exception as e:
