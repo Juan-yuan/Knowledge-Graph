@@ -29,27 +29,17 @@ class Neo4jClient:
         self.close()
 
     def run_cypher(self, query, parameters=None):
-        """
-        Execute one Cypher statement and return the results.
-        :param query: Cypher query
-        :param parameters: optional parameter dictionary
-        :return: list of result rows, where each row is a dict
-        """
+        """Execute one Cypher statement and return the results."""
         with self.driver.session() as session:
             result = session.run(query, parameters or {})
             return [record.data() for record in result]
 
     def run_multiple_cypher(self, queries_with_params):
-        """
-        Execute multiple Cypher statements in one transaction and show a tqdm progress bar.
-
-        Args:
-            queries_with_params: List[Tuple[str, Dict]]
-                Example: [("CREATE (n:Test {name: $name})", {"name": "Alice"}), ...]
-        """
+        """Execute multiple Cypher statements in one write transaction."""
+        progress_desc = conf.require("NEO4J_CYPHER_PROGRESS_DESC")
         with self.driver.session() as session:
             def transaction_logic(tx):
-                for query, params in tqdm(queries_with_params, desc="Executing Cypher statements"):
+                for query, params in tqdm(queries_with_params, desc=progress_desc):
                     tx.run(query, params or {})
 
             session.execute_write(transaction_logic)

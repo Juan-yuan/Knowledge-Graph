@@ -1,3 +1,4 @@
+import json
 import os
 import sys
 from pathlib import Path
@@ -21,6 +22,9 @@ class Config:
         self.NEO4J_URI = os.getenv("NEO4J_URI")
         self.NEO4J_USER = os.getenv("NEO4J_USER")
         self.NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
+        self.NEO4J_CYPHER_PROGRESS_DESC = os.getenv("NEO4J_CYPHER_PROGRESS_DESC")
+        self.NEO4J_RUN_CYPHER_DOC = os.getenv("NEO4J_RUN_CYPHER_DOC")
+        self.NEO4J_RUN_MULTIPLE_CYPHER_DOC = os.getenv("NEO4J_RUN_MULTIPLE_CYPHER_DOC")
 
         self.JIMENG_AK = os.getenv("JIMENG_AK")
         self.JIMENG_SK = os.getenv("JIMENG_SK")
@@ -42,6 +46,13 @@ class Config:
         self.KG_EXTRACTION_SCHEMA = os.getenv("KG_EXTRACTION_SCHEMA")
         self.KG_FINETUNE_INSTRUCTION = os.getenv("KG_FINETUNE_INSTRUCTION")
 
+        # Private TCM Neo4j import settings
+        self.TCM_NEO4J_PROJECT = os.getenv("TCM_NEO4J_PROJECT")
+        self.TCM_IMPORT_ENTITY_LABELS = os.getenv("TCM_IMPORT_ENTITY_LABELS")
+        self.TCM_IMPORT_ATTRIBUTE_KEYS = os.getenv("TCM_IMPORT_ATTRIBUTE_KEYS")
+        self.TCM_IMPORT_RELATION_SCHEMA = os.getenv("TCM_IMPORT_RELATION_SCHEMA")
+        self.TCM_IMPORT_PROJECT_INFO = os.getenv("TCM_IMPORT_PROJECT_INFO")
+
         self.ENTITY_INDEX_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss.index")
         self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss_id2text.pkl")
 
@@ -50,6 +61,10 @@ class Config:
         if not value:
             raise RuntimeError(f"{key} is missing. Set it in common/.env (see .env.example).")
         return value
+
+    def require_json(self, key: str):
+        return json.loads(self.require(key))
+
 
 
 if __name__ == "__main__":
