@@ -1,0 +1,755 @@
+{
+  "filename": "Lophatherum (Dan Zhu Ye).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Lophatherum (Dan Zhu Ye)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": null,
+          "nature": "cold",
+          "flavor": "sweet; bland",
+          "meridians": [
+            "Heart channel",
+            "Lung channel",
+            "Gallbladder channel",
+            "Stomach channel"
+          ],
+          "dosage": "9–15 g (decoction, internal use)",
+          "preparation_method": "dried stems and leaves",
+          "contraindications": "Use with caution in patients without real fire or damp-heat; contraindicated in constitutional deficiency with cold."
+        }
+      },
+      {
+        "name": "clears Heart fire",
+        "type": "Effect"
+      },
+      {
+        "name": "relieves vexation and heat",
+        "type": "Effect"
+      },
+      {
+        "name": "promotes urination",
+        "type": "Effect"
+      },
+      {
+        "name": "dissolves phlegm",
+        "type": "Effect"
+      },
+      {
+        "name": "stops thirst",
+        "type": "Effect"
+      },
+      {
+        "name": "eliminates Upper Burner fire",
+        "type": "Effect"
+      },
+      {
+        "name": "brightens the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "reduces fever",
+        "type": "Effect"
+      },
+      {
+        "name": "disperses hemorrhoidal pus and toxins",
+        "type": "Effect"
+      },
+      {
+        "name": "dispels stomach heat",
+        "type": "Effect"
+      },
+      {
+        "name": "antidote for pediatric pox toxins",
+        "type": "Effect"
+      },
+      {
+        "name": "cools and relieves heat",
+        "type": "Effect"
+      },
+      {
+        "name": "diuretic",
+        "type": "Effect"
+      },
+      {
+        "name": "febrile disease",
+        "type": "Disease"
+      },
+      {
+        "name": "febrile thirst",
+        "type": "Disease"
+      },
+      {
+        "name": "thirst",
+        "type": "Symptom"
+      },
+      {
+        "name": "vexation",
+        "type": "Symptom"
+      },
+      {
+        "name": "dark or painful urination",
+        "type": "Symptom"
+      },
+      {
+        "name": "turbid painful dribbling",
+        "type": "Disease"
+      },
+      {
+        "name": "oral ulcers and tongue sores",
+        "type": "Symptom"
+      },
+      {
+        "name": "swollen painful gums",
+        "type": "Symptom"
+      },
+      {
+        "name": "cough and asthma",
+        "type": "Disease"
+      },
+      {
+        "name": "hemoptysis",
+        "type": "Symptom"
+      },
+      {
+        "name": "vomiting and retching",
+        "type": "Symptom"
+      },
+      {
+        "name": "pediatric convulsions",
+        "type": "Disease"
+      },
+      {
+        "name": "leukorrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "hemorrhoidal pus and toxins",
+        "type": "Disease"
+      },
+      {
+        "name": "stomach heat",
+        "type": "Disease"
+      },
+      {
+        "name": "ocular conditions",
+        "type": "Disease"
+      },
+      {
+        "name": "nasal bleeding",
+        "type": "Symptom"
+      },
+      {
+        "name": "Compendium of Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Essentials of the Nature of Crude Herbs",
+        "type": "Source"
+      },
+      {
+        "name": "Woling Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Materia Medica Renewed",
+        "type": "Source"
+      },
+      {
+        "name": "Handy Prescriptions from Flora",
+        "type": "Source"
+      },
+      {
+        "name": "Classified Herbal Natures",
+        "type": "Source"
+      },
+      {
+        "name": "Modern Practical Chinese Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Guangxi Materia Medica Records",
+        "type": "Source"
+      },
+      {
+        "name": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Dan Zhu Ye Congee (Sheng Hui Fang)",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Dao Chi San (Yi Li Jian Yi)",
+        "type": "Formula",
+        "formula_attributes": null
+      },
+      {
+        "name": "Poria (Fu Ling)",
+        "type": "Herb"
+      },
+      {
+        "name": "Gypsum (Shi Gao)",
+        "type": "Herb"
+      },
+      {
+        "name": "wheat",
+        "type": "Herb"
+      },
+      {
+        "name": "Trichosanthes fruit (Gua Lou)",
+        "type": "Herb"
+      },
+      {
+        "name": "Pinellia (Ban Xia)",
+        "type": "Herb"
+      },
+      {
+        "name": "Ginseng (Ren Shen)",
+        "type": "Herb"
+      },
+      {
+        "name": "Ophiopogon root (Mai Dong)",
+        "type": "Herb"
+      },
+      {
+        "name": "Licorice root (Gan Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Japonica rice",
+        "type": "Herb"
+      },
+      {
+        "name": "Capillaris wormwood (Yin Chen)",
+        "type": "Herb"
+      },
+      {
+        "name": "Kudzu root (Ge Gen)",
+        "type": "Herb"
+      },
+      {
+        "name": "Saposhnikovia root (Fang Feng)",
+        "type": "Herb"
+      },
+      {
+        "name": "Platycodon root (Jie Geng)",
+        "type": "Herb"
+      },
+      {
+        "name": "Cinnamon twig (Gui Zhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Aconite (Fu Zi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Jujube (Da Zao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Fresh ginger (Sheng Jiang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Plantain seed (Che Qian Zi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Black bean (Wu Dou)",
+        "type": "Herb"
+      },
+      {
+        "name": "Juncus pith (Deng Xin Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Akebia stem (Mu Tong)",
+        "type": "Herb"
+      },
+      {
+        "name": "Raw Rehmannia (Sheng Di Huang)",
+        "type": "Herb"
+      },
+      {
+        "name": "Wai Tai Mi Yao",
+        "type": "Source"
+      },
+      {
+        "name": "Shang Han Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Sheng Ji Zong Lu",
+        "type": "Source"
+      },
+      {
+        "name": "Sheng Hui Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Jin Gui Yao Lue",
+        "type": "Source"
+      },
+      {
+        "name": "Qi Xiao Liang Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Yi Li Jian Yi",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "clears Heart fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "relieves vexation and heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "promotes urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "dissolves phlegm",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "stops thirst",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "eliminates Upper Burner fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "brightens the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "reduces fever",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "disperses hemorrhoidal pus and toxins",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "dispels stomach heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "antidote for pediatric pox toxins",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "cools and relieves heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "diuretic",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "febrile disease",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "febrile thirst",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "thirst",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "vexation",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "dark or painful urination",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "turbid painful dribbling",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "oral ulcers and tongue sores",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "swollen painful gums",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "cough and asthma",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "hemoptysis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "vomiting and retching",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "pediatric convulsions",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "leukorrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "hemorrhoidal pus and toxins",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "stomach heat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "ocular conditions",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "nasal bleeding",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Compendium of Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Essentials of the Nature of Crude Herbs",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Woling Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Materia Medica Renewed",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Handy Prescriptions from Flora",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Classified Herbal Natures",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Modern Practical Chinese Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Lophatherum (Dan Zhu Ye)",
+        "target": "Guangxi Materia Medica Records",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "target": "Lophatherum (Dan Zhu Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "target": "Poria (Fu Ling)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "target": "Gypsum (Shi Gao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "target": "wheat",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "target": "Trichosanthes fruit (Gua Lou)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "target": "febrile thirst",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Wai Tai Mi Yao)",
+        "target": "Wai Tai Mi Yao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Lophatherum (Dan Zhu Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Gypsum (Shi Gao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Pinellia (Ban Xia)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Ginseng (Ren Shen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Ophiopogon root (Mai Dong)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Licorice root (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Japonica rice",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Bamboo Leaf and Gypsum Decoction (Shang Han Lun)",
+        "target": "post-typhoid emaciation with qi counterflow and retching",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Dan Zhu Ye Congee (Sheng Hui Fang)",
+        "target": "Lophatherum (Dan Zhu Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Congee (Sheng Hui Fang)",
+        "target": "Japonica rice",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Congee (Sheng Hui Fang)",
+        "target": "Capillaris wormwood (Yin Chen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Congee (Sheng Hui Fang)",
+        "target": "pediatric heart wind-heat with mental confusion",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Dan Zhu Ye Congee (Sheng Hui Fang)",
+        "target": "Sheng Hui Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Lophatherum (Dan Zhu Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Kudzu root (Ge Gen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Saposhnikovia root (Fang Feng)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Platycodon root (Jie Geng)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Licorice root (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Cinnamon twig (Gui Zhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Ginseng (Ren Shen)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Aconite (Fu Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Jujube (Da Zao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Fresh ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "postpartum wind-stroke with fever, face flushed red, panting and headache",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Bamboo Leaf Decoction (Jin Gui Yao Lue)",
+        "target": "Jin Gui Yao Lue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "Lophatherum (Dan Zhu Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "Plantain seed (Che Qian Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "Jujube (Da Zao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "Black bean (Wu Dou)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "Juncus pith (Deng Xin Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "Licorice root (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "various dribbling painful urinary disorders",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Dan Zhu Ye Decoction (Qi Xiao Liang Fang)",
+        "target": "Qi Xiao Liang Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Dao Chi San (Yi Li Jian Yi)",
+        "target": "Lophatherum (Dan Zhu Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dao Chi San (Yi Li Jian Yi)",
+        "target": "Akebia stem (Mu Tong)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dao Chi San (Yi Li Jian Yi)",
+        "target": "Licorice root (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dao Chi San (Yi Li Jian Yi)",
+        "target": "Plantain seed (Che Qian Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dao Chi San (Yi Li Jian Yi)",
+        "target": "Raw Rehmannia (Sheng Di Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Dao Chi San (Yi Li Jian Yi)",
+        "target": "Heart-heat transferring to the small intestine",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Dao Chi San (Yi Li Jian Yi)",
+        "target": "Yi Li Jian Yi",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

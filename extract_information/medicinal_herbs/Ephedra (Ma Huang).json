@@ -1,0 +1,479 @@
+{
+  "filename": "Ephedra (Ma Huang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Ephedra (Ma Huang)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": null,
+          "nature": "warm",
+          "flavor": "acrid, slightly bitter",
+          "meridians": [
+            "Lung channel",
+            "Bladder channel"
+          ],
+          "dosage": "Internal decoction 1.5–10 g; external: appropriate amount (powder for nasal insufflation or topical); raw and honey-fried preparations differ in strength",
+          "preparation_method": "Raw: cut into sections and dry. Honey-fried: stir-fry with cooked refined honey (per 100 jin herb use 10–15 jin honey). Raw has strong diaphoretic power; honey-frying reduces diaphoretic power and moistens the Lung, stopping cough and calming wheezing.",
+          "contraindications": "Contraindicated in constitutionally weak individuals with spontaneous sweating, night sweats, or chronic asthma; contraindicated in exterior deficiency with spontaneous sweating, yin deficiency with night sweating, lung deficiency with heat and copious phlegm causing nasal obstruction, and other debilitated states as described in classical sources."
+        }
+      },
+      {
+        "name": "Induces sweating",
+        "type": "Effect"
+      },
+      {
+        "name": "Calms wheezing",
+        "type": "Effect"
+      },
+      {
+        "name": "Promotes urination",
+        "type": "Effect"
+      },
+      {
+        "name": "Releases the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "Transforms phlegm",
+        "type": "Effect"
+      },
+      {
+        "name": "Stops cough",
+        "type": "Effect"
+      },
+      {
+        "name": "Fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "Aversion to cold",
+        "type": "Symptom"
+      },
+      {
+        "name": "Absence of sweating",
+        "type": "Symptom"
+      },
+      {
+        "name": "Headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Nasal congestion",
+        "type": "Symptom"
+      },
+      {
+        "name": "Pain of bones and joints",
+        "type": "Symptom"
+      },
+      {
+        "name": "Cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "Asthma",
+        "type": "Symptom"
+      },
+      {
+        "name": "Difficult urination",
+        "type": "Symptom"
+      },
+      {
+        "name": "Numbness of the skin",
+        "type": "Symptom"
+      },
+      {
+        "name": "Itchy wind rashes",
+        "type": "Symptom"
+      },
+      {
+        "name": "Wheezing",
+        "type": "Symptom"
+      },
+      {
+        "name": "Ma Huang Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Ma Huang Xing Ren Gan Cao Shi Gao Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Ma Huang Xing Ren Yi Yi Gan Cao Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "San Ao Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Ma Huang Fu Zi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Xiao Qing Long Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "She Gan Ma Huang Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Yue Bi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Gan Cao Ma Huang Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Treatise on Cold Damage (Shāng Hán Lùn)",
+        "type": "Source"
+      },
+      {
+        "name": "Benjing (The Classic Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Bielu",
+        "type": "Source"
+      },
+      {
+        "name": "Yaoxing Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Rihuazi Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Zhenzhu Nang",
+        "type": "Source"
+      },
+      {
+        "name": "Diannan Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "Source"
+      },
+      {
+        "name": "Scientific Folk Herbs",
+        "type": "Source"
+      },
+      {
+        "name": "Modern Practical Chinese Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Identification Methods of Chinese Medicine Properties",
+        "type": "Source"
+      },
+      {
+        "name": "Cinnamon twig (Guìzhī)",
+        "type": "Herb"
+      },
+      {
+        "name": "Licorice (Gāncǎo)",
+        "type": "Herb"
+      },
+      {
+        "name": "Apricot kernel (Xìngrén)",
+        "type": "Herb"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Induces sweating",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Calms wheezing",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Promotes urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Releases the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Transforms phlegm",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Stops cough",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Aversion to cold",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Absence of sweating",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Nasal congestion",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Pain of bones and joints",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Asthma",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Difficult urination",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Numbness of the skin",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Itchy wind rashes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Wheezing",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Benjing (The Classic Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Bielu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Yaoxing Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Rihuazi Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Zhenzhu Nang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Diannan Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Scientific Folk Herbs",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Modern Practical Chinese Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ephedra (Ma Huang)",
+        "target": "Identification Methods of Chinese Medicine Properties",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ma Huang Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ma Huang Tang",
+        "target": "Treatise on Cold Damage (Shāng Hán Lùn)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ma Huang Tang",
+        "target": "Taiyang disease",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ma Huang Xing Ren Gan Cao Shi Gao Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ma Huang Xing Ren Gan Cao Shi Gao Tang",
+        "target": "Treatise on Cold Damage (Shāng Hán Lùn)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ma Huang Xing Ren Gan Cao Shi Gao Tang",
+        "target": "Taiyang disease after sweating with wheezing",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ma Huang Xing Ren Yi Yi Gan Cao Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ma Huang Xing Ren Yi Yi Gan Cao Tang",
+        "target": "Essentials from the Golden Cabinet (Jīn Guì Yào Lüè)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ma Huang Xing Ren Yi Yi Gan Cao Tang",
+        "target": "Wind-damp disease resulting from exposure to wind after sweating",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "San Ao Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "San Ao Tang",
+        "target": "Local Formulary",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "San Ao Tang",
+        "target": "Common cold (wind-cold) with nasal obstruction, heavy voice, cough with abundant phlegm",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ma Huang Fu Zi Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ma Huang Fu Zi Tang",
+        "target": "Treatise on Cold Damage (Shāng Hán Lùn)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ma Huang Fu Zi Tang",
+        "target": "Simultaneous Taiyang and Shaoyin pattern where fever returns and the pulse is deep",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Xiao Qing Long Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Xiao Qing Long Tang",
+        "target": "Treatise on Cold Damage (Shāng Hán Lùn)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Xiao Qing Long Tang",
+        "target": "Cold damage with internal water accumulation, cough and difficulty breathing",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "She Gan Ma Huang Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "She Gan Ma Huang Tang",
+        "target": "Essentials from the Golden Cabinet (Jīn Guì Yào Lüè)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "She Gan Ma Huang Tang",
+        "target": "Cough and asthma with upward qi and gurgling watery sounds",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Yue Bi Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yue Bi Tang",
+        "target": "Essentials from the Golden Cabinet (Jīn Guì Yào Lüè)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Yue Bi Tang",
+        "target": "Wind-water edema (whole-body swelling with floating pulse)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Gan Cao Ma Huang Tang",
+        "target": "Ephedra (Ma Huang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Gan Cao Ma Huang Tang",
+        "target": "Essentials from the Golden Cabinet (Jīn Guì Yào Lüè)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Gan Cao Ma Huang Tang",
+        "target": "Water qi disease with skin edema without sweating",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ma Huang Tang",
+        "target": "Cinnamon twig (Guìzhī)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ma Huang Tang",
+        "target": "Licorice (Gāncǎo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ma Huang Tang",
+        "target": "Apricot kernel (Xìngrén)",
+        "type": "HAS_INGREDIENT"
+      }
+    ]
+  }
+}

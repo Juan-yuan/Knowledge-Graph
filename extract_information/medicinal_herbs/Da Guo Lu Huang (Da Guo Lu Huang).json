@@ -1,0 +1,87 @@
+{
+  "filename": "Da Guo Lu Huang (Da Guo Lu Huang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Da guo lu huang (Dà guòlùhuáng) - Primulaceae (primrose family)",
+          "nature": "neutral",
+          "flavor": "bland",
+          "meridians": [
+            "Lung",
+            "Stomach"
+          ],
+          "dosage": "Internal use: decoction, 15–30 g. External use: appropriate amount, fresh material pounded and applied; or decocted and used as a wash.",
+          "preparation_method": "Internal decoction; external use fresh material pounded and applied or decocted and used as a wash."
+        }
+      },
+      {
+        "name": "disperses wind",
+        "type": "Effect"
+      },
+      {
+        "name": "clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "transforms phlegm",
+        "type": "Effect"
+      },
+      {
+        "name": "wind-heat cough",
+        "type": "Disease"
+      },
+      {
+        "name": "sore throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "heat-toxin sores",
+        "type": "Disease"
+      },
+      {
+        "name": "scabies",
+        "type": "Disease"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "target": "disperses wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "target": "clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "target": "transforms phlegm",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "target": "wind-heat cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "target": "sore throat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "target": "heat-toxin sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Da Guo Lu Huang (Da Guo Lu Huang)",
+        "target": "scabies",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

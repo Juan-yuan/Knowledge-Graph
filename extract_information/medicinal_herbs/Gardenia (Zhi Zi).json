@@ -1,0 +1,271 @@
+{
+  "filename": "Gardenia (Zhi Zi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Gardenia (Zhi Zi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Gardenia jasminoides Ellis (Rubiaceae)",
+          "nature": "cold",
+          "flavor": "bitter",
+          "meridians": [
+            "Heart",
+            "Liver",
+            "Lung",
+            "Stomach"
+          ],
+          "dosage": "Internal: decoction 5–10 g; External: topical as needed",
+          "preparation_method": "raw, peeled pericarp, kernels (ren), fried, charred (Jiao), charred charcoal; various traditional preparations (e.g., frying, charring, soaking in licorice water)",
+          "contraindications": "Contraindicated in spleen-deficiency with loose stools; avoid when pathogen is at the exterior and deficiency fire rises"
+        }
+      },
+      {
+        "name": "clears heat",
+        "type": "Effect"
+      },
+      {
+        "name": "drains fire",
+        "type": "Effect"
+      },
+      {
+        "name": "cools the blood",
+        "type": "Effect"
+      },
+      {
+        "name": "promotes urination",
+        "type": "Effect"
+      },
+      {
+        "name": "clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "jaundice",
+        "type": "Disease"
+      },
+      {
+        "name": "strangury",
+        "type": "Disease"
+      },
+      {
+        "name": "diabetes (wasting-thirst)",
+        "type": "Disease"
+      },
+      {
+        "name": "bloody dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "heat-toxic sores and ulcers",
+        "type": "Disease"
+      },
+      {
+        "name": "carbuncles and erysipelas",
+        "type": "Disease"
+      },
+      {
+        "name": "vexation",
+        "type": "Symptom"
+      },
+      {
+        "name": "insomnia",
+        "type": "Symptom"
+      },
+      {
+        "name": "red eyes",
+        "type": "Symptom"
+      },
+      {
+        "name": "sore throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "vomiting blood",
+        "type": "Symptom"
+      },
+      {
+        "name": "nosebleed",
+        "type": "Symptom"
+      },
+      {
+        "name": "hematuria",
+        "type": "Symptom"
+      },
+      {
+        "name": "sprains and swelling pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Zhi Zi Chi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Shi Zhi Zi Chi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Zhi Zi Bai Pi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Shang Han Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Gang Mu",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Bei Yao",
+        "type": "Source"
+      },
+      {
+        "name": "Guangzhou Military Commonly Used Chinese Herbs Manual",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "clears heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "drains fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "cools the blood",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "promotes urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "jaundice",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "strangury",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "diabetes (wasting-thirst)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "bloody dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "heat-toxic sores and ulcers",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "carbuncles and erysipelas",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "vexation",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "insomnia",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "red eyes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "sore throat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "vomiting blood",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "nosebleed",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "hematuria",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "sprains and swelling pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Zhi Zi Chi Tang",
+        "target": "Gardenia (Zhi Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Shi Zhi Zi Chi Tang",
+        "target": "Gardenia (Zhi Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Zi Bai Pi Tang",
+        "target": "Gardenia (Zhi Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Zhi Zi Chi Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Shi Zhi Zi Chi Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Zhi Zi Bai Pi Tang",
+        "target": "Shang Han Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "Ben Cao Gang Mu",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "Ben Cao Bei Yao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Gardenia (Zhi Zi)",
+        "target": "Guangzhou Military Commonly Used Chinese Herbs Manual",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

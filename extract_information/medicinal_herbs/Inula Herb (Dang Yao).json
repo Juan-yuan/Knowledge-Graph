@@ -1,0 +1,97 @@
+{
+  "filename": "Inula Herb (Dang Yao).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Swertiae Herba (Dang Yao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Swertia pseudochinensis Hara",
+          "nature": "cold",
+          "flavor": "bitter",
+          "meridians": [
+            "Liver",
+            "Stomach",
+            "Large Intestine"
+          ],
+          "dosage": "Internal: 6–12 g (reduce for children). External: appropriate amount as poultice or expressed juice.",
+          "preparation_method": "Decoct for internal use; or grind into powder and take with water. For external use, crush and apply as a poultice or apply expressed juice."
+        }
+      },
+      {
+        "name": "Clears damp-heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Strengthens the stomach",
+        "type": "Effect"
+      },
+      {
+        "name": "Damp-heat jaundice",
+        "type": "Disease"
+      },
+      {
+        "name": "Acute and chronic bacterial dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "Hypochondriac pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Dysenteric abdominal pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Loss of appetite",
+        "type": "Symptom"
+      },
+      {
+        "name": "Abdominal pain",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Clears damp-heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Strengthens the stomach",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Damp-heat jaundice",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Acute and chronic bacterial dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Hypochondriac pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Dysenteric abdominal pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Loss of appetite",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Swertiae Herba (Dang Yao)",
+        "target": "Abdominal pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      }
+    ]
+  }
+}

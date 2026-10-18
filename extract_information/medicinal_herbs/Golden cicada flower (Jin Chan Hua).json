@@ -1,0 +1,156 @@
+{
+  "filename": "Golden cicada flower (Jin Chan Hua).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Golden cicada flower (Jin Chan Hua)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "conidiophore clusters of the Clavicipitaceae fungus Chanbangshubaojun; stromata of Large Cicada Herb (Dachancao) and parasitized insect bodies",
+          "nature": "cold",
+          "flavor": "sweet and salty",
+          "meridians": [
+            "Lung",
+            "Liver"
+          ],
+          "dosage": "Internal use: decoction, 3–9 g",
+          "preparation_method": "Remove impurities, wash clean, dry, and sieve off ash and debris; sun-dried after harvesting"
+        }
+      },
+      {
+        "name": "Dispel wind and clear heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Promote eruption of rashes",
+        "type": "Effect"
+      },
+      {
+        "name": "Extinguish wind and stop convulsions",
+        "type": "Effect"
+      },
+      {
+        "name": "Brighten the eyes and reduce ocular opacities",
+        "type": "Effect"
+      },
+      {
+        "name": "externally-contracted wind-heat",
+        "type": "Disease"
+      },
+      {
+        "name": "early-stage measles with incomplete eruption",
+        "type": "Disease"
+      },
+      {
+        "name": "pediatric convulsions",
+        "type": "Disease"
+      },
+      {
+        "name": "ocular membrane opacity obstructing vision",
+        "type": "Disease"
+      },
+      {
+        "name": "fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "dizziness",
+        "type": "Symptom"
+      },
+      {
+        "name": "sore throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "night crying",
+        "type": "Symptom"
+      },
+      {
+        "name": "red, swollen and painful eyes",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "Dispel wind and clear heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "Promote eruption of rashes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "Extinguish wind and stop convulsions",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "Brighten the eyes and reduce ocular opacities",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "externally-contracted wind-heat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "early-stage measles with incomplete eruption",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "pediatric convulsions",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "ocular membrane opacity obstructing vision",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "dizziness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "sore throat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "night crying",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Golden cicada flower (Jin Chan Hua)",
+        "target": "red, swollen and painful eyes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "externally-contracted wind-heat",
+        "target": "fever",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "externally-contracted wind-heat",
+        "target": "dizziness",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "externally-contracted wind-heat",
+        "target": "sore throat",
+        "type": "HAS_SYMPTOM"
+      }
+    ]
+  }
+}

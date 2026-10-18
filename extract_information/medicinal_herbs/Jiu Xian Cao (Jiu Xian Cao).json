@@ -1,0 +1,206 @@
+{
+  "filename": "Jiu Xian Cao (Jiu Xian Cao).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Jiu Xian Cao (Jiu Xian Cao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Plants of the Santalaceae family (various Bairuicao species: Long-leaved Bairuicao, Exserted-stigma Bairuicao, Long-flowered Bairuicao, Abrupt-bending Bairuicao)",
+          "nature": "cold",
+          "flavor": "acrid; slightly bitter",
+          "meridians": [
+            "Lung",
+            "Liver",
+            "Spleen"
+          ],
+          "dosage": "6–12 g (decoction)",
+          "preparation_method": "decoction; or taken with steamed egg"
+        }
+      },
+      {
+        "name": "releases the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "clears heat",
+        "type": "Effect"
+      },
+      {
+        "name": "expels wind",
+        "type": "Effect"
+      },
+      {
+        "name": "stops spasms",
+        "type": "Effect"
+      },
+      {
+        "name": "common cold",
+        "type": "Disease"
+      },
+      {
+        "name": "heatstroke",
+        "type": "Disease"
+      },
+      {
+        "name": "pediatric pneumonia",
+        "type": "Disease"
+      },
+      {
+        "name": "convulsions",
+        "type": "Symptom"
+      },
+      {
+        "name": "Bupleurum (Chai Hu)",
+        "type": "Herb"
+      },
+      {
+        "name": "Baical skullcap (Huang Qin)",
+        "type": "Herb"
+      },
+      {
+        "name": "Drynaria (Guo Shan Long)",
+        "type": "Herb"
+      },
+      {
+        "name": "Formula: Jiu Xian Cao + Bupleurum (Chai Hu) + Baical skullcap (Huang Qin) (for pediatric liver-heat deficiency fever)",
+        "type": "Formula"
+      },
+      {
+        "name": "pediatric liver-heat deficiency fever",
+        "type": "Disease"
+      },
+      {
+        "name": "Formula: Jiu Xian Cao powder (for pediatric malnutrition and night blindness)",
+        "type": "Formula"
+      },
+      {
+        "name": "pediatric malnutrition",
+        "type": "Disease"
+      },
+      {
+        "name": "night blindness",
+        "type": "Disease"
+      },
+      {
+        "name": "Formula: Jiu Xian Cao + Drynaria (for gastrocnemius muscle spasms and rheumatic pain)",
+        "type": "Formula"
+      },
+      {
+        "name": "gastrocnemius muscle spasms",
+        "type": "Symptom"
+      },
+      {
+        "name": "rheumatic pain",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "releases the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "clears heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "expels wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "stops spasms",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "common cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "heatstroke",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "pediatric pneumonia",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "convulsions",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Bupleurum (Chai Hu) + Baical skullcap (Huang Qin) (for pediatric liver-heat deficiency fever)",
+        "target": "Jiu Xian Cao (Jiu Xian Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Bupleurum (Chai Hu) + Baical skullcap (Huang Qin) (for pediatric liver-heat deficiency fever)",
+        "target": "Bupleurum (Chai Hu)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Bupleurum (Chai Hu) + Baical skullcap (Huang Qin) (for pediatric liver-heat deficiency fever)",
+        "target": "Baical skullcap (Huang Qin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Bupleurum (Chai Hu) + Baical skullcap (Huang Qin) (for pediatric liver-heat deficiency fever)",
+        "target": "pediatric liver-heat deficiency fever",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao powder (for pediatric malnutrition and night blindness)",
+        "target": "Jiu Xian Cao (Jiu Xian Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao powder (for pediatric malnutrition and night blindness)",
+        "target": "pediatric malnutrition",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao powder (for pediatric malnutrition and night blindness)",
+        "target": "night blindness",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Drynaria (for gastrocnemius muscle spasms and rheumatic pain)",
+        "target": "Jiu Xian Cao (Jiu Xian Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Drynaria (for gastrocnemius muscle spasms and rheumatic pain)",
+        "target": "Drynaria (Guo Shan Long)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Drynaria (for gastrocnemius muscle spasms and rheumatic pain)",
+        "target": "gastrocnemius muscle spasms",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Formula: Jiu Xian Cao + Drynaria (for gastrocnemius muscle spasms and rheumatic pain)",
+        "target": "rheumatic pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "pediatric malnutrition",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jiu Xian Cao (Jiu Xian Cao)",
+        "target": "night blindness",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

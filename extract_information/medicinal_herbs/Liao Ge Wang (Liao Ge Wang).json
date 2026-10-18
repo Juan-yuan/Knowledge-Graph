@@ -1,0 +1,243 @@
+{
+  "filename": "Liao Ge Wang (Liao Ge Wang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Liao Ge Wang (Liao Ge Wang)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Nanling Raohua (nan ling rao hua) in the Thymelaeaceae family",
+          "nature": "cold; toxic",
+          "flavor": "bitter; pungent",
+          "meridians": [
+            "Heart",
+            "Lung",
+            "Small Intestine"
+          ],
+          "dosage": "Internal: decoction (decoct >4 hours) 6–9 g; External: appropriate amount, pounded and applied, powdered and mixed for topical application, or decocted for washing.",
+          "preparation_method": "Stems and leaves harvested year-round; wash, cut into sections, sun-dry or use fresh. Steamed leaves can be pounded to a pulp for external application or squeezed for juice; roots steamed until cooked, sliced and sun-dried; steam leaves, wash, air-dry in shade, cut into sections.",
+          "contraindications": "Avoid in individuals with weak constitutions and in pregnant women."
+        }
+      },
+      {
+        "name": "Clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "Transforms phlegm and disperses nodules",
+        "type": "Effect"
+      },
+      {
+        "name": "Reduces swelling and relieves pain",
+        "type": "Effect"
+      },
+      {
+        "name": "suppurative swellings and sores",
+        "type": "Disease"
+      },
+      {
+        "name": "scrofula",
+        "type": "Disease"
+      },
+      {
+        "name": "rheumatic pain",
+        "type": "Disease"
+      },
+      {
+        "name": "traumatic injuries from falls and blows",
+        "type": "Disease"
+      },
+      {
+        "name": "snake and insect bites",
+        "type": "Disease"
+      },
+      {
+        "name": "phlegm-fire sores",
+        "type": "Disease"
+      },
+      {
+        "name": "hexi feng (crane-knee wind)",
+        "type": "Disease"
+      },
+      {
+        "name": "sores and toxic swellings",
+        "type": "Disease"
+      },
+      {
+        "name": "infant scalp sores",
+        "type": "Disease"
+      },
+      {
+        "name": "sores and breast abscesses",
+        "type": "Disease"
+      },
+      {
+        "name": "cramping pain of the limbs",
+        "type": "Symptom"
+      },
+      {
+        "name": "Jiegucao (jie gu cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Liaogewang leaves + salt (topical)",
+        "type": "Formula"
+      },
+      {
+        "name": "Nanling Raohua + Jiegucao (decoction with wine)",
+        "type": "Formula"
+      },
+      {
+        "name": "Fresh Liaogewang stems and leaves (topical/juice)",
+        "type": "Formula"
+      },
+      {
+        "name": "Liaogewang leaves (topical)",
+        "type": "Formula"
+      },
+      {
+        "name": "Lingnan Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Hunan Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Guangzhou Military Handbook of Common Chinese Herbs",
+        "type": "Source"
+      },
+      {
+        "name": "Guangxi Materia Medica",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "Clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "Transforms phlegm and disperses nodules",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "Reduces swelling and relieves pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "suppurative swellings and sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "scrofula",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "rheumatic pain",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "traumatic injuries from falls and blows",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Liao Ge Wang (Liao Ge Wang)",
+        "target": "snake and insect bites",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Liaogewang leaves + salt (topical)",
+        "target": "Liao Ge Wang (Liao Ge Wang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Liaogewang leaves + salt (topical)",
+        "target": "phlegm-fire sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Liaogewang leaves + salt (topical)",
+        "target": "cramping pain of the limbs",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Liaogewang leaves + salt (topical)",
+        "target": "Lingnan Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Nanling Raohua + Jiegucao (decoction with wine)",
+        "target": "Liao Ge Wang (Liao Ge Wang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Nanling Raohua + Jiegucao (decoction with wine)",
+        "target": "Jiegucao (jie gu cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Nanling Raohua + Jiegucao (decoction with wine)",
+        "target": "hexi feng (crane-knee wind)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Nanling Raohua + Jiegucao (decoction with wine)",
+        "target": "Hunan Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Fresh Liaogewang stems and leaves (topical/juice)",
+        "target": "Liao Ge Wang (Liao Ge Wang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Fresh Liaogewang stems and leaves (topical/juice)",
+        "target": "sores and toxic swellings",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Fresh Liaogewang stems and leaves (topical/juice)",
+        "target": "traumatic injuries from falls and blows",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Fresh Liaogewang stems and leaves (topical/juice)",
+        "target": "snake and insect bites",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Fresh Liaogewang stems and leaves (topical/juice)",
+        "target": "infant scalp sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Fresh Liaogewang stems and leaves (topical/juice)",
+        "target": "Guangzhou Military Handbook of Common Chinese Herbs",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Liaogewang leaves (topical)",
+        "target": "Liao Ge Wang (Liao Ge Wang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Liaogewang leaves (topical)",
+        "target": "sores and breast abscesses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Liaogewang leaves (topical)",
+        "target": "Guangxi Materia Medica",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

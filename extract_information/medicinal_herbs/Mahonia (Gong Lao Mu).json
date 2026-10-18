@@ -1,0 +1,116 @@
+{
+  "filename": "Mahonia (Gong Lao Mu).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Mahonia (Gong Lao Mu)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Mahonia bealei (Fort.) Carr. or Mahonia fortunei (Lindl.) Fedde",
+          "nature": "cold",
+          "flavor": "bitter",
+          "meridians": [
+            "liver",
+            "stomach",
+            "large intestine"
+          ],
+          "dosage": "Internal: decoction 5–10 g; External: decoct for washing or grind to powder and apply as a paste.",
+          "preparation_method": "Remove impurities, grade, wash clean, moisten thoroughly, slice thinly, dry, and sieve off dust.",
+          "contraindications": "Those with a cold-deficient constitution should avoid use."
+        }
+      },
+      {
+        "name": "clears heat and dries dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "drains fire and relieves toxicity",
+        "type": "Effect"
+      },
+      {
+        "name": "damp-heat diarrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "jaundice",
+        "type": "Disease"
+      },
+      {
+        "name": "jaundice-type hepatitis",
+        "type": "Disease"
+      },
+      {
+        "name": "sores and boils",
+        "type": "Disease"
+      },
+      {
+        "name": "abscesses",
+        "type": "Disease"
+      },
+      {
+        "name": "red swollen painful eyes",
+        "type": "Symptom"
+      },
+      {
+        "name": "stomach-fire toothache",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "clears heat and dries dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "drains fire and relieves toxicity",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "damp-heat diarrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "jaundice",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "jaundice-type hepatitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "sores and boils",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "abscesses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "red swollen painful eyes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mahonia (Gong Lao Mu)",
+        "target": "stomach-fire toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      }
+    ]
+  }
+}

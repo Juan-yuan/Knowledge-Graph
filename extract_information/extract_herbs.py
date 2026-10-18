@@ -18,7 +18,7 @@ from extract_information.extract_graph_data_utils import extract_tcm_knowledge
 INPUT_DIR = get_file_path("clawler/medicinal_herbs")
 OUTPUT_DIR = get_file_path("extract_information/medicinal_herbs")
 MAX_WORKERS = 5
-DEFAULT_LIMIT = 20
+DEFAULT_LIMIT = 0
 MAX_RETRIES = 3
 CJK_PATTERN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff]")
 TRANSLATE_PROMPT = (

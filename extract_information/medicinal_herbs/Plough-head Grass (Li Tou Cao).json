@@ -1,0 +1,195 @@
+{
+  "filename": "Plough-head Grass (Li Tou Cao).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Plough-head Grass (Li Tou Cao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Heartleaf Violet (Xin Ye Jin Cai)",
+          "nature": "cold",
+          "flavor": "bitter; slightly pungent",
+          "meridians": [
+            "Liver",
+            "Spleen"
+          ],
+          "dosage": "Internal use: decoction 9–15 g, fresh 30–60 g; or take pounded juice. External use: appropriate amount, pounded and applied as a poultice.",
+          "preparation_method": "Whole herb harvested during fruit ripening (April–May); remove soil and use fresh or sun-dry; may be pounded for juice or poultice."
+        }
+      },
+      {
+        "name": "Clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "Resolves stasis and discharges pus",
+        "type": "Effect"
+      },
+      {
+        "name": "Cools the blood and clears the liver",
+        "type": "Effect"
+      },
+      {
+        "name": "carbuncles and swellings",
+        "type": "Disease"
+      },
+      {
+        "name": "mammary carbuncles",
+        "type": "Disease"
+      },
+      {
+        "name": "intestinal abscess with bleeding",
+        "type": "Disease"
+      },
+      {
+        "name": "purulent osteomyelitis",
+        "type": "Disease"
+      },
+      {
+        "name": "jaundice",
+        "type": "Disease"
+      },
+      {
+        "name": "red swollen painful eyes",
+        "type": "Disease"
+      },
+      {
+        "name": "scrofula",
+        "type": "Disease"
+      },
+      {
+        "name": "external traumatic bleeding",
+        "type": "Disease"
+      },
+      {
+        "name": "snakebite",
+        "type": "Disease"
+      },
+      {
+        "name": "boils",
+        "type": "Disease"
+      },
+      {
+        "name": "abscesses",
+        "type": "Disease"
+      },
+      {
+        "name": "mastitis",
+        "type": "Disease"
+      },
+      {
+        "name": "felons",
+        "type": "Disease"
+      },
+      {
+        "name": "postpartum blood stasis with knife-like stabbing pain",
+        "type": "Disease"
+      },
+      {
+        "name": "brine poisoning",
+        "type": "Disease"
+      },
+      {
+        "name": "nodules on the back",
+        "type": "Disease"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "Clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "Resolves stasis and discharges pus",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "Cools the blood and clears the liver",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "carbuncles and swellings",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "mammary carbuncles",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "intestinal abscess with bleeding",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "purulent osteomyelitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "jaundice",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "red swollen painful eyes",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "scrofula",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "external traumatic bleeding",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "snakebite",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "boils",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "abscesses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "mastitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "felons",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "postpartum blood stasis with knife-like stabbing pain",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "brine poisoning",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Plough-head Grass (Li Tou Cao)",
+        "target": "nodules on the back",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "filename": "Mulberry leaf (Sang Ye).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Mulberry Leaf (Sang Ye)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Morus (Moraceae)",
+          "nature": "cold",
+          "flavor": "bitter and sweet",
+          "meridians": [
+            "Lung channel",
+            "Liver channel"
+          ],
+          "dosage": "Internal decoction 4.5–9 g; external: appropriate amount, decoct for washing or pound and apply as a poultice.",
+          "preparation_method": "Honey-fried (Mi Sang Ye): mix with refined cooked honey and stir-fry until no longer sticky."
+        }
+      },
+      {
+        "name": "expels wind and clears heat",
+        "type": "Effect"
+      },
+      {
+        "name": "cools the blood",
+        "type": "Effect"
+      },
+      {
+        "name": "brightens the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "induces sweating",
+        "type": "Effect"
+      },
+      {
+        "name": "wind-warm febrile disease",
+        "type": "Disease"
+      },
+      {
+        "name": "wind-bi (wind-damp obstruction)",
+        "type": "Disease"
+      },
+      {
+        "name": "urticaria",
+        "type": "Disease"
+      },
+      {
+        "name": "elephantiasis of the lower limbs",
+        "type": "Disease"
+      },
+      {
+        "name": "lung-heat cough",
+        "type": "Disease"
+      },
+      {
+        "name": "fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "red eyes",
+        "type": "Symptom"
+      },
+      {
+        "name": "thirst",
+        "type": "Symptom"
+      },
+      {
+        "name": "sore throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "swollen painful gums",
+        "type": "Symptom"
+      },
+      {
+        "name": "facial edema",
+        "type": "Symptom"
+      },
+      {
+        "name": "Shennong Bencao Jing",
+        "type": "Source"
+      },
+      {
+        "name": "Tang Bencao",
+        "type": "Source"
+      },
+      {
+        "name": "Compendium of Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Wenbing Tiaobian: Sang Ju Yin",
+        "type": "Formula"
+      },
+      {
+        "name": "Sang Ma Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Du Sheng San",
+        "type": "Formula"
+      },
+      {
+        "name": "Chrysanthemum-Mulberry-Mint-Bamboo Leaf Tea",
+        "type": "Formula"
+      },
+      {
+        "name": "Mulberry Leaf and Fu Xiao Mai Tea",
+        "type": "Formula"
+      },
+      {
+        "name": "Mulberry-Chrysanthemum-Cicada Slough Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Safflower-Mulberry-Chrysanthemum Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Mulberry-Mint-Chrysanthemum-Loquat Leaf Tea",
+        "type": "Formula"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "expels wind and clears heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "cools the blood",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "brightens the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "induces sweating",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "wind-warm febrile disease",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "lung-heat cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "wind-bi (wind-damp obstruction)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "urticaria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "elephantiasis of the lower limbs",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "red eyes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "thirst",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "sore throat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "swollen painful gums",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "facial edema",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "wind-warm febrile disease",
+        "target": "fever",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "wind-warm febrile disease",
+        "target": "headache",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "wind-warm febrile disease",
+        "target": "red eyes",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "wind-warm febrile disease",
+        "target": "thirst",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "wind-warm febrile disease",
+        "target": "lung-heat cough",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "Shennong Bencao Jing",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "Tang Bencao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Mulberry Leaf (Sang Ye)",
+        "target": "Compendium of Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Wenbing Tiaobian: Sang Ju Yin",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Sang Ma Wan",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Du Sheng San",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Chrysanthemum-Mulberry-Mint-Bamboo Leaf Tea",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mulberry Leaf and Fu Xiao Mai Tea",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mulberry-Chrysanthemum-Cicada Slough Decoction",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Safflower-Mulberry-Chrysanthemum Decoction",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mulberry-Mint-Chrysanthemum-Loquat Leaf Tea",
+        "target": "Mulberry Leaf (Sang Ye)",
+        "type": "HAS_INGREDIENT"
+      }
+    ]
+  }
+}

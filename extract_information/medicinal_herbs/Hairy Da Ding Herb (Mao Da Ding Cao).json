@@ -1,0 +1,220 @@
+{
+  "filename": "Hairy Da Ding Herb (Mao Da Ding Cao).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "nature": "neutral",
+          "flavor": "bitter and pungent",
+          "meridians": [
+            "Liver",
+            "Lung",
+            "Spleen",
+            "Kidney",
+            "Bladder"
+          ],
+          "dosage": "Internal: 6–15 g dried, 30–60 g fresh; External: appropriate amount, crush and apply as a poultice.",
+          "preparation_method": "Decoction; sun-dry or use fresh; external poultice."
+        }
+      },
+      {
+        "name": "Clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "Disseminates Lung and stops cough",
+        "type": "Effect"
+      },
+      {
+        "name": "Moves qi and activates blood",
+        "type": "Effect"
+      },
+      {
+        "name": "Promotes urination",
+        "type": "Effect"
+      },
+      {
+        "name": "Expels dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "Induces sweating and disperses cold",
+        "type": "Effect"
+      },
+      {
+        "name": "Stops cough and calms wheezing",
+        "type": "Effect"
+      },
+      {
+        "name": "Common cold",
+        "type": "Disease"
+      },
+      {
+        "name": "Diarrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "Dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "Edema",
+        "type": "Disease"
+      },
+      {
+        "name": "Sores and carbuncles",
+        "type": "Disease"
+      },
+      {
+        "name": "Poisonous snake bite",
+        "type": "Disease"
+      },
+      {
+        "name": "Cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "Epigastric distension and pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Turbid urinary discharge",
+        "type": "Symptom"
+      },
+      {
+        "name": "Traumatic swelling and pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Wheezing",
+        "type": "Symptom"
+      },
+      {
+        "name": "Tianbao Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Mindong Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Sichuan Record of Chinese Materia Medica",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Disseminates Lung and stops cough",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Moves qi and activates blood",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Promotes urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Expels dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Induces sweating and disperses cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Stops cough and calms wheezing",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Common cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Diarrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Edema",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Sores and carbuncles",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Poisonous snake bite",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Epigastric distension and pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Turbid urinary discharge",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Traumatic swelling and pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Wheezing",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Common cold",
+        "target": "Cough",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Tianbao Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Mindong Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Hairy Da Ding Herb (Mao Da Ding Cao)",
+        "target": "Sichuan Record of Chinese Materia Medica",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

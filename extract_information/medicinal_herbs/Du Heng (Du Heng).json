@@ -1,0 +1,241 @@
+{
+  "filename": "Du Heng (Du Heng).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Asarum (Du Heng)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Asarum forbesii Maxim.",
+          "nature": "Pungent, warm; slightly toxic",
+          "flavor": "Pungent, acrid",
+          "meridians": [
+            "Lung",
+            "Kidney"
+          ],
+          "dosage": "1–3 g; for external use as appropriate, grind to powder and sprinkle on the affected area.",
+          "preparation_method": "Remove dirt and other impurities from the raw material, cut into short sections, and sieve off ash and debris."
+        }
+      },
+      {
+        "name": "Dispel wind",
+        "type": "Effect"
+      },
+      {
+        "name": "Scatter cold",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieve pain",
+        "type": "Effect"
+      },
+      {
+        "name": "Transform phlegm",
+        "type": "Effect"
+      },
+      {
+        "name": "Stop cough",
+        "type": "Effect"
+      },
+      {
+        "name": "Asthma",
+        "type": "Disease"
+      },
+      {
+        "name": "Wind-cold headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Joint pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Phlegm-retention cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "Toothache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Wheeze",
+        "type": "Symptom"
+      },
+      {
+        "name": "Summer rashes",
+        "type": "Symptom"
+      },
+      {
+        "name": "Traumatic pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Snakebite",
+        "type": "Symptom"
+      },
+      {
+        "name": "Sores and toxins",
+        "type": "Symptom"
+      },
+      {
+        "name": "Dental caries pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Xinglin Zhaiyao",
+        "type": "Source"
+      },
+      {
+        "name": "Buque Zhouhou Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Puji Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Zhejiang Tianmu Mountain Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Fujian Folk Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Xianghan San (Fragrant Sweat Powder)",
+        "type": "Formula"
+      },
+      {
+        "name": "Hei Ma Ti Xiang San (Black Horse-hoof Fragrance Powder)",
+        "type": "Formula"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Dispel wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Scatter cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Relieve pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Transform phlegm",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Stop cough",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Asthma",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Wind-cold headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Joint pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Phlegm-retention cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Wheeze",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Summer rashes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Traumatic pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Snakebite",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Sores and toxins",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Dental caries pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Xianghan San (Fragrant Sweat Powder)",
+        "target": "Asarum (Du Heng)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Hei Ma Ti Xiang San (Black Horse-hoof Fragrance Powder)",
+        "target": "Asarum (Du Heng)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Xianghan San (Fragrant Sweat Powder)",
+        "target": "Xinglin Zhaiyao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Hei Ma Ti Xiang San (Black Horse-hoof Fragrance Powder)",
+        "target": "Puji Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Xinglin Zhaiyao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Buque Zhouhou Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Puji Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Zhejiang Tianmu Mountain Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Asarum (Du Heng)",
+        "target": "Fujian Folk Materia Medica",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

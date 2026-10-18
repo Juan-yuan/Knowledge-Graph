@@ -1,0 +1,386 @@
+{
+  "filename": "Ox-ear Rhubarb (Niu Er Da Huang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Curly Dock (Niu'er Dahuang)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Rumex crispus",
+          "nature": "cold",
+          "flavor": "bitter",
+          "meridians": [
+            "Heart",
+            "Liver",
+            "Large Intestine"
+          ],
+          "dosage": "Internal: decoction, 10–15 g. External: appropriate amount, pounded and applied; or ground to powder and applied topically.",
+          "preparation_method": "Roots harvested in April–May, washed, sun-dried or used fresh.",
+          "contraindications": "Contraindicated in diarrhea due to spleen deficiency."
+        }
+      },
+      {
+        "name": "Clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "Cools the blood and stops bleeding",
+        "type": "Effect"
+      },
+      {
+        "name": "Purges and kills parasites",
+        "type": "Effect"
+      },
+      {
+        "name": "Antitussive",
+        "type": "Effect"
+      },
+      {
+        "name": "Expectorant",
+        "type": "Effect"
+      },
+      {
+        "name": "Antiasthmatic",
+        "type": "Effect"
+      },
+      {
+        "name": "Antibacterial",
+        "type": "Effect"
+      },
+      {
+        "name": "Antitumor",
+        "type": "Effect"
+      },
+      {
+        "name": "Laxative",
+        "type": "Effect"
+      },
+      {
+        "name": "Astringent",
+        "type": "Effect"
+      },
+      {
+        "name": "Stomachic and tonic",
+        "type": "Effect"
+      },
+      {
+        "name": "Rubefacient and dispersant",
+        "type": "Effect"
+      },
+      {
+        "name": "Kills skin parasites",
+        "type": "Effect"
+      },
+      {
+        "name": "acute hepatitis",
+        "type": "Disease"
+      },
+      {
+        "name": "chronic hepatitis",
+        "type": "Disease"
+      },
+      {
+        "name": "enteritis",
+        "type": "Disease"
+      },
+      {
+        "name": "dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "chronic bronchitis",
+        "type": "Disease"
+      },
+      {
+        "name": "hematemesis",
+        "type": "Disease"
+      },
+      {
+        "name": "epistaxis",
+        "type": "Disease"
+      },
+      {
+        "name": "hematochezia",
+        "type": "Disease"
+      },
+      {
+        "name": "metrorrhagia",
+        "type": "Disease"
+      },
+      {
+        "name": "heat-bound constipation",
+        "type": "Disease"
+      },
+      {
+        "name": "carbuncles",
+        "type": "Disease"
+      },
+      {
+        "name": "toxic swellings",
+        "type": "Disease"
+      },
+      {
+        "name": "scabies",
+        "type": "Disease"
+      },
+      {
+        "name": "alopecia",
+        "type": "Disease"
+      },
+      {
+        "name": "hemorrhagic purpura",
+        "type": "Disease"
+      },
+      {
+        "name": "thrombocytopenia",
+        "type": "Disease"
+      },
+      {
+        "name": "internal bleeding",
+        "type": "Disease"
+      },
+      {
+        "name": "amenorrhea with abdominal distention",
+        "type": "Disease"
+      },
+      {
+        "name": "tinea",
+        "type": "Disease"
+      },
+      {
+        "name": "Caomu Bianfang",
+        "type": "Source"
+      },
+      {
+        "name": "Sichuan Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Chongqing Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Mindong Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Qiqihar Chinese Herbal Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Plateau Herbal Treatment Manual",
+        "type": "Source"
+      },
+      {
+        "name": "Shaanxi-Gansu-Ningxia-Qinghai Herbal Selection",
+        "type": "Source"
+      },
+      {
+        "name": "Chongchuang Materia Medica",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Cools the blood and stops bleeding",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Purges and kills parasites",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Antitussive",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Expectorant",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Antiasthmatic",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Antibacterial",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Antitumor",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Laxative",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Astringent",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Stomachic and tonic",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Rubefacient and dispersant",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Kills skin parasites",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "acute hepatitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "chronic hepatitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "enteritis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "chronic bronchitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "hematemesis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "epistaxis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "hematochezia",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "metrorrhagia",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "heat-bound constipation",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "carbuncles",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "toxic swellings",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "scabies",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "alopecia",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "hemorrhagic purpura",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "thrombocytopenia",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "internal bleeding",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "amenorrhea with abdominal distention",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "tinea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Caomu Bianfang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Sichuan Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Chongqing Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Mindong Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Qiqihar Chinese Herbal Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Plateau Herbal Treatment Manual",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Shaanxi-Gansu-Ningxia-Qinghai Herbal Selection",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Curly Dock (Niu'er Dahuang)",
+        "target": "Chongchuang Materia Medica",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

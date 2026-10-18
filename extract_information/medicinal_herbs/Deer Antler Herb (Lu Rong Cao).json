@@ -1,0 +1,128 @@
+{
+  "filename": "Deer Antler Herb (Lu Rong Cao).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Deer Antler Herb (Lu Rong Cao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Monochasma savatieri",
+          "nature": "neutral",
+          "flavor": "slightly bitter, astringent",
+          "dosage": "Internal use: decoction, 9–15 g; External use: appropriate amount",
+          "preparation_method": "Internal: decoction; External: decocted for washing or pounded and applied as a poultice."
+        }
+      },
+      {
+        "name": "Clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "Cools the blood and stops bleeding",
+        "type": "Effect"
+      },
+      {
+        "name": "Feverish vexation in the chest from colds",
+        "type": "Disease"
+      },
+      {
+        "name": "Cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "Hematemesis",
+        "type": "Symptom"
+      },
+      {
+        "name": "Dysentery with blood",
+        "type": "Disease"
+      },
+      {
+        "name": "Bloody stools",
+        "type": "Symptom"
+      },
+      {
+        "name": "Irregular menstruation",
+        "type": "Disease"
+      },
+      {
+        "name": "Rheumatic bone pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "Toothache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Mastitis",
+        "type": "Disease"
+      },
+      {
+        "name": "Monochasma savatieri (Scrophulariaceae plant)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Cools the blood and stops bleeding",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Feverish vexation in the chest from colds",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Dysentery with blood",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Irregular menstruation",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Mastitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Hematemesis",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Bloody stools",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Rheumatic bone pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Deer Antler Herb (Lu Rong Cao)",
+        "target": "Monochasma savatieri (Scrophulariaceae plant)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

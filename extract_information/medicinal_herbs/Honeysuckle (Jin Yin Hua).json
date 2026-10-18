@@ -1,0 +1,297 @@
+{
+  "filename": "Honeysuckle (Jin Yin Hua).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Honeysuckle Flower (Jin Yin Hua)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Lonicera species (Caprifoliaceae)",
+          "nature": "cold",
+          "flavor": "sweet",
+          "meridians": [
+            "Lung Meridian",
+            "Stomach Meridian"
+          ],
+          "dosage": "Internal 10–20 g; external: appropriate amount crushed and applied as a poultice",
+          "preparation_method": "Decoct as a tea; used in pills or powders; externally crushed as a poultice",
+          "contraindications": "Contraindicated for spleen and stomach deficiency cold and for ulcers or sores with clear pus due to qi deficiency"
+        }
+      },
+      {
+        "name": "Clears heat and relieves toxicity",
+        "type": "Effect"
+      },
+      {
+        "name": "Febrile disease",
+        "type": "Disease"
+      },
+      {
+        "name": "Fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "Dysentery due to heat-toxin",
+        "type": "Disease"
+      },
+      {
+        "name": "Carbuncles and boils",
+        "type": "Disease"
+      },
+      {
+        "name": "Scrofula",
+        "type": "Disease"
+      },
+      {
+        "name": "Hemorrhoids",
+        "type": "Disease"
+      },
+      {
+        "name": "Anal fistula",
+        "type": "Disease"
+      },
+      {
+        "name": "Intestinal abscess",
+        "type": "Disease"
+      },
+      {
+        "name": "Mastitis",
+        "type": "Disease"
+      },
+      {
+        "name": "Gaseous gangrene",
+        "type": "Disease"
+      },
+      {
+        "name": "Osteomyelitis",
+        "type": "Disease"
+      },
+      {
+        "name": "Dian Nan Ben Cao",
+        "type": "Source"
+      },
+      {
+        "name": "Sheng Cao Yao Xing Bei Yao",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Bei Yao",
+        "type": "Source"
+      },
+      {
+        "name": "Chongqing Tang Miscellaneous Notes",
+        "type": "Source"
+      },
+      {
+        "name": "Guangzhou Military Common Chinese Herbs Manual",
+        "type": "Source"
+      },
+      {
+        "name": "Yin Qiao San",
+        "type": "Formula"
+      },
+      {
+        "name": "Ren Dong Decoction (Honeysuckle Decoction)",
+        "type": "Formula"
+      },
+      {
+        "name": "Forsythia (Lian Qiao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Licorice Root (Gan Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Bitter Platycodon Root (Ku Jie Geng)",
+        "type": "Herb"
+      },
+      {
+        "name": "Mint (Bo He)",
+        "type": "Herb"
+      },
+      {
+        "name": "Bamboo Leaves (Dan Zhu Ye)",
+        "type": "Herb"
+      },
+      {
+        "name": "Raw Licorice (Sheng Gan Cao)",
+        "type": "Herb"
+      },
+      {
+        "name": "Schizonepeta Spike (Jing Jie Sui)",
+        "type": "Herb"
+      },
+      {
+        "name": "Fermented Soybean (Dan Dou Chi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Burdock Fruit (Niu Bang Zi)",
+        "type": "Herb"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Clears heat and relieves toxicity",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Febrile disease",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Dysentery due to heat-toxin",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Carbuncles and boils",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Scrofula",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Hemorrhoids",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Anal fistula",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Intestinal abscess",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Mastitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Gaseous gangrene",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Osteomyelitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Dian Nan Ben Cao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Sheng Cao Yao Xing Bei Yao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Ben Cao Bei Yao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Chongqing Tang Miscellaneous Notes",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Honeysuckle Flower (Jin Yin Hua)",
+        "target": "Guangzhou Military Common Chinese Herbs Manual",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Forsythia (Lian Qiao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Honeysuckle Flower (Jin Yin Hua)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Bitter Platycodon Root (Ku Jie Geng)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Mint (Bo He)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Bamboo Leaves (Dan Zhu Ye)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Raw Licorice (Sheng Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Schizonepeta Spike (Jing Jie Sui)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Fermented Soybean (Dan Dou Chi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Burdock Fruit (Niu Bang Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Yin Qiao San",
+        "target": "Taiyin wind-warmth; warm-heat at onset in winter-warm disease with fever without aversion to cold but with thirst",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ren Dong Decoction (Honeysuckle Decoction)",
+        "target": "Honeysuckle Flower (Jin Yin Hua)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ren Dong Decoction (Honeysuckle Decoction)",
+        "target": "Licorice Root (Gan Cao)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ren Dong Decoction (Honeysuckle Decoction)",
+        "target": "Intestinal abscess",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ren Dong Decoction (Honeysuckle Decoction)",
+        "target": "Mastitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Ren Dong Decoction (Honeysuckle Decoction)",
+        "target": "Carbuncles and boils",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

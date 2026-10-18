@@ -1,0 +1,295 @@
+{
+  "filename": "Horsetail (Mu Zei).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Horsetail (Mu Zei)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Equisetum hiemale L.",
+          "nature": "neutral",
+          "flavor": "sweet, bitter",
+          "meridians": [
+            "Lung channel",
+            "Liver channel"
+          ],
+          "dosage": "Internal use: decoct 3–9 g; external use: grind to powder and sprinkle.",
+          "preparation_method": "Remove withered stems and remaining roots, spray with clean water, moisten slightly, cut into sections, dry.",
+          "contraindications": "Use with caution in those with qi and blood deficiency. Not suitable for certain eye diseases caused by anger and summer heat; excessive or prolonged use may harm the liver and cause eye swelling; not for long-standing ocular films or blood deficiency."
+        }
+      },
+      {
+        "name": "Disperse wind",
+        "type": "Effect"
+      },
+      {
+        "name": "Clear heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Release the muscle layer",
+        "type": "Effect"
+      },
+      {
+        "name": "Dispel ocular films",
+        "type": "Effect"
+      },
+      {
+        "name": "Stop bleeding",
+        "type": "Effect"
+      },
+      {
+        "name": "Expel wind-damp",
+        "type": "Effect"
+      },
+      {
+        "name": "Induce sweating",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieve abscesses and swellings",
+        "type": "Effect"
+      },
+      {
+        "name": "Reduce accumulations and masses",
+        "type": "Effect"
+      },
+      {
+        "name": "Brighten the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "Cloudy films over the eyes",
+        "type": "Disease"
+      },
+      {
+        "name": "Tearing in wind",
+        "type": "Symptom"
+      },
+      {
+        "name": "Intestinal wind with bleeding",
+        "type": "Disease"
+      },
+      {
+        "name": "Bloody dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "Malaria",
+        "type": "Disease"
+      },
+      {
+        "name": "Sore throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "Abscesses and swellings",
+        "type": "Disease"
+      },
+      {
+        "name": "Typhoid",
+        "type": "Disease"
+      },
+      {
+        "name": "Prolapse of the large intestine",
+        "type": "Disease"
+      },
+      {
+        "name": "Continuous uterine bleeding",
+        "type": "Disease"
+      },
+      {
+        "name": "Tinea versicolor",
+        "type": "Disease"
+      },
+      {
+        "name": "Red painful throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "Unstoppable hemorrhage",
+        "type": "Symptom"
+      },
+      {
+        "name": "Jiahu Materia Medica (Jiahu Bencao)",
+        "type": "Source"
+      },
+      {
+        "name": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "Source"
+      },
+      {
+        "name": "Standard Materia Medica (Bencao Zheng)",
+        "type": "Source"
+      },
+      {
+        "name": "Yuqiu’s Explanation of Medicines (Yu Qiu Yao Jie)",
+        "type": "Source"
+      },
+      {
+        "name": "Commentary on the Materia Medica (Bencao Jingshu)",
+        "type": "Source"
+      },
+      {
+        "name": "Collected Sayings on Materia Medica (Bencao Huiyan)",
+        "type": "Source"
+      },
+      {
+        "name": "Origins of This Classic (Benjing Fengyuan)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Disperse wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Clear heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Release the muscle layer",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Dispel ocular films",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Stop bleeding",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Expel wind-damp",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Induce sweating",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Relieve abscesses and swellings",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Reduce accumulations and masses",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Brighten the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Cloudy films over the eyes",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Tearing in wind",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Intestinal wind with bleeding",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Bloody dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Malaria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Sore throat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Abscesses and swellings",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Typhoid",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Prolapse of the large intestine",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Continuous uterine bleeding",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Tinea versicolor",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Red painful throat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Unstoppable hemorrhage",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Jiahu Materia Medica (Jiahu Bencao)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Compendium of Materia Medica (Bencao Gangmu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Standard Materia Medica (Bencao Zheng)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Yuqiu’s Explanation of Medicines (Yu Qiu Yao Jie)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Commentary on the Materia Medica (Bencao Jingshu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Collected Sayings on Materia Medica (Bencao Huiyan)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Horsetail (Mu Zei)",
+        "target": "Origins of This Classic (Benjing Fengyuan)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

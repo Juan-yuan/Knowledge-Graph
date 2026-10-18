@@ -21,8 +21,9 @@ INSTRUCTION = (
 
 def load_existing_records(output_path):
     """
-    Load existing fine-tune records from a JSON array file.
-    Also accepts legacy JSON Lines (.jsonl-style) content and normalizes it.
+    Load records already written to the JSON Lines file.
+    Accepts a legacy JSON array file too. A broken last line (from an
+    interrupted write) is dropped.
     """
     if not os.path.exists(output_path):
         return []
@@ -31,32 +32,34 @@ def load_existing_records(output_path):
     if not raw:
         return []
 
-    try:
-        data = json.loads(raw)
-        if isinstance(data, list):
-            return data
-        if isinstance(data, dict):
-            return [data]
-    except json.JSONDecodeError:
-        pass
+    if raw.startswith("["):
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError:
+            pass
 
-    # Legacy JSON Lines: one object per line
     records = []
     for line in raw.splitlines():
         line = line.strip()
         if not line:
             continue
-        records.append(json.loads(line))
+        try:
+            records.append(json.loads(line))
+        except json.JSONDecodeError:
+            tqdm.write(f"Dropped broken line: {line[:60]}...")
     return records
 
 
 def save_records(records, output_path):
+    """Rewrite the whole file as JSON Lines, one record per line."""
     parent = os.path.dirname(output_path)
     if parent:
         os.makedirs(parent, exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(records, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+    tmp_path = output_path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        for record in records:
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+    os.replace(tmp_path, output_path)
 
 
 def build_record(txt_path, json_path):
@@ -73,34 +76,36 @@ def build_record(txt_path, json_path):
 
 def run(input_dir, extract_dir, output_path):
     """
-    Pair every extraction json with its source txt and write one Alpaca record
-    each into a JSON array. Records already present (by input text) are skipped.
+    Pair every extraction json with its source txt and append one Alpaca record
+    per line (JSON Lines). Records already present (by input text) are skipped,
+    so the script can be rerun to pick up newly extracted herbs.
     """
     json_names = sorted(f for f in os.listdir(extract_dir) if f.endswith(".json"))
     records = load_existing_records(output_path)
     done_inputs = {record["input"] for record in records if isinstance(record, dict)}
     print(f"Found {len(json_names)} extraction file(s), {len(done_inputs)} record(s) already written")
 
-    added, skipped, failed = 0, 0, []
-    for name in tqdm(json_names, desc="Building", unit="herb"):
-        txt_path = os.path.join(input_dir, Path(name).stem + ".txt")
-        try:
-            record = build_record(txt_path, os.path.join(extract_dir, name))
-        except Exception as e:
-            failed.append(name)
-            tqdm.write(f"Failed: {name}: {e}")
-            continue
-        if not record["input"] or record["input"] in done_inputs:
-            skipped += 1
-            continue
-        records.append(record)
-        done_inputs.add(record["input"])
-        added += 1
-        # Persist incrementally so an interrupted run can resume
-        save_records(records, output_path)
-
-    # Ensure a valid array file exists even when nothing was added
+    # Normalize the file to clean JSON Lines before appending
     save_records(records, output_path)
+
+    added, skipped, failed = 0, 0, []
+    with open(output_path, "a", encoding="utf-8") as out:
+        for name in tqdm(json_names, desc="Building", unit="herb"):
+            txt_path = os.path.join(input_dir, Path(name).stem + ".txt")
+            try:
+                record = build_record(txt_path, os.path.join(extract_dir, name))
+            except Exception as e:
+                failed.append(name)
+                tqdm.write(f"Failed: {name}: {e}")
+                continue
+            if not record["input"] or record["input"] in done_inputs:
+                skipped += 1
+                continue
+            out.write(json.dumps(record, ensure_ascii=False) + "\n")
+            out.flush()
+            done_inputs.add(record["input"])
+            added += 1
+
     print(f"Finished. Added {added}, skipped {skipped}, failed {len(failed)}.")
 
 

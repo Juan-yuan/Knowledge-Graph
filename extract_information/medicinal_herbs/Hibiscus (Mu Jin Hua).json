@@ -1,0 +1,132 @@
+{
+  "filename": "Hibiscus (Mu Jin Hua).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Hibiscus syriacus",
+          "nature": "cool",
+          "flavor": "sweet, bland",
+          "meridians": [
+            "Spleen",
+            "Lung"
+          ],
+          "dosage": "Internal: 3–9 g; External: appropriate amount fresh, crushed and applied.",
+          "preparation_method": "Remove stems and impurities; sieve off dust. Honey-fried: fry with refined honey until fully absorbed (approx. 40 kg honey per 100 kg flowers)."
+        }
+      },
+      {
+        "name": "Clears heat and drains dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "Cools the blood",
+        "type": "Effect"
+      },
+      {
+        "name": "Detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "intestinal-wind bloody diarrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "dysentery with red or white stools",
+        "type": "Disease"
+      },
+      {
+        "name": "bleeding hemorrhoids",
+        "type": "Disease"
+      },
+      {
+        "name": "lung-heat cough",
+        "type": "Disease"
+      },
+      {
+        "name": "cough with blood",
+        "type": "Symptom"
+      },
+      {
+        "name": "leukorrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "sores and carbuncles",
+        "type": "Disease"
+      },
+      {
+        "name": "burns",
+        "type": "Disease"
+      },
+      {
+        "name": "dried flowers of Hibiscus syriacus (not fully open)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "Clears heat and drains dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "Cools the blood",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "Detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "intestinal-wind bloody diarrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "dysentery with red or white stools",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "bleeding hemorrhoids",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "lung-heat cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "cough with blood",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "leukorrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "sores and carbuncles",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "burns",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Hibiscus syriacus Flower (Mùjǐn huā)",
+        "target": "dried flowers of Hibiscus syriacus (not fully open)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

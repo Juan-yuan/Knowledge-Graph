@@ -1,0 +1,185 @@
+{
+  "filename": "Open-mouthed Arrow (Kai Kou Jian).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Open-mouthed Arrow (Kai Kou Jian)",
+        "type": "Herb",
+        "herb_attributes": {
+          "nature": "cold; toxic",
+          "flavor": "bitter; pungent",
+          "dosage": "Internal: decoction 1.5–3 g; powdered 0.6–0.9 g. External: appropriate amount, pounded and applied.",
+          "preparation_method": "Remove leaves and fibrous roots, wash clean, use fresh or slice and sun-dry.",
+          "contraindications": "Contraindicated in pregnancy; toxic — reports of poisoning; stop medicine immediately and provide timely rescue if poisoning occurs."
+        }
+      },
+      {
+        "name": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "type": "Herb",
+        "herb_attributes": {
+          "nature": "cold; toxic",
+          "flavor": "bitter; pungent",
+          "dosage": "Internal: decoction 1.5–3 g; powdered 0.6–0.9 g. External: appropriate amount, pounded and applied.",
+          "preparation_method": "Remove leaves and fibrous roots, wash clean, use fresh or slice and sun-dry.",
+          "contraindications": "Contraindicated in pregnancy; toxic — reports of poisoning; stop medicine immediately and provide timely rescue if poisoning occurs."
+        }
+      },
+      {
+        "name": "clears heat and detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "dispels wind and eliminates dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "disperses stasis and relieves pain",
+        "type": "Effect"
+      },
+      {
+        "name": "diphtheria",
+        "type": "Disease"
+      },
+      {
+        "name": "throat swelling and pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "rheumatic painful obstruction",
+        "type": "Disease"
+      },
+      {
+        "name": "traumatic injuries from falls and blows",
+        "type": "Disease"
+      },
+      {
+        "name": "stomach pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "carbuncles and ulcers",
+        "type": "Disease"
+      },
+      {
+        "name": "poisonous snakebites",
+        "type": "Disease"
+      },
+      {
+        "name": "rabid dog bites",
+        "type": "Disease"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "dispels wind and eliminates dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "disperses stasis and relieves pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "clears heat and detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "dispels wind and eliminates dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "disperses stasis and relieves pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "diphtheria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "throat swelling and pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "rheumatic painful obstruction",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "traumatic injuries from falls and blows",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "stomach pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "carbuncles and ulcers",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "poisonous snakebites",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Open-mouthed Arrow (Kai Kou Jian)",
+        "target": "rabid dog bites",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "diphtheria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "throat swelling and pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "rheumatic painful obstruction",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "traumatic injuries from falls and blows",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "stomach pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "carbuncles and ulcers",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "poisonous snakebites",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Sword-leaf Arisaema (Jian ye kai kou jian)",
+        "target": "rabid dog bites",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}

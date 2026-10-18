@@ -1,0 +1,215 @@
+{
+  "filename": "Fresh ginger (Sheng Jiang).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Fresh Ginger (Sheng Jiang)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "ginger plant (Zingiberaceae family)",
+          "nature": "slightly warm",
+          "flavor": "acrid",
+          "meridians": [
+            "Lung",
+            "Spleen",
+            "Stomach"
+          ],
+          "dosage": "Internal: decoction 3–10 g; External: appropriate amount (poultice, compress, topical)",
+          "preparation_method": "Remove impurities, wash clean, cut into thick slices when used; may be pounded to a juice",
+          "contraindications": "Contraindicated in yin deficiency with internal heat; avoid long-term use in yin deficiency or internal heat"
+        }
+      },
+      {
+        "name": "releases the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "disperses cold",
+        "type": "Effect"
+      },
+      {
+        "name": "stops vomiting",
+        "type": "Effect"
+      },
+      {
+        "name": "transforms phlegm",
+        "type": "Effect"
+      },
+      {
+        "name": "antidote for Pinellia (Banxia), Arisaema (Tiannanxing), and poisons from fish, crabs, birds, and beasts",
+        "type": "Effect"
+      },
+      {
+        "name": "wind-cold common cold",
+        "type": "Disease"
+      },
+      {
+        "name": "phlegm-fluid retention",
+        "type": "Disease"
+      },
+      {
+        "name": "vomiting",
+        "type": "Symptom"
+      },
+      {
+        "name": "wheezy cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "abdominal distention",
+        "type": "Symptom"
+      },
+      {
+        "name": "diarrhea",
+        "type": "Symptom"
+      },
+      {
+        "name": "Shengjiang Xiexin Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Shengjiang Banxia Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Shengjiang Wan",
+        "type": "Formula"
+      },
+      {
+        "name": "Chenpi Tang",
+        "type": "Formula"
+      },
+      {
+        "name": "Ginger-Salt Drink",
+        "type": "Formula"
+      },
+      {
+        "name": "Shanghan Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Jinkui Yaolue",
+        "type": "Source"
+      },
+      {
+        "name": "Puji Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Qianjin Yaofang",
+        "type": "Source"
+      },
+      {
+        "name": "Chishui Xianzhu",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "releases the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "disperses cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "stops vomiting",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "transforms phlegm",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "antidote for Pinellia (Banxia), Arisaema (Tiannanxing), and poisons from fish, crabs, birds, and beasts",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "wind-cold common cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "phlegm-fluid retention",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "vomiting",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "wheezy cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "abdominal distention",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Fresh Ginger (Sheng Jiang)",
+        "target": "diarrhea",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Shengjiang Xiexin Tang",
+        "target": "Fresh Ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Shengjiang Banxia Tang",
+        "target": "Fresh Ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Shengjiang Wan",
+        "target": "Fresh Ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Chenpi Tang",
+        "target": "Fresh Ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Ginger-Salt Drink",
+        "target": "Fresh Ginger (Sheng Jiang)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Shengjiang Xiexin Tang",
+        "target": "Shanghan Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Shengjiang Banxia Tang",
+        "target": "Jinkui Yaolue",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Shengjiang Wan",
+        "target": "Puji Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Chenpi Tang",
+        "target": "Qianjin Yaofang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Ginger-Salt Drink",
+        "target": "Chishui Xianzhu",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

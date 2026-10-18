@@ -1,0 +1,317 @@
+{
+  "filename": "Cockscomb seed (Qing Xiang Zi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": null,
+          "nature": "cold",
+          "flavor": "bitter",
+          "meridians": [
+            "Liver"
+          ],
+          "dosage": "Internal: 3–15 g. External: appropriate amount, grind to powder for topical application; mash to extract juice for nasal instillation.",
+          "preparation_method": "Decoction for internal use; grind to powder for topical application; mash to extract juice for nasal instillation.",
+          "contraindications": "Contraindicated in cases of markedly dilated pupils."
+        }
+      },
+      {
+        "name": "expels wind-heat",
+        "type": "Effect"
+      },
+      {
+        "name": "clears liver fire",
+        "type": "Effect"
+      },
+      {
+        "name": "brightens the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "benefits the brain and marrow",
+        "type": "Effect"
+      },
+      {
+        "name": "calms the liver",
+        "type": "Effect"
+      },
+      {
+        "name": "strengthens sinews and bones",
+        "type": "Effect"
+      },
+      {
+        "name": "dispels wind, cold, and damp bi pain",
+        "type": "Effect"
+      },
+      {
+        "name": "eliminates heart-channel fire pathogens",
+        "type": "Effect"
+      },
+      {
+        "name": "clears heat",
+        "type": "Effect"
+      },
+      {
+        "name": "dispels wind",
+        "type": "Effect"
+      },
+      {
+        "name": "lowers blood pressure",
+        "type": "Effect"
+      },
+      {
+        "name": "red swollen painful eyes",
+        "type": "Symptom"
+      },
+      {
+        "name": "ocular obstructions",
+        "type": "Disease"
+      },
+      {
+        "name": "hypertension",
+        "type": "Disease"
+      },
+      {
+        "name": "epistaxis",
+        "type": "Symptom"
+      },
+      {
+        "name": "skin wind-heat itching",
+        "type": "Symptom"
+      },
+      {
+        "name": "scabies",
+        "type": "Disease"
+      },
+      {
+        "name": "chronic uveitis",
+        "type": "Disease"
+      },
+      {
+        "name": "liver-heart toxic heat and dark obstructions entering the black of the eye",
+        "type": "Disease"
+      },
+      {
+        "name": "wind-toxin eye diseases",
+        "type": "Disease"
+      },
+      {
+        "name": "membranous obstructions covering the eye",
+        "type": "Disease"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "dizziness",
+        "type": "Symptom"
+      },
+      {
+        "name": "Qing Xiang Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Qing Xiang Zi Pills",
+        "type": "Formula"
+      },
+      {
+        "name": "Eight-Seed Pill",
+        "type": "Formula"
+      },
+      {
+        "name": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "type": "Formula"
+      },
+      {
+        "name": "Cassia seed (Jue Ming Zi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Shepherd’s-purse seed (Ji Cai Zi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Clinical Applications of Chinese Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Zhengzhi Zhunsheng – Classified Formulas",
+        "type": "Source"
+      },
+      {
+        "name": "Yi Bu Quan Lu – Ophthalmology",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "expels wind-heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "clears liver fire",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "brightens the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "benefits the brain and marrow",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "calms the liver",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "strengthens sinews and bones",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "dispels wind, cold, and damp bi pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "eliminates heart-channel fire pathogens",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "red swollen painful eyes",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "ocular obstructions",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "hypertension",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "epistaxis",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "skin wind-heat itching",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "target": "scabies",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Qing Xiang Decoction",
+        "target": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Qing Xiang Decoction",
+        "target": "chronic uveitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Qing Xiang Decoction",
+        "target": "Clinical Applications of Chinese Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Qing Xiang Zi Pills",
+        "target": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Qing Xiang Zi Pills",
+        "target": "liver-heart toxic heat and dark obstructions entering the black of the eye",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Qing Xiang Zi Pills",
+        "target": "Zhengzhi Zhunsheng – Classified Formulas",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Eight-Seed Pill",
+        "target": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Eight-Seed Pill",
+        "target": "wind-toxin eye diseases",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Eight-Seed Pill",
+        "target": "membranous obstructions covering the eye",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Eight-Seed Pill",
+        "target": "Yi Bu Quan Lu – Ophthalmology",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "Feather Cockscomb Seed (Qing Xiang Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "Cassia seed (Jue Ming Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "Shepherd’s-purse seed (Ji Cai Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "clears heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "dispels wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "brightens the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "lowers blood pressure",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Cassia–Shepherd’s-purse–Feather Cockscomb Tea",
+        "target": "dizziness",
+        "type": "ALLEVIATES_SYMPTOM"
+      }
+    ]
+  }
+}

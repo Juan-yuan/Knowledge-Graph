@@ -1,0 +1,138 @@
+{
+  "filename": "Jasmine leaf (Mo Li Ye).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Jasmine leaf (Mo Li Ye)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Jasmine (Moli) - Oleaceae family",
+          "nature": "warm",
+          "flavor": "pungent, slightly bitter",
+          "meridians": [
+            "Lung",
+            "Stomach"
+          ],
+          "dosage": "Internal: decoct, 6–10 g. External: appropriate amount, decoct for washing or crush and apply as a poultice.",
+          "preparation_method": "Decoct for internal use; external decoction for washing; crush and apply as a poultice."
+        }
+      },
+      {
+        "name": "Dispel wind and release the exterior",
+        "type": "Effect"
+      },
+      {
+        "name": "Reduce swelling",
+        "type": "Effect"
+      },
+      {
+        "name": "Relieve pain",
+        "type": "Effect"
+      },
+      {
+        "name": "Externally contracted febrile disorders",
+        "type": "Disease"
+      },
+      {
+        "name": "Dysentery with abdominal distention",
+        "type": "Disease"
+      },
+      {
+        "name": "Swollen painful feet (beriberi)",
+        "type": "Disease"
+      },
+      {
+        "name": "Poisonous insect stings or bites",
+        "type": "Disease"
+      },
+      {
+        "name": "fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "abdominal distention",
+        "type": "Symptom"
+      },
+      {
+        "name": "swelling",
+        "type": "Symptom"
+      },
+      {
+        "name": "pain",
+        "type": "Symptom"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "Dispel wind and release the exterior",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "Reduce swelling",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "Relieve pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "Externally contracted febrile disorders",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "Dysentery with abdominal distention",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "Swollen painful feet (beriberi)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "Poisonous insect stings or bites",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "swelling",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Jasmine leaf (Mo Li Ye)",
+        "target": "abdominal distention",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Externally contracted febrile disorders",
+        "target": "fever",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Dysentery with abdominal distention",
+        "target": "abdominal distention",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Swollen painful feet (beriberi)",
+        "target": "swelling",
+        "type": "HAS_SYMPTOM"
+      },
+      {
+        "source": "Swollen painful feet (beriberi)",
+        "target": "pain",
+        "type": "HAS_SYMPTOM"
+      }
+    ]
+  }
+}

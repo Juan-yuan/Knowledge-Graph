@@ -1,0 +1,588 @@
+{
+  "filename": "Reed Rhizome (Lu Gen).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Reed Rhizome (Lu Gen)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Phragmites australis (Lu Wei)",
+          "nature": "cold",
+          "flavor": "sweet",
+          "meridians": [
+            "Lung meridian",
+            "Stomach meridian",
+            "Bladder meridian"
+          ],
+          "dosage": "Internal decoction: 15–30 g dried, 60–120 g fresh; or pound fresh and extract juice. External: appropriate amount, decoct and wash.",
+          "preparation_method": "Decoct; fresh may be pounded and juice extracted; external decoction and wash.",
+          "contraindications": "Use with caution in those with spleen and stomach cold deficiency."
+        }
+      },
+      {
+        "name": "clear heat",
+        "type": "Effect"
+      },
+      {
+        "name": "generate fluids",
+        "type": "Effect"
+      },
+      {
+        "name": "relieve vexation",
+        "type": "Effect"
+      },
+      {
+        "name": "stop vomiting",
+        "type": "Effect"
+      },
+      {
+        "name": "promote urination",
+        "type": "Effect"
+      },
+      {
+        "name": "leach dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "relieve poisoning",
+        "type": "Effect"
+      },
+      {
+        "name": "febrile disease with vexation and thirst",
+        "type": "Disease"
+      },
+      {
+        "name": "stomach-heat vomiting",
+        "type": "Disease"
+      },
+      {
+        "name": "dysphagia and obstruction in the epigastrium",
+        "type": "Disease"
+      },
+      {
+        "name": "rebellious stomach qi",
+        "type": "Disease"
+      },
+      {
+        "name": "pulmonary consumption",
+        "type": "Disease"
+      },
+      {
+        "name": "lung abscess",
+        "type": "Disease"
+      },
+      {
+        "name": "puffer fish (fugu) poisoning",
+        "type": "Disease"
+      },
+      {
+        "name": "alcohol poisoning",
+        "type": "Disease"
+      },
+      {
+        "name": "fish or crab poisoning",
+        "type": "Disease"
+      },
+      {
+        "name": "cholera",
+        "type": "Disease"
+      },
+      {
+        "name": "measles not erupting",
+        "type": "Disease"
+      },
+      {
+        "name": "scarlet fever",
+        "type": "Disease"
+      },
+      {
+        "name": "pertussis with hemoptysis",
+        "type": "Disease"
+      },
+      {
+        "name": "lobar pneumonia with high fever, vexation and thirst, wheeze and cough",
+        "type": "Disease"
+      },
+      {
+        "name": "edema",
+        "type": "Disease"
+      },
+      {
+        "name": "sore throat",
+        "type": "Disease"
+      },
+      {
+        "name": "constipation",
+        "type": "Disease"
+      },
+      {
+        "name": "leukorrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "infant vomiting and irritability with heat",
+        "type": "Disease"
+      },
+      {
+        "name": "pregnancy vomiting",
+        "type": "Disease"
+      },
+      {
+        "name": "postpartum vomiting and diarrhea, cholera, and abdominal pain",
+        "type": "Disease"
+      },
+      {
+        "name": "vexation",
+        "type": "Symptom"
+      },
+      {
+        "name": "thirst",
+        "type": "Symptom"
+      },
+      {
+        "name": "vomiting",
+        "type": "Symptom"
+      },
+      {
+        "name": "dysphagia",
+        "type": "Symptom"
+      },
+      {
+        "name": "belching",
+        "type": "Symptom"
+      },
+      {
+        "name": "hiccup",
+        "type": "Symptom"
+      },
+      {
+        "name": "inability to eat",
+        "type": "Symptom"
+      },
+      {
+        "name": "wheeze",
+        "type": "Symptom"
+      },
+      {
+        "name": "cough",
+        "type": "Symptom"
+      },
+      {
+        "name": "bloody sputum",
+        "type": "Symptom"
+      },
+      {
+        "name": "foul-smelling purulent sputum",
+        "type": "Symptom"
+      },
+      {
+        "name": "small difficult urination",
+        "type": "Symptom"
+      },
+      {
+        "name": "dry retching",
+        "type": "Symptom"
+      },
+      {
+        "name": "diarrhea",
+        "type": "Symptom"
+      },
+      {
+        "name": "abdominal pain",
+        "type": "Symptom"
+      },
+      {
+        "name": "mouth ulcers",
+        "type": "Symptom"
+      },
+      {
+        "name": "swollen painful throat",
+        "type": "Symptom"
+      },
+      {
+        "name": "Bie Lu (Bielu)",
+        "type": "Source"
+      },
+      {
+        "name": "Yao Xing Lun (Yaoxing Lun)",
+        "type": "Source"
+      },
+      {
+        "name": "Tang Ben Cao",
+        "type": "Source"
+      },
+      {
+        "name": "Ri Huazi Ben Cao (Ri Hua Zi Ben Cao)",
+        "type": "Source"
+      },
+      {
+        "name": "Riyong Ben Cao (Ri Yong Ben Cao)",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Meng Quan",
+        "type": "Source"
+      },
+      {
+        "name": "Ben Cao Yuan Shi",
+        "type": "Source"
+      },
+      {
+        "name": "Yu Qiu Yao Jie",
+        "type": "Source"
+      },
+      {
+        "name": "Yi Lin Zuan Yao",
+        "type": "Source"
+      },
+      {
+        "name": "Tian Bao Ben Cao",
+        "type": "Source"
+      },
+      {
+        "name": "Zhongguo Yao Zhi",
+        "type": "Source"
+      },
+      {
+        "name": "Nanjing Minjian Yao Cao (Nanjing Folk Herbs)",
+        "type": "Source"
+      },
+      {
+        "name": "Shandong Zhong Yao (Shandong Chinese Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Sichuan Zhong Yao Zhi (Sichuan Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Qian Jin Fang (Qian Jin Fang)",
+        "type": "Source"
+      },
+      {
+        "name": "Jin Kui Yu Han Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Zhou Hou Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Ningxia Zhong Cao Yao Manual",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "clear heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "generate fluids",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "relieve vexation",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "stop vomiting",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "promote urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "leach dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "relieve poisoning",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "febrile disease with vexation and thirst",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "stomach-heat vomiting",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "dysphagia and obstruction in the epigastrium",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "rebellious stomach qi",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "pulmonary consumption",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "lung abscess",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "puffer fish (fugu) poisoning",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "alcohol poisoning",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "fish or crab poisoning",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "cholera",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "measles not erupting",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "scarlet fever",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "pertussis with hemoptysis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "lobar pneumonia with high fever, vexation and thirst, wheeze and cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "edema",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "sore throat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "constipation",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "leukorrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "infant vomiting and irritability with heat",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "pregnancy vomiting",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "postpartum vomiting and diarrhea, cholera, and abdominal pain",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "vexation",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "thirst",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "vomiting",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "belching",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "hiccup",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "inability to eat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "wheeze",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "cough",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "bloody sputum",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "foul-smelling purulent sputum",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "small difficult urination",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "dry retching",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "diarrhea",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "abdominal pain",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "mouth ulcers",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "swollen painful throat",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Bie Lu (Bielu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Yao Xing Lun (Yaoxing Lun)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Tang Ben Cao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Ri Huazi Ben Cao (Ri Hua Zi Ben Cao)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Riyong Ben Cao (Ri Yong Ben Cao)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Ben Cao Meng Quan",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Ben Cao Yuan Shi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Yu Qiu Yao Jie",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Yi Lin Zuan Yao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Tian Bao Ben Cao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Zhongguo Yao Zhi",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Nanjing Minjian Yao Cao (Nanjing Folk Herbs)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Shandong Zhong Yao (Shandong Chinese Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Sichuan Zhong Yao Zhi (Sichuan Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Qian Jin Fang (Qian Jin Fang)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Jin Kui Yu Han Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Zhou Hou Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Reed Rhizome (Lu Gen)",
+        "target": "Ningxia Zhong Cao Yao Manual",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

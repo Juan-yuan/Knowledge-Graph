@@ -1,0 +1,231 @@
+{
+  "filename": "Duckweed (Fu Ping).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Duckweed (Fu Ping)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Spirodela polyrrhiza (L.) Schleid.",
+          "nature": "cold",
+          "flavor": "pungent",
+          "meridians": [
+            "Lung"
+          ],
+          "dosage": "Internal: decoct, 3–9 g; fresh 15–30 g; or crush and drink the juice; or include in pills or powders. External: appropriate amount, decoct for fumigating washes; grind to powder and sprinkle or make into a paste to apply.",
+          "preparation_method": "Collected June to September, washed clean, impurities removed, sun-dried.",
+          "contraindications": "Contraindicated in exterior deficiency with spontaneous sweating; do not use lightly unless there is great excess heat; contraindicated in blood deficiency with dry skin and in qi deficiency with wind-induced pain."
+        }
+      },
+      {
+        "name": "Induce sweating",
+        "type": "Effect"
+      },
+      {
+        "name": "Dispel wind",
+        "type": "Effect"
+      },
+      {
+        "name": "Promote urination",
+        "type": "Effect"
+      },
+      {
+        "name": "Clear heat",
+        "type": "Effect"
+      },
+      {
+        "name": "Detoxify",
+        "type": "Effect"
+      },
+      {
+        "name": "Epidemic febrile diseases",
+        "type": "Disease"
+      },
+      {
+        "name": "Wind-heat urticaria",
+        "type": "Disease"
+      },
+      {
+        "name": "Erysipelas",
+        "type": "Disease"
+      },
+      {
+        "name": "Scabies",
+        "type": "Disease"
+      },
+      {
+        "name": "Tinea (tinea versicolor)",
+        "type": "Disease"
+      },
+      {
+        "name": "Abscesses",
+        "type": "Disease"
+      },
+      {
+        "name": "Acute nephritis",
+        "type": "Disease"
+      },
+      {
+        "name": "Wasting-thirst (diabetes)",
+        "type": "Disease"
+      },
+      {
+        "name": "Burns",
+        "type": "Disease"
+      },
+      {
+        "name": "Rashes that do not surface",
+        "type": "Symptom"
+      },
+      {
+        "name": "Skin itching",
+        "type": "Symptom"
+      },
+      {
+        "name": "Edema",
+        "type": "Symptom"
+      },
+      {
+        "name": "Urinary retention",
+        "type": "Symptom"
+      },
+      {
+        "name": "Benjing (The Classic of Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Tujing (Illustrated Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Gangmu (Compendium of Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Tang Bencao (Tang Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Shiyi (Supplement to Materia Medica)",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Induce sweating",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Dispel wind",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Promote urination",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Clear heat",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Detoxify",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Epidemic febrile diseases",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Wind-heat urticaria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Erysipelas",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Scabies",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Tinea (tinea versicolor)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Abscesses",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Acute nephritis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Wasting-thirst (diabetes)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Burns",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Rashes that do not surface",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Skin itching",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Edema",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Urinary retention",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Benjing (The Classic of Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Bencao Tujing (Illustrated Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Bencao Gangmu (Compendium of Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Tang Bencao (Tang Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Duckweed (Fu Ping)",
+        "target": "Bencao Shiyi (Supplement to Materia Medica)",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

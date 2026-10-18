@@ -1,0 +1,349 @@
+{
+  "filename": "Notopterygium root (Qiang Huo).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Notopterygium root (Qiang Huo)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Notopterygium incisum; Notopterygium forbesii",
+          "nature": "warm",
+          "flavor": "pungent and bitter",
+          "meridians": [
+            "Bladder",
+            "Kidney"
+          ],
+          "dosage": "3 to 10 g (decoction)",
+          "preparation_method": "decoction; also used in pills and powders",
+          "contraindications": "contraindicated for bi pain due to blood deficiency"
+        }
+      },
+      {
+        "name": "release the exterior and disperse cold",
+        "type": "Effect"
+      },
+      {
+        "name": "expel wind and overcome dampness",
+        "type": "Effect"
+      },
+      {
+        "name": "relieve pain",
+        "type": "Effect"
+      },
+      {
+        "name": "impotence",
+        "type": "Disease"
+      },
+      {
+        "name": "spermatorrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "enuresis",
+        "type": "Disease"
+      },
+      {
+        "name": "frequent urination",
+        "type": "Disease"
+      },
+      {
+        "name": "cold pain in the lower back and knees",
+        "type": "Disease"
+      },
+      {
+        "name": "wheezing due to kidney deficiency",
+        "type": "Disease"
+      },
+      {
+        "name": "early morning diarrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "vitiligo",
+        "type": "Disease"
+      },
+      {
+        "name": "alopecia areata",
+        "type": "Disease"
+      },
+      {
+        "name": "common cold (wind-cold)",
+        "type": "Disease"
+      },
+      {
+        "name": "wind-cold-damp bi syndrome",
+        "type": "Disease"
+      },
+      {
+        "name": "wind-water edema",
+        "type": "Disease"
+      },
+      {
+        "name": "boils and sores with toxic swelling",
+        "type": "Disease"
+      },
+      {
+        "name": "aversion to cold",
+        "type": "Symptom"
+      },
+      {
+        "name": "fever",
+        "type": "Symptom"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "body aches",
+        "type": "Symptom"
+      },
+      {
+        "name": "stiff neck",
+        "type": "Symptom"
+      },
+      {
+        "name": "soreness and aching of bones and joints",
+        "type": "Symptom"
+      },
+      {
+        "name": "Nine-Ingredient Qianghuo Decoction (Jiuwei Qianghuo Tang)",
+        "type": "Formula"
+      },
+      {
+        "name": "Quanbi (Juanbi) Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Qiang-Fuzi Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Qianghuo Victory Dampness Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Da Qianghuo Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Wu Bi Decoction",
+        "type": "Formula"
+      },
+      {
+        "name": "Two-Huo Chuanxiong Wine",
+        "type": "Formula"
+      },
+      {
+        "name": "Yaoxing Lun",
+        "type": "Source"
+      },
+      {
+        "name": "Rihuazi Bencao",
+        "type": "Source"
+      },
+      {
+        "name": "Zhenzhu Nang",
+        "type": "Source"
+      },
+      {
+        "name": "Pinhui Jingyao",
+        "type": "Source"
+      },
+      {
+        "name": "Bencao Beiyao",
+        "type": "Source"
+      },
+      {
+        "name": "Huiyue Yijing",
+        "type": "Source"
+      },
+      {
+        "name": "expels wind, promotes blood circulation, relieves spasms",
+        "type": "Effect"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "release the exterior and disperse cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "expel wind and overcome dampness",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "relieve pain",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "impotence",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "spermatorrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "enuresis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "frequent urination",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "cold pain in the lower back and knees",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "wheezing due to kidney deficiency",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "early morning diarrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "vitiligo",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "alopecia areata",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "common cold (wind-cold)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "wind-cold-damp bi syndrome",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "wind-water edema",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "boils and sores with toxic swelling",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "aversion to cold",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "fever",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "body aches",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "stiff neck",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "soreness and aching of bones and joints",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Nine-Ingredient Qianghuo Decoction (Jiuwei Qianghuo Tang)",
+        "target": "Notopterygium root (Qiang Huo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Quanbi (Juanbi) Decoction",
+        "target": "Notopterygium root (Qiang Huo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Qiang-Fuzi Decoction",
+        "target": "Notopterygium root (Qiang Huo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Qianghuo Victory Dampness Decoction",
+        "target": "Notopterygium root (Qiang Huo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Da Qianghuo Decoction",
+        "target": "Notopterygium root (Qiang Huo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Wu Bi Decoction",
+        "target": "Notopterygium root (Qiang Huo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Two-Huo Chuanxiong Wine",
+        "target": "Notopterygium root (Qiang Huo)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "Yaoxing Lun",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "Rihuazi Bencao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "Zhenzhu Nang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "Pinhui Jingyao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "Bencao Beiyao",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Notopterygium root (Qiang Huo)",
+        "target": "Huiyue Yijing",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Two-Huo Chuanxiong Wine",
+        "target": "expels wind, promotes blood circulation, relieves spasms",
+        "type": "HAS_EFFECT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,582 @@
+{
+  "filename": "Houttuynia (E Bu Shi Cao).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Small Centipeda Herb (E bu shi cao)",
+        "type": "Herb",
+        "herb_attributes": {
+          "scientific_name": "Centipeda (Shi hu sui)",
+          "nature": "warm",
+          "flavor": "pungent",
+          "meridians": [
+            "Lung meridian",
+            "Liver meridian"
+          ],
+          "dosage": "Internal: decoction 5–9 g. External: appropriate amount, crush and apply as poultice; crush and stuff into the nose; or grind to powder and pinch into the nose.",
+          "preparation_method": "Decoct for internal use; mash to extract juice; crush and apply externally as poultice; crush and stuff into the nose; grind to powder and pinch into the nose."
+        }
+      },
+      {
+        "name": "disperses wind and dispels cold",
+        "type": "Effect"
+      },
+      {
+        "name": "overcomes dampness and removes eye films",
+        "type": "Effect"
+      },
+      {
+        "name": "unblocks nasal obstruction",
+        "type": "Effect"
+      },
+      {
+        "name": "detoxifies",
+        "type": "Effect"
+      },
+      {
+        "name": "clears the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "disperses sores and swellings",
+        "type": "Effect"
+      },
+      {
+        "name": "relieves pain and reduces swelling",
+        "type": "Effect"
+      },
+      {
+        "name": "arrests malaria",
+        "type": "Effect"
+      },
+      {
+        "name": "stops dysentery",
+        "type": "Effect"
+      },
+      {
+        "name": "expels wind-phlegm",
+        "type": "Effect"
+      },
+      {
+        "name": "induces sneezing",
+        "type": "Effect"
+      },
+      {
+        "name": "common cold",
+        "type": "Disease"
+      },
+      {
+        "name": "cold-induced asthma",
+        "type": "Disease"
+      },
+      {
+        "name": "throat obstruction",
+        "type": "Disease"
+      },
+      {
+        "name": "whooping cough",
+        "type": "Disease"
+      },
+      {
+        "name": "sha-syndrome abdominal pain",
+        "type": "Disease"
+      },
+      {
+        "name": "amoebic dysentery",
+        "type": "Disease"
+      },
+      {
+        "name": "malaria",
+        "type": "Disease"
+      },
+      {
+        "name": "malnutrition-related diarrhea",
+        "type": "Disease"
+      },
+      {
+        "name": "rhinitis",
+        "type": "Disease"
+      },
+      {
+        "name": "nasal polyps",
+        "type": "Disease"
+      },
+      {
+        "name": "eye films causing gritty itching",
+        "type": "Disease"
+      },
+      {
+        "name": "scabies",
+        "type": "Disease"
+      },
+      {
+        "name": "tinea",
+        "type": "Disease"
+      },
+      {
+        "name": "traumatic injuries from falls and blows",
+        "type": "Disease"
+      },
+      {
+        "name": "rheumatic low back and leg pain",
+        "type": "Disease"
+      },
+      {
+        "name": "gan-accumulation (childhood malnutrition)",
+        "type": "Disease"
+      },
+      {
+        "name": "throat toxin",
+        "type": "Disease"
+      },
+      {
+        "name": "pterygium encroaching on the eye",
+        "type": "Disease"
+      },
+      {
+        "name": "hemorrhoidal swelling and pain",
+        "type": "Disease"
+      },
+      {
+        "name": "psoriasis",
+        "type": "Disease"
+      },
+      {
+        "name": "snakebite (topical application)",
+        "type": "Disease"
+      },
+      {
+        "name": "corn (clavus)",
+        "type": "Disease"
+      },
+      {
+        "name": "damp-toxin leg ulcers",
+        "type": "Disease"
+      },
+      {
+        "name": "swellings and toxins",
+        "type": "Disease"
+      },
+      {
+        "name": "nasal obstruction",
+        "type": "Symptom"
+      },
+      {
+        "name": "deafness",
+        "type": "Symptom"
+      },
+      {
+        "name": "headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "head soreness",
+        "type": "Symptom"
+      },
+      {
+        "name": "harsh breathing",
+        "type": "Symptom"
+      },
+      {
+        "name": "eye redness",
+        "type": "Symptom"
+      },
+      {
+        "name": "eye swelling",
+        "type": "Symptom"
+      },
+      {
+        "name": "gritty itching (eyes)",
+        "type": "Symptom"
+      },
+      {
+        "name": "Supplement to Materia Medica (Ben Cao Shi Yi)",
+        "type": "Source"
+      },
+      {
+        "name": "Si Sheng Materia Medica (Four-Tone Materia Medica)",
+        "type": "Source"
+      },
+      {
+        "name": "Compendium of Materia Medica (Ben Cao Gang Mu)",
+        "type": "Source"
+      },
+      {
+        "name": "Essentials of Raw Herbal Natures (Sheng Cao Yao Xing Bei Yao)",
+        "type": "Source"
+      },
+      {
+        "name": "Essentials of Collected Medical Forest (Yi Lin Zuan Yao)",
+        "type": "Source"
+      },
+      {
+        "name": "Illustrated Examination of Plant Names and Realities (Zhi Wu Ming Shi Tu Kao)",
+        "type": "Source"
+      },
+      {
+        "name": "Guangxi Medicinal Plant Illustrations (Guangxi Yao Zhi Tu Zhi)",
+        "type": "Source"
+      },
+      {
+        "name": "Guangxi Chinese Medicinal Substances (Guangxi Zhong Yao Wu)",
+        "type": "Source"
+      },
+      {
+        "name": "Guangdong Chinese Materia Medica II (Guangdong Zhong Yao II)",
+        "type": "Source"
+      },
+      {
+        "name": "Guangzhou Military Common Chinese Herbal Manual (Guangzhou Bu Dui Chang Yong Zhong Cao Yao Shou Ce)",
+        "type": "Source"
+      },
+      {
+        "name": "Guiyang Folk Herbal Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Binhu Ji Simple Formulas",
+        "type": "Source"
+      },
+      {
+        "name": "Zhejiang Folk Herbal Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Guangxi Commonly Used Folk Herbs",
+        "type": "Source"
+      },
+      {
+        "name": "Modern Practical Chinese Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Jiangxi Herbal Medicine",
+        "type": "Source"
+      },
+      {
+        "name": "Hunan Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Quanzhou Materia Medica",
+        "type": "Source"
+      },
+      {
+        "name": "Zhejiang Commonly Used Folk Herbs",
+        "type": "Source"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "disperses wind and dispels cold",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "overcomes dampness and removes eye films",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "unblocks nasal obstruction",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "detoxifies",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "clears the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "disperses sores and swellings",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "relieves pain and reduces swelling",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "arrests malaria",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "stops dysentery",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "expels wind-phlegm",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "induces sneezing",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "common cold",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "cold-induced asthma",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "throat obstruction",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "whooping cough",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "sha-syndrome abdominal pain",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "amoebic dysentery",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "malaria",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "malnutrition-related diarrhea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "rhinitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "nasal polyps",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "eye films causing gritty itching",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "scabies",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "tinea",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "traumatic injuries from falls and blows",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "rheumatic low back and leg pain",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "gan-accumulation (childhood malnutrition)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "throat toxin",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "pterygium encroaching on the eye",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "hemorrhoidal swelling and pain",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "psoriasis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "snakebite (topical application)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "corn (clavus)",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "damp-toxin leg ulcers",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "swellings and toxins",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "nasal obstruction",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "deafness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "head soreness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "harsh breathing",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "eye redness",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "eye swelling",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "gritty itching (eyes)",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Supplement to Materia Medica (Ben Cao Shi Yi)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Si Sheng Materia Medica (Four-Tone Materia Medica)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Compendium of Materia Medica (Ben Cao Gang Mu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Essentials of Raw Herbal Natures (Sheng Cao Yao Xing Bei Yao)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Essentials of Collected Medical Forest (Yi Lin Zuan Yao)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Illustrated Examination of Plant Names and Realities (Zhi Wu Ming Shi Tu Kao)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Guangxi Medicinal Plant Illustrations (Guangxi Yao Zhi Tu Zhi)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Guangxi Chinese Medicinal Substances (Guangxi Zhong Yao Wu)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Guangdong Chinese Materia Medica II (Guangdong Zhong Yao II)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Guangzhou Military Common Chinese Herbal Manual (Guangzhou Bu Dui Chang Yong Zhong Cao Yao Shou Ce)",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Guiyang Folk Herbal Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Binhu Ji Simple Formulas",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Zhejiang Folk Herbal Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Guangxi Commonly Used Folk Herbs",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Modern Practical Chinese Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Jiangxi Herbal Medicine",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Hunan Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Quanzhou Materia Medica",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Small Centipeda Herb (E bu shi cao)",
+        "target": "Zhejiang Commonly Used Folk Herbs",
+        "type": "FROM_SOURCE"
+      }
+    ]
+  }
+}

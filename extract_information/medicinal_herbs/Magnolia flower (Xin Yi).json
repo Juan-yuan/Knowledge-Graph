@@ -1,0 +1,311 @@
+{
+  "filename": "Magnolia flower (Xin Yi).txt",
+  "extract_dict": {
+    "entities": [
+      {
+        "name": "Magnolia Flower (Xin Yi)",
+        "type": "Herb",
+        "herb_attributes": {
+          "nature": "warm",
+          "flavor": "pungent",
+          "meridians": [
+            "Lung channel",
+            "Stomach channel"
+          ],
+          "dosage": "Internal: decoction 3–10 g (preferably in a bag); External: powdered and snuffed into the nostrils or use distilled aromatic water as nasal drops",
+          "preparation_method": "Pick out and clean away stem and debris; crush for use; slightly roast for medicinal use",
+          "contraindications": "Contraindicated for those with yin deficiency and vigorous fire; persons with qi deficiency should avoid; headache due to blood deficiency with blazing fire is contraindicated"
+        }
+      },
+      {
+        "name": "Expels wind and opens the orifices",
+        "type": "Effect"
+      },
+      {
+        "name": "Drains the lung and descends rebellious qi",
+        "type": "Effect"
+      },
+      {
+        "name": "Unblocks channels and vessels",
+        "type": "Effect"
+      },
+      {
+        "name": "Promotes hair growth",
+        "type": "Effect"
+      },
+      {
+        "name": "Brightens the eyes",
+        "type": "Effect"
+      },
+      {
+        "name": "Oxytocic/promotes uterine contraction",
+        "type": "Effect"
+      },
+      {
+        "name": "Headache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Nasal congestion",
+        "type": "Symptom"
+      },
+      {
+        "name": "Nasal discharge",
+        "type": "Symptom"
+      },
+      {
+        "name": "Nasal obstruction",
+        "type": "Symptom"
+      },
+      {
+        "name": "Toothache",
+        "type": "Symptom"
+      },
+      {
+        "name": "Inability to smell fragrances",
+        "type": "Symptom"
+      },
+      {
+        "name": "Rhinitis",
+        "type": "Disease"
+      },
+      {
+        "name": "Sinusitis",
+        "type": "Disease"
+      },
+      {
+        "name": "Nasal sores",
+        "type": "Disease"
+      },
+      {
+        "name": "Cang Er Powder",
+        "type": "Formula"
+      },
+      {
+        "name": "Chuanxiong Powder",
+        "type": "Formula"
+      },
+      {
+        "name": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "type": "Formula"
+      },
+      {
+        "name": "Ji Sheng Fang",
+        "type": "Source"
+      },
+      {
+        "name": "Zheng Zhi Zhun Sheng",
+        "type": "Source"
+      },
+      {
+        "name": "Cocklebur Fruit (Cang Er Zi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Dahurian Angelica Root (Bai Zhi)",
+        "type": "Herb"
+      },
+      {
+        "name": "Mint (Bo He)",
+        "type": "Herb"
+      },
+      {
+        "name": "Chuanxiong (Chuan Xiong)",
+        "type": "Herb"
+      },
+      {
+        "name": "Asarum (Xi Xin)",
+        "type": "Herb"
+      },
+      {
+        "name": "Mu Tong (Akebia)",
+        "type": "Herb"
+      },
+      {
+        "name": "Scallion white (Cong Bai)",
+        "type": "Herb"
+      },
+      {
+        "name": "Tea leaves",
+        "type": "Herb"
+      }
+    ],
+    "relations": [
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Expels wind and opens the orifices",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Drains the lung and descends rebellious qi",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Unblocks channels and vessels",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Promotes hair growth",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Brightens the eyes",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Oxytocic/promotes uterine contraction",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Headache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Nasal congestion",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Nasal discharge",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Nasal obstruction",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Toothache",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Rhinitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Sinusitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Magnolia Flower (Xin Yi)",
+        "target": "Nasal sores",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Cang Er Powder",
+        "target": "Magnolia Flower (Xin Yi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cang Er Powder",
+        "target": "Cocklebur Fruit (Cang Er Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cang Er Powder",
+        "target": "Dahurian Angelica Root (Bai Zhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cang Er Powder",
+        "target": "Mint (Bo He)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Cang Er Powder",
+        "target": "Ji Sheng Fang",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Cang Er Powder",
+        "target": "Rhinitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Chuanxiong Powder",
+        "target": "Magnolia Flower (Xin Yi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Chuanxiong Powder",
+        "target": "Chuanxiong (Chuan Xiong)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Chuanxiong Powder",
+        "target": "Asarum (Xi Xin)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Chuanxiong Powder",
+        "target": "Mu Tong (Akebia)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Chuanxiong Powder",
+        "target": "Zheng Zhi Zhun Sheng",
+        "type": "FROM_SOURCE"
+      },
+      {
+        "source": "Chuanxiong Powder",
+        "target": "Nasal obstruction",
+        "type": "ALLEVIATES_SYMPTOM"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Mint (Bo He)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Cocklebur Fruit (Cang Er Zi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Magnolia Flower (Xin Yi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Dahurian Angelica Root (Bai Zhi)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Scallion white (Cong Bai)",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Tea leaves",
+        "type": "HAS_INGREDIENT"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Expels wind and opens the orifices",
+        "type": "HAS_EFFECT"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Rhinitis",
+        "type": "TREATS_DISEASE"
+      },
+      {
+        "source": "Mint, Cocklebur, Magnolia, Dahurian Angelica Tea",
+        "target": "Sinusitis",
+        "type": "TREATS_DISEASE"
+      }
+    ]
+  }
+}
