@@ -40,6 +40,7 @@ class Config:
         self.KG_EXTRACTION_PROMPT = os.getenv("KG_EXTRACTION_PROMPT")
         self.KG_EXTRACTION_PROJECT_INFO = os.getenv("KG_EXTRACTION_PROJECT_INFO")
         self.KG_EXTRACTION_SCHEMA = os.getenv("KG_EXTRACTION_SCHEMA")
+        self.KG_FINETUNE_INSTRUCTION = os.getenv("KG_FINETUNE_INSTRUCTION")
 
         self.ENTITY_INDEX_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss.index")
         self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss_id2text.pkl")
