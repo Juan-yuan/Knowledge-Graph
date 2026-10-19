@@ -46,6 +46,7 @@ class Config:
         self.KG_EXTRACTION_SCHEMA = os.getenv("KG_EXTRACTION_SCHEMA")
         self.KG_FINETUNE_INSTRUCTION = os.getenv("KG_FINETUNE_INSTRUCTION")
         self.ZHONGYI_INTENT_PROMPT = os.getenv("ZHONGYI_INTENT_PROMPT")
+        self.ENTITY_EXTRACTION_PROMPT = os.getenv("ENTITY_EXTRACTION_PROMPT")
 
         # Private TCM Neo4j import settings
         self.TCM_NEO4J_PROJECT = os.getenv("TCM_NEO4J_PROJECT")
