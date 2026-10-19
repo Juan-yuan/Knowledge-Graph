@@ -48,6 +48,7 @@ class Config:
         self.ZHONGYI_INTENT_PROMPT = os.getenv("ZHONGYI_INTENT_PROMPT")
         self.ENTITY_EXTRACTION_PROMPT = os.getenv("ENTITY_EXTRACTION_PROMPT")
         self.CYPHER_GENERATION_PROMPT = os.getenv("CYPHER_GENERATION_PROMPT")
+        self.NEO4J_ANSWER_PROMPT = os.getenv("NEO4J_ANSWER_PROMPT")
 
         # Private TCM Neo4j import settings
         self.TCM_NEO4J_PROJECT = os.getenv("TCM_NEO4J_PROJECT")
