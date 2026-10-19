@@ -45,6 +45,7 @@ class Config:
         self.KG_EXTRACTION_PROJECT_INFO = os.getenv("KG_EXTRACTION_PROJECT_INFO")
         self.KG_EXTRACTION_SCHEMA = os.getenv("KG_EXTRACTION_SCHEMA")
         self.KG_FINETUNE_INSTRUCTION = os.getenv("KG_FINETUNE_INSTRUCTION")
+        self.ZHONGYI_INTENT_PROMPT = os.getenv("ZHONGYI_INTENT_PROMPT")
 
         # Private TCM Neo4j import settings
         self.TCM_NEO4J_PROJECT = os.getenv("TCM_NEO4J_PROJECT")
@@ -55,6 +56,8 @@ class Config:
 
         self.ENTITY_INDEX_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss.index")
         self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss_id2text.pkl")
+
+        self.TCM_METADATA = open(get_file_path("common/tcm_metadata.json"), "r", encoding="utf-8").read()
 
     def require(self, key: str) -> str:
         value = getattr(self, key, None) or os.getenv(key)
@@ -69,4 +72,4 @@ class Config:
 
 if __name__ == "__main__":
     conf = Config()
-    print(conf.MODEL_BASE_URL)
+    print(conf.TCM_METADATA)
