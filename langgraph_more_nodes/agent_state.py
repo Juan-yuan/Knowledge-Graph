@@ -25,6 +25,8 @@ class AgentState(TypedDict):
     # Cypher queries
     cypher_query: List[str]
     is_all_validate_cypher: bool
+    # Number of Cypher checks so far (caps the regenerate loop)
+    cypher_check_count: int
     cypher_results: List[Any]
     neo4j_answer: str
     # Output

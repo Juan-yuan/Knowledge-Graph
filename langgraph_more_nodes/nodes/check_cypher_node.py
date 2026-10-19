@@ -14,6 +14,7 @@ def check_cypher_node(state: AgentState) -> AgentState:
     state["is_all_validate_cypher"] = bool(queries) and all(
         neo4j_client.validate_cypher(query) for query in queries
     )
+    state["cypher_check_count"] = (state.get("cypher_check_count") or 0) + 1
     return state
 
 
