@@ -1,10 +1,15 @@
+from pathlib import Path
+
 from langgraph.graph.state import CompiledStateGraph
 
+# Knowledge-Graph/picture (resolved from this file, not the process cwd)
+PICTURE_DIR = Path(__file__).resolve().parents[1] / "picture"
 
-def output_pic_graph(app: CompiledStateGraph, filename: str = "graph.jpg"):
-    try:
-        mermaid_code = app.get_graph().draw_mermaid_png()
-        with open(filename, 'wb') as f:
-            f.write(mermaid_code)
-    except Exception as e:
-        print(e)
+
+def output_pic_graph(app: CompiledStateGraph, filename: str = "graph.jpg") -> str:
+    PICTURE_DIR.mkdir(parents=True, exist_ok=True)
+    output_path = PICTURE_DIR / Path(filename).name
+    mermaid_png = app.get_graph().draw_mermaid_png()
+    output_path.write_bytes(mermaid_png)
+    print(f"Graph image saved to: {output_path}")
+    return str(output_path)
