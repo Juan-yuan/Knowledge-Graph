@@ -45,26 +45,27 @@ class Neo4jClient:
             session.execute_write(transaction_logic)
 
     def export_tcm_metadata_to_json(self, output_path="tcm_metadata.json"):
+        project = conf.require("TCM_NEO4J_PROJECT")
         with self.driver.session() as session:
 
             label_query = """
             MATCH (n)
-            WHERE n.project = "TCM"
+            WHERE n.project = $project
             UNWIND labels(n) AS label
             RETURN DISTINCT label
             """
-            labels = [record["label"] for record in session.run(label_query)]
+            labels = [record["label"] for record in session.run(label_query, project=project)]
 
             rel_query = """
             MATCH (n)-[r]-()
-            WHERE n.project = "TCM"
+            WHERE n.project = $project
             RETURN DISTINCT type(r) AS rel_type
             """
-            rel_types = [record["rel_type"] for record in session.run(rel_query)]
+            rel_types = [record["rel_type"] for record in session.run(rel_query, project=project)]
 
             triple_query = """
             MATCH (n)-[r]->(m)
-            WHERE n.project = "TCM"
+            WHERE n.project = $project
             WITH head(labels(n)) AS from_label, type(r) AS rel_type, head(labels(m)) AS to_label
             RETURN DISTINCT from_label, rel_type, to_label
             """
@@ -73,18 +74,18 @@ class Neo4jClient:
                 "rel_type": record["rel_type"],
                 "to": record["to_label"],
                 "description": ""
-            } for record in session.run(triple_query)]
+            } for record in session.run(triple_query, project=project)]
 
             node_props_query = """
             MATCH (n)
-            WHERE n.project = "TCM"
+            WHERE n.project = $project
             UNWIND labels(n) AS label
             UNWIND keys(n) AS prop
             RETURN DISTINCT label, prop
             ORDER BY label, prop
             """
             label_props = {}
-            for record in session.run(node_props_query):
+            for record in session.run(node_props_query, project=project):
                 label = record["label"]
                 prop = record["prop"]
                 if prop == "project":  # ignore the project field
@@ -96,13 +97,13 @@ class Neo4jClient:
 
             rel_props_query = """
             MATCH (n)-[r]->(m)
-            WHERE n.project = "TCM"
+            WHERE n.project = $project
             UNWIND keys(r) AS prop
             RETURN DISTINCT type(r) AS rel_type, prop
             ORDER BY rel_type, prop
             """
             rel_type_props = {}
-            for record in session.run(rel_props_query):
+            for record in session.run(rel_props_query, project=project):
                 rel_type = record["rel_type"]
                 prop = record["prop"]
                 rel_type_props.setdefault(rel_type, []).append({
@@ -137,23 +138,28 @@ class Neo4jClient:
     def get_all_node_names(self, label: str = None):
         """
         Get the name property of every node with the given label.
-        :param label: node label, for example 'Effect', 'Symptom', or 'Disease'
+        :param label: node label from private schema config
         :return: List[str]
         """
+        project = conf.require("TCM_NEO4J_PROJECT")
         if label is None:
             query = """
             MATCH (n)
+            WHERE n.project = $project
             RETURN DISTINCT n.name AS name
             ORDER BY name
             """
+            params = {"project": project}
         else:
             query = f"""
             MATCH (n:{label})
+            WHERE n.project = $project
             RETURN DISTINCT n.name AS name
             ORDER BY name
             """
+            params = {"project": project}
         with self.driver.session() as session:
-            result = session.run(query)
+            result = session.run(query, params)
             return [record["name"] for record in result if record["name"]]
 
     def validate_cypher(self, query: str) -> bool:

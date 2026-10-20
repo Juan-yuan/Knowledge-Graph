@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from common.path_utils import get_file_path
 
+
 def _load_env() -> None:
     # Reload on every Config() so Streamlit / uvicorn pick up .env edits without a full process restart
     load_dotenv(get_file_path(".env"), override=True)
@@ -31,6 +32,7 @@ class Config:
         self.NEO4J_CYPHER_PROGRESS_DESC = os.getenv("NEO4J_CYPHER_PROGRESS_DESC")
         self.NEO4J_RUN_CYPHER_DOC = os.getenv("NEO4J_RUN_CYPHER_DOC")
         self.NEO4J_RUN_MULTIPLE_CYPHER_DOC = os.getenv("NEO4J_RUN_MULTIPLE_CYPHER_DOC")
+        self.NEO4J_IMPORT_BATCH_SIZE = os.getenv("NEO4J_IMPORT_BATCH_SIZE", "500")
 
         self.JIMENG_AK = os.getenv("JIMENG_AK")
         self.JIMENG_SK = os.getenv("JIMENG_SK")
@@ -41,6 +43,18 @@ class Config:
         self.HERBS_LIST_URL = os.getenv("HERBS_LIST_URL")
         self.FORMULAS_LIST_URL = os.getenv("FORMULAS_LIST_URL")
         self.CRAWLER_USER_AGENT = os.getenv("CRAWLER_USER_AGENT")
+        self.CRAWLER_CONTENT_SELECTOR = os.getenv("CRAWLER_CONTENT_SELECTOR")
+        self.CRAWLER_LIST_LINK_SELECTOR = os.getenv("CRAWLER_LIST_LINK_SELECTOR")
+        self.CRAWLER_DETAIL_REMOVE_SELECTORS = os.getenv("CRAWLER_DETAIL_REMOVE_SELECTORS")
+        self.CRAWLER_DETAIL_UNWRAP_SELECTORS = os.getenv("CRAWLER_DETAIL_UNWRAP_SELECTORS")
+        self.CRAWLER_DETAIL_TITLE_SELECTOR = os.getenv("CRAWLER_DETAIL_TITLE_SELECTOR")
+        self.CRAWLER_BATCH_SIZE = os.getenv("CRAWLER_BATCH_SIZE", "50")
+        self.CRAWLER_MAX_RETRIES = os.getenv("CRAWLER_MAX_RETRIES", "3")
+        self.CRAWLER_TRANSLATE_WORKERS = os.getenv("CRAWLER_TRANSLATE_WORKERS", "10")
+        self.CRAWLER_DETAIL_WORKERS = os.getenv("CRAWLER_DETAIL_WORKERS", "10")
+        self.CRAWLER_REQUEST_DELAY_MIN = os.getenv("CRAWLER_REQUEST_DELAY_MIN", "0.5")
+        self.CRAWLER_REQUEST_DELAY_MAX = os.getenv("CRAWLER_REQUEST_DELAY_MAX", "1.5")
+        self.CRAWLER_CHUNK_SIZE = os.getenv("CRAWLER_CHUNK_SIZE", "4000")
 
         # Private prompts / schema (common/.env only; not committed)
         self.CRAWLER_HERBS_LIST_PROMPT = os.getenv("CRAWLER_HERBS_LIST_PROMPT")
@@ -51,11 +65,25 @@ class Config:
         self.KG_EXTRACTION_PROJECT_INFO = os.getenv("KG_EXTRACTION_PROJECT_INFO")
         self.KG_EXTRACTION_SCHEMA = os.getenv("KG_EXTRACTION_SCHEMA")
         self.KG_FINETUNE_INSTRUCTION = os.getenv("KG_FINETUNE_INSTRUCTION")
+        self.KG_TRANSLATE_PROMPT = os.getenv("KG_TRANSLATE_PROMPT")
+        self.KG_EXTRACT_WORKERS = os.getenv("KG_EXTRACT_WORKERS", "5")
+        self.KG_EXTRACT_MAX_RETRIES = os.getenv("KG_EXTRACT_MAX_RETRIES", "3")
         self.ZHONGYI_INTENT_PROMPT = os.getenv("ZHONGYI_INTENT_PROMPT")
         self.ENTITY_EXTRACTION_PROMPT = os.getenv("ENTITY_EXTRACTION_PROMPT")
         self.CYPHER_GENERATION_PROMPT = os.getenv("CYPHER_GENERATION_PROMPT")
         self.NEO4J_ANSWER_PROMPT = os.getenv("NEO4J_ANSWER_PROMPT")
         self.MAX_CYPHER_CHECKS = os.getenv("MAX_CYPHER_CHECKS")
+        self.LLM_DIRECT_OUT_SYSTEM_PROMPT = os.getenv("LLM_DIRECT_OUT_SYSTEM_PROMPT", "")
+
+        # Private entity / Cypher tech points
+        self.TCM_METADATA = os.getenv("TCM_METADATA")
+        self.ENTITY_LABEL_CONFIG = os.getenv("ENTITY_LABEL_CONFIG")
+        self.ENTITY_INPUT_TO_MATCHED_KEY = os.getenv("ENTITY_INPUT_TO_MATCHED_KEY")
+        self.ENTITY_MATCHED_KEY_TO_LABEL = os.getenv("ENTITY_MATCHED_KEY_TO_LABEL")
+        self.ENTITY_MATCH_TOP_K = os.getenv("ENTITY_MATCH_TOP_K", "5")
+        self.ENTITY_MATCH_THRESHOLD = os.getenv("ENTITY_MATCH_THRESHOLD", "0.6")
+        self.ENTITY_NEAR_DUPLICATE_THRESHOLD = os.getenv("ENTITY_NEAR_DUPLICATE_THRESHOLD", "0.15")
+        self.CYPHER_WRITE_KEYWORDS = os.getenv("CYPHER_WRITE_KEYWORDS")
 
         # Private TCM Neo4j import settings
         self.TCM_NEO4J_PROJECT = os.getenv("TCM_NEO4J_PROJECT")
@@ -77,6 +105,7 @@ class Config:
             "FASTAPI_HEALTH_MESSAGE",
             "TCM Knowledge Graph System is running normally",
         )
+        self.FASTAPI_KEY_STATE_FIELDS = os.getenv("FASTAPI_KEY_STATE_FIELDS", "[]")
 
         # FastAPI client / tests
         self.API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
@@ -85,10 +114,15 @@ class Config:
         self.API_PROCESS_TIMEOUT = int(os.getenv("API_PROCESS_TIMEOUT", "120"))
         self.API_MISSING_FIELD_TIMEOUT = int(os.getenv("API_MISSING_FIELD_TIMEOUT", "10"))
 
+        # Streamlit UI copy (private)
+        self.STREAMLIT_PORT = int(os.getenv("STREAMLIT_PORT", "8501"))
+        self.STREAMLIT_TAGLINE = os.getenv("STREAMLIT_TAGLINE", "")
+        self.STREAMLIT_EXAMPLE_QUESTIONS = os.getenv("STREAMLIT_EXAMPLE_QUESTIONS", "[]")
+        self.STREAMLIT_SIDEBAR_HOWTO = os.getenv("STREAMLIT_SIDEBAR_HOWTO", "[]")
+        self.STREAMLIT_DISCLAIMER = os.getenv("STREAMLIT_DISCLAIMER", "")
+
         self.ENTITY_INDEX_PATH = get_file_path("langgraph_nodes/nero4j_embedding_faiss.index")
         self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_nodes/nero4j_embedding_faiss_id2text.pkl")
-
-        self.TCM_METADATA = open(get_file_path("common/tcm_metadata.json"), "r", encoding="utf-8").read()
 
     def require(self, key: str) -> str:
         value = getattr(self, key, None) or os.getenv(key)
@@ -99,8 +133,13 @@ class Config:
     def require_json(self, key: str):
         return json.loads(self.require(key))
 
+    def get_json(self, key: str, default=None):
+        raw = getattr(self, key, None) or os.getenv(key)
+        if not raw:
+            return default
+        return json.loads(raw)
 
 
 if __name__ == "__main__":
     conf = Config()
-    print(conf.TCM_METADATA)
+    print(json.loads(conf.require("TCM_METADATA")).keys())

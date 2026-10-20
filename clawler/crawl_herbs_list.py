@@ -22,9 +22,11 @@ BASE_URL = _conf.HERBS_BASE_URL
 LIST_URL = _conf.HERBS_LIST_URL
 OUTPUT_CSV = get_file_path("clawler/medicinal_herbs_list.csv")
 HEADERS = {"User-Agent": _conf.CRAWLER_USER_AGENT}
-BATCH_SIZE = 50
-MAX_RETRIES = 3
-TRANSLATE_WORKERS = 10
+BATCH_SIZE = int(_conf.require("CRAWLER_BATCH_SIZE"))
+MAX_RETRIES = int(_conf.require("CRAWLER_MAX_RETRIES"))
+TRANSLATE_WORKERS = int(_conf.require("CRAWLER_TRANSLATE_WORKERS"))
+CONTENT_SELECTOR = _conf.require("CRAWLER_CONTENT_SELECTOR")
+LIST_LINK_SELECTOR = _conf.require("CRAWLER_LIST_LINK_SELECTOR")
 SYSTEM_PROMPT = _conf.require("CRAWLER_HERBS_LIST_PROMPT")
 
 
@@ -43,9 +45,9 @@ def fetch_herb_list(list_url=LIST_URL):
     response.encoding = "utf-8"
     soup = BeautifulSoup(response.text, "html.parser")
 
-    content = soup.select_one("#content .p_content")
+    content = soup.select_one(CONTENT_SELECTOR)
     herbs, seen = [], set()
-    for a in content.select("li a[href^='/wiki/']"):
+    for a in content.select(LIST_LINK_SELECTOR):
         name = a.get_text(strip=True)
         # Percent-encode the path so the stored link is pure ASCII
         url = urljoin(BASE_URL, quote(a["href"]))

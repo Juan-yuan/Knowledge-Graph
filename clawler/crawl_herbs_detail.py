@@ -21,15 +21,21 @@ from common.config import Config
 from common.llm import my_llm
 from common.path_utils import get_file_path
 
+_conf = Config()
 OUTPUT_DIR = get_file_path("clawler/medicinal_herbs")
-MAX_WORKERS = 10
+MAX_WORKERS = int(_conf.require("CRAWLER_DETAIL_WORKERS"))
 DEFAULT_LIMIT = 100
-MAX_RETRIES = 3
-# Random pause before each request so 10 threads don't hammer the site
-REQUEST_DELAY = (0.5, 1.5)
-CHUNK_SIZE = 4000
+MAX_RETRIES = int(_conf.require("CRAWLER_MAX_RETRIES"))
+REQUEST_DELAY = (
+    float(_conf.require("CRAWLER_REQUEST_DELAY_MIN")),
+    float(_conf.require("CRAWLER_REQUEST_DELAY_MAX")),
+)
+CHUNK_SIZE = int(_conf.require("CRAWLER_CHUNK_SIZE"))
+CONTENT_SELECTOR = _conf.require("CRAWLER_CONTENT_SELECTOR")
+DETAIL_REMOVE_SELECTORS = _conf.require("CRAWLER_DETAIL_REMOVE_SELECTORS")
+DETAIL_UNWRAP_SELECTORS = _conf.require("CRAWLER_DETAIL_UNWRAP_SELECTORS")
 CJK_PATTERN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff]")
-SYSTEM_PROMPT = Config().require("CRAWLER_HERBS_DETAIL_PROMPT")
+SYSTEM_PROMPT = _conf.require("CRAWLER_HERBS_DETAIL_PROMPT")
 
 _local = threading.local()
 
@@ -89,16 +95,16 @@ def fetch_detail(url):
     response.encoding = "utf-8"
     soup = BeautifulSoup(response.text, "html.parser")
 
-    content = soup.select_one("#content .p_content")
+    content = soup.select_one(CONTENT_SELECTOR)
     # Drop images, ads and scripts; the publish time lives in the header, which we skip
-    for tag in content.select("figure, script, ins, style"):
+    for tag in content.select(DETAIL_REMOVE_SELECTORS):
         tag.decompose()
     # Unwrap inline tags so e.g. a linked ingredient stays on the same line as its dosage
-    for tag in content.select("a, strong, b, em, span"):
+    for tag in content.select(DETAIL_UNWRAP_SELECTORS):
         tag.unwrap()
     content.smooth()
 
-    title = soup.select_one(".p_title")
+    title = soup.select_one(_conf.require("CRAWLER_DETAIL_TITLE_SELECTOR"))
     lines = [title.get_text(strip=True)] if title else []
     for line in content.get_text("\n").splitlines():
         line = line.strip()

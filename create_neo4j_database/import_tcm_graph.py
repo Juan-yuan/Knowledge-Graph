@@ -21,7 +21,7 @@ RELATION_SCHEMA = {
     for key, value in _conf.require_json("TCM_IMPORT_RELATION_SCHEMA").items()
 }
 
-BATCH_SIZE = 500
+BATCH_SIZE = int(_conf.require("NEO4J_IMPORT_BATCH_SIZE"))
 
 DEFAULT_DATA_DIRS = [
     get_file_path("extract_information/medicinal_herbs"),

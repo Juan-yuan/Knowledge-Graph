@@ -27,6 +27,10 @@ common/.env
 .env.*
 !.env.example
 prompts.txt
+prompt.txt
+
+# Private schema / metadata (keep only in common/.env as TCM_METADATA)
+common/tcm_metadata.json
 
 # API keys / credentials
 *.pem
@@ -92,9 +96,24 @@ vector_store/
 embeddings/
 
 # =========================
-# Nodes
+# Nodes (private workflow)
 # =========================
 langgraph_nodes/
+
+# =========================
+# Crawled / extracted knowledge (private)
+# =========================
+clawler/medicinal_herbs/
+clawler/herbal_formulas/
+clawler/*_list.csv
+extract_information/medicinal_herbs/
+extract_information/herbal_formulas/
+extract_information/*fine_tuning*.json
+extract_information/*finetune*.json
+neo4j_data/
+
+# Private architecture diagram
+picture/system_design_graph.jpg
 
 # =========================
 # Model Files
@@ -109,6 +128,7 @@ langgraph_nodes/
 models/bge-m3
 .neo4j/
 API_INTERFACE.md
+fastapi/API_INTERFACE.md
 
 # =========================
 # Temporary Files

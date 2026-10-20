@@ -18,15 +18,12 @@ logger = get_logger("kg.streamlit", "streamlit.log")
 conf = Config()
 
 BRAND = conf.FASTAPI_TITLE
-TAGLINE = "Ask herbs, formulas, and symptoms — answers grounded in the knowledge graph."
+TAGLINE = conf.STREAMLIT_TAGLINE or ""
 USER_ICON = "👤"
 AI_ICON = "🌿"
-
-EXAMPLE_QUESTIONS = [
-    "What are the effects of Ephedra (Ma Huang)?",
-    "What are the ingredients of Ephedra Decoction (Ma Huang Tang)?",
-    "Which formulas alleviate headache?",
-]
+EXAMPLE_QUESTIONS = conf.get_json("STREAMLIT_EXAMPLE_QUESTIONS", []) or []
+SIDEBAR_HOWTO = conf.get_json("STREAMLIT_SIDEBAR_HOWTO", []) or []
+DISCLAIMER = conf.STREAMLIT_DISCLAIMER or ""
 
 st.set_page_config(
     page_title=BRAND,
@@ -498,17 +495,10 @@ with st.sidebar:
             st.rerun()
 
     st.caption(f"Session `{st.session_state.user_id}`")
-    st.divider()
-    st.markdown(
-        """
-**How it works**
-
-1. Detect TCM intent  
-2. Extract & match entities  
-3. Query the Neo4j graph  
-4. Generate a grounded answer
-"""
-    )
+    if SIDEBAR_HOWTO:
+        st.divider()
+        steps = "\n".join(f"{i}. {step}" for i, step in enumerate(SIDEBAR_HOWTO, start=1))
+        st.markdown(f"**How it works**\n\n{steps}")
 
 if st.session_state.api_ok is None:
     st.session_state.api_ok, _ = check_health(api_base_url)
@@ -540,10 +530,11 @@ if is_home:
                 submit_question(example)
                 st.rerun()
     render_ask_composer("home_ask")
-    st.markdown(
-        '<p class="disclaimer">For reference only. Consult a qualified TCM practitioner before using any herb or formula.</p>',
-        unsafe_allow_html=True,
-    )
+    if DISCLAIMER:
+        st.markdown(
+            f'<p class="disclaimer">{html.escape(DISCLAIMER)}</p>',
+            unsafe_allow_html=True,
+        )
 else:
     for message in st.session_state.messages:
         render_message(message["role"], message["content"])

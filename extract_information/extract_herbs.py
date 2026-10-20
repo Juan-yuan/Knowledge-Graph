@@ -11,23 +11,19 @@ from tqdm import tqdm
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from common.config import Config
 from common.llm import my_llm
 from common.path_utils import get_file_path
 from extract_information.extract_graph_data_utils import extract_tcm_knowledge
 
+_conf = Config()
 INPUT_DIR = get_file_path("clawler/medicinal_herbs")
 OUTPUT_DIR = get_file_path("extract_information/medicinal_herbs")
-MAX_WORKERS = 5
+MAX_WORKERS = int(_conf.require("KG_EXTRACT_WORKERS"))
 DEFAULT_LIMIT = 0
-MAX_RETRIES = 3
+MAX_RETRIES = int(_conf.require("KG_EXTRACT_MAX_RETRIES"))
 CJK_PATTERN = re.compile(r"[\u3400-\u9fff\uf900-\ufaff]")
-TRANSLATE_PROMPT = (
-    "You are a translator for Traditional Chinese Medicine data. "
-    "Translate every Chinese string value in the given JSON into English. "
-    "Use pinyin in parentheses for herb and formula names, e.g. Bupleurum (Chai Hu). "
-    "Keep the JSON structure, keys and enum values unchanged. "
-    "Return only the JSON, without markdown fences or explanations."
-)
+TRANSLATE_PROMPT = _conf.require("KG_TRANSLATE_PROMPT")
 
 
 def has_cjk(data):

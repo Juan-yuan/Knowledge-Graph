@@ -77,7 +77,7 @@ async def health_check():
     return {"status": "ok", "message": conf.FASTAPI_HEALTH_MESSAGE}
 
 
-KEY_STATE_FIELDS = ("is_zhongyi_intent", "cypher_query", "is_all_validate_cypher", "cypher_check_count")
+KEY_STATE_FIELDS = tuple(conf.get_json("FASTAPI_KEY_STATE_FIELDS", []) or [])
 
 
 def run_graph(request_id: str, question: str) -> dict:
