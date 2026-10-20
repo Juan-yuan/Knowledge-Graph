@@ -108,6 +108,7 @@ langgraph_nodes/
 *.msgpack
 models/bge-m3
 .neo4j/
+API_INTERFACE.md
 
 # =========================
 # Temporary Files

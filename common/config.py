@@ -58,8 +58,29 @@ class Config:
         self.TCM_IMPORT_RELATION_SCHEMA = os.getenv("TCM_IMPORT_RELATION_SCHEMA")
         self.TCM_IMPORT_PROJECT_INFO = os.getenv("TCM_IMPORT_PROJECT_INFO")
 
-        self.ENTITY_INDEX_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss.index")
-        self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_more_nodes/nero4j_embedding_faiss_id2text.pkl")
+        # FastAPI server
+        self.FASTAPI_HOST = os.getenv("FASTAPI_HOST", "0.0.0.0")
+        self.FASTAPI_PORT = int(os.getenv("FASTAPI_PORT", "8000"))
+        self.FASTAPI_TITLE = os.getenv("FASTAPI_TITLE", "TCM Knowledge Graph Q&A System")
+        self.FASTAPI_DESCRIPTION = os.getenv(
+            "FASTAPI_DESCRIPTION",
+            "Intelligent Q&A API for TCM knowledge graph based on FastAPI and LangGraph",
+        )
+        self.FASTAPI_ERROR_OUTPUT = os.getenv("FASTAPI_ERROR_OUTPUT", "System error, please try again!")
+        self.FASTAPI_HEALTH_MESSAGE = os.getenv(
+            "FASTAPI_HEALTH_MESSAGE",
+            "TCM Knowledge Graph Q&A System is running normally",
+        )
+
+        # FastAPI client / tests
+        self.API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")
+        self.API_TEST_USER_ID = os.getenv("API_TEST_USER_ID", "user-123")
+        self.API_HEALTH_TIMEOUT = int(os.getenv("API_HEALTH_TIMEOUT", "10"))
+        self.API_PROCESS_TIMEOUT = int(os.getenv("API_PROCESS_TIMEOUT", "120"))
+        self.API_MISSING_FIELD_TIMEOUT = int(os.getenv("API_MISSING_FIELD_TIMEOUT", "10"))
+
+        self.ENTITY_INDEX_PATH = get_file_path("langgraph_nodes/nero4j_embedding_faiss.index")
+        self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_nodes/nero4j_embedding_faiss_id2text.pkl")
 
         self.TCM_METADATA = open(get_file_path("common/tcm_metadata.json"), "r", encoding="utf-8").read()
 
