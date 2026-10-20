@@ -6,7 +6,7 @@ from langgraph.graph.state import CompiledStateGraph
 PICTURE_DIR = Path(__file__).resolve().parents[1] / "picture"
 
 
-def output_pic_graph(app: CompiledStateGraph, filename: str = "graph.jpg") -> str:
+def output_pic_graph(app: CompiledStateGraph, filename: str = "system_design_graph.jpg") -> str:
     PICTURE_DIR.mkdir(parents=True, exist_ok=True)
     output_path = PICTURE_DIR / Path(filename).name
     mermaid_png = app.get_graph().draw_mermaid_png()

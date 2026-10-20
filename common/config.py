@@ -9,12 +9,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from common.path_utils import get_file_path
 
-load_dotenv(get_file_path(".env"))
-load_dotenv(get_file_path("common/.env"), override=True)
+def _load_env() -> None:
+    # Reload on every Config() so Streamlit / uvicorn pick up .env edits without a full process restart
+    load_dotenv(get_file_path(".env"), override=True)
+    load_dotenv(get_file_path("common/.env"), override=True)
+
+
+_load_env()
 
 
 class Config:
     def __init__(self):
+        _load_env()
         self.MODEL_API_KEY = os.getenv("MODEL_API_KEY")
         self.MODEL_BASE_URL = os.getenv("MODEL_BASE_URL")
         self.MODEL_NAME = os.getenv("MODEL_NAME")
@@ -61,15 +67,15 @@ class Config:
         # FastAPI server
         self.FASTAPI_HOST = os.getenv("FASTAPI_HOST", "0.0.0.0")
         self.FASTAPI_PORT = int(os.getenv("FASTAPI_PORT", "8000"))
-        self.FASTAPI_TITLE = os.getenv("FASTAPI_TITLE", "TCM Knowledge Graph Q&A System")
+        self.FASTAPI_TITLE = os.getenv("FASTAPI_TITLE", "TCM Knowledge Graph System")
         self.FASTAPI_DESCRIPTION = os.getenv(
             "FASTAPI_DESCRIPTION",
-            "Intelligent Q&A API for TCM knowledge graph based on FastAPI and LangGraph",
+            "TCM knowledge graph based on FastAPI and LangGraph",
         )
         self.FASTAPI_ERROR_OUTPUT = os.getenv("FASTAPI_ERROR_OUTPUT", "System error, please try again!")
         self.FASTAPI_HEALTH_MESSAGE = os.getenv(
             "FASTAPI_HEALTH_MESSAGE",
-            "TCM Knowledge Graph Q&A System is running normally",
+            "TCM Knowledge Graph System is running normally",
         )
 
         # FastAPI client / tests
