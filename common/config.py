@@ -73,6 +73,8 @@ class Config:
         self.CYPHER_GENERATION_PROMPT = os.getenv("CYPHER_GENERATION_PROMPT")
         self.NEO4J_ANSWER_PROMPT = os.getenv("NEO4J_ANSWER_PROMPT")
         self.MAX_CYPHER_CHECKS = os.getenv("MAX_CYPHER_CHECKS")
+        # Number of past messages fed to the semantic transcription node
+        self.HISTORY_NUM = int(os.getenv("HISTORY_NUM", "6"))
         self.LLM_DIRECT_OUT_SYSTEM_PROMPT = os.getenv("LLM_DIRECT_OUT_SYSTEM_PROMPT", "")
 
         # Private entity / Cypher tech points

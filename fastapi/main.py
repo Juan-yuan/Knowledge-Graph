@@ -4,6 +4,8 @@ import time
 import uuid
 from pathlib import Path
 
+from langchain_core.runnables import RunnableConfig
+
 # Must run before any project import so Knowledge-Graph modules resolve
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
@@ -80,12 +82,15 @@ async def health_check():
 KEY_STATE_FIELDS = tuple(conf.get_json("FASTAPI_KEY_STATE_FIELDS", []) or [])
 
 
-def run_graph(request_id: str, question: str) -> dict:
+def run_graph(config: RunnableConfig, question: str) -> dict:
     """Run the graph node by node so every step and its state update gets logged."""
+    configurable = config.get("configurable") or {}
+    request_id = configurable.get("request_id", "-")
     state = {"input": question}
     # stream_mode="updates" yields {node_name: update} after each node; AgentState has no
-    # reducers, so merging the updates in order reproduces graph.invoke's final state
-    for step, update in enumerate(graph.stream(state, stream_mode="updates"), start=1):
+    # reducers, so merging the updates in order reproduces graph.invoke's final state.
+    # config.thread_id is required by InMemorySaver so history persists across turns.
+    for step, update in enumerate(graph.stream(state, stream_mode="updates", config=config), start=1):
         for node_name, node_update in update.items():
             node_update = node_update or {}
             # Nodes may return the whole state, so only log the fields this step changed
@@ -103,10 +108,17 @@ def run_graph(request_id: str, question: str) -> dict:
 async def process(request: ProcessRequest, http_request: Request):
     request_id = http_request.state.request_id
     logger.info("[%s] /process user_id=%s input=%r", request_id, request.user_id, request.input)
+    # thread_id scopes checkpointer history per user; request_id is only for log correlation
+    config: RunnableConfig = {
+        "configurable": {
+            "thread_id": request.user_id,
+            "request_id": request_id,
+        }
+    }
     start = time.perf_counter()
     try:
         # The graph is blocking (LLM / Neo4j / FAISS calls), keep it off the event loop
-        result = await run_in_threadpool(run_graph, request_id, request.input)
+        result = await run_in_threadpool(run_graph, config, request.input)
         output = result.get("output", "")
         if not output:
             logger.warning("[%s] Graph finished with an empty output", request_id)
