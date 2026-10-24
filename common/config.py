@@ -122,6 +122,21 @@ class Config:
         self.STREAMLIT_EXAMPLE_QUESTIONS = os.getenv("STREAMLIT_EXAMPLE_QUESTIONS", "[]")
         self.STREAMLIT_SIDEBAR_HOWTO = os.getenv("STREAMLIT_SIDEBAR_HOWTO", "[]")
         self.STREAMLIT_DISCLAIMER = os.getenv("STREAMLIT_DISCLAIMER", "")
+        self.STREAMLIT_INPUT_PLACEHOLDER = os.getenv(
+            "STREAMLIT_INPUT_PLACEHOLDER",
+            "Ask about a herb, formula, symptom, or disease…",
+        )
+        self.STREAMLIT_EMPTY_HINT = os.getenv(
+            "STREAMLIT_EMPTY_HINT",
+            "Try an example, or type your own question below.",
+        )
+        self.STREAMLIT_SPINNER_TEXT = os.getenv(
+            "STREAMLIT_SPINNER_TEXT",
+            "Consulting the knowledge graph…",
+        )
+        self.STREAMLIT_STREAM_DEFAULT = os.getenv(
+            "STREAMLIT_STREAM_DEFAULT", "true"
+        ).strip().lower() in {"1", "true", "yes", "on"}
 
         self.ENTITY_INDEX_PATH = get_file_path("langgraph_nodes/nero4j_embedding_faiss.index")
         self.ENTITY_ID2TEXT_PATH = get_file_path("langgraph_nodes/nero4j_embedding_faiss_id2text.pkl")

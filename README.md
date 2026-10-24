@@ -73,7 +73,7 @@ bash start.sh
 | FastAPI | `http://localhost:8000` (or `FASTAPI_PORT`) |
 | Swagger docs | `http://localhost:8000/docs` |
 
-Ports and `API_BASE_URL` come from `common/.env`. The sidebar can override `API_BASE_URL` and run a health check.
+Ports and `API_BASE_URL` come from `common/.env`. The sidebar can override `API_BASE_URL` and run a health check. The **Stream thinking** toggle (on by default) calls `/process_stream` and shows each graph node live, collapsing the steps once the answer arrives; turn it off to use `/process`.
 
 To run either process alone:
 

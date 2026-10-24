@@ -1,9 +1,11 @@
-"""Streamlit chat frontend for the FastAPI /process endpoint. Start with: bash streamlit/start_streamlit.sh"""
+"""Streamlit chat frontend for the FastAPI /process and /process_stream endpoints. Start with: bash streamlit/start_streamlit.sh"""
 import html
+import json
 import sys
 import time
 import uuid
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 import streamlit as st
@@ -24,6 +26,13 @@ AI_ICON = "🌿"
 EXAMPLE_QUESTIONS = conf.get_json("STREAMLIT_EXAMPLE_QUESTIONS", []) or []
 SIDEBAR_HOWTO = conf.get_json("STREAMLIT_SIDEBAR_HOWTO", []) or []
 DISCLAIMER = conf.STREAMLIT_DISCLAIMER or ""
+INPUT_PLACEHOLDER = conf.STREAMLIT_INPUT_PLACEHOLDER or "Ask about a herb, formula, symptom, or disease…"
+EMPTY_HINT = conf.STREAMLIT_EMPTY_HINT or "Try an example, or type your own question below."
+SPINNER_TEXT = conf.STREAMLIT_SPINNER_TEXT or "Consulting the knowledge graph…"
+STREAM_DEFAULT = bool(conf.STREAMLIT_STREAM_DEFAULT)
+# Public API routes (must match fastapi/main.py); not secrets
+PROCESS_PATH = "/process"
+PROCESS_STREAM_PATH = "/process_stream"
 
 st.set_page_config(
     page_title=BRAND,
@@ -386,10 +395,25 @@ div[data-testid="stMainBlockContainer"],
     )
 
 
+def normalize_api_base_url(url: str) -> tuple[str, bool]:
+    """Allow only http(s) base URLs without embedded credentials. Returns (url, ok)."""
+    default = (conf.API_BASE_URL or "http://localhost:8000").rstrip("/")
+    cleaned = (url or "").strip().rstrip("/")
+    if not cleaned:
+        return default, False
+    parsed = urlparse(cleaned)
+    if parsed.scheme not in ("http", "https") or not parsed.netloc:
+        return default, False
+    # Avoid leaking user:pass@host via logs / sidebar if pasted by mistake
+    if parsed.username or parsed.password:
+        return default, False
+    return cleaned, True
+
+
 def check_health(base_url: str) -> tuple[bool, str]:
     try:
         response = requests.get(f"{base_url}/", timeout=conf.API_HEALTH_TIMEOUT)
-        logger.info("Health check %s -> %d %s", base_url, response.status_code, response.text)
+        logger.info("Health check %s -> %d %s", base_url, response.status_code, truncate(response.text))
         response.raise_for_status()
         return True, response.json().get("message", "ok")
     except requests.RequestException as e:
@@ -400,24 +424,24 @@ def check_health(base_url: str) -> tuple[bool, str]:
 def ask(base_url: str, question: str, user_id: str) -> str:
     """Call POST /process and return the answer text (or a readable error message)."""
     request_id = uuid.uuid4().hex[:8]
-    logger.info("[%s] POST %s/process user_id=%s input=%r", request_id, base_url, user_id, question)
+    logger.info("[%s] POST %s%s user_id=%s input=%r", request_id, base_url, PROCESS_PATH, user_id, question)
     start = time.perf_counter()
     try:
         response = requests.post(
-            f"{base_url}/process",
+            f"{base_url}{PROCESS_PATH}",
             json={"input": question, "user_id": user_id},
             headers={"X-Request-ID": request_id},
             timeout=conf.API_PROCESS_TIMEOUT,
         )
     except requests.Timeout:
-        logger.error("[%s] /process timed out after %ds", request_id, conf.API_PROCESS_TIMEOUT)
+        logger.error("[%s] %s timed out after %ds", request_id, PROCESS_PATH, conf.API_PROCESS_TIMEOUT)
         return f"Request timed out after {conf.API_PROCESS_TIMEOUT}s. Please try again."
     except requests.ConnectionError as e:
         logger.error("[%s] Cannot connect to %s: %s", request_id, base_url, e)
         return f"Cannot connect to the API at {base_url}. Is the FastAPI server running?"
 
     elapsed = time.perf_counter() - start
-    logger.info("[%s] /process -> %d in %.2fs", request_id, response.status_code, elapsed)
+    logger.info("[%s] %s -> %d in %.2fs", request_id, PROCESS_PATH, response.status_code, elapsed)
     try:
         data = response.json()
     except ValueError:
@@ -425,11 +449,124 @@ def ask(base_url: str, question: str, user_id: str) -> str:
         return f"Unexpected response from the API (HTTP {response.status_code})."
 
     if response.status_code != 200:
-        logger.error("[%s] /process error body: %s", request_id, truncate(data))
+        logger.error("[%s] %s error body: %s", request_id, PROCESS_PATH, truncate(data))
         return f"{data.get('output') or data.get('detail') or 'API error'} (HTTP {response.status_code})"
 
     logger.debug("[%s] Answer: %s", request_id, truncate(data.get("output", ""), 2000))
     return data.get("output", "") or "No answer was returned."
+
+
+def render_step(step: dict) -> None:
+    """One finished graph node: its name plus the state fields it changed."""
+    # Backticks reduce markdown injection from untrusted node names
+    node = str(step.get("node") or "?").replace("`", "'")
+    st.markdown(f"✅ `{node}`")
+    if step.get("data"):
+        st.json(step["data"], expanded=False)
+
+
+def render_thinking(steps: list, elapsed: float) -> None:
+    """Collapsed thinking process shown above a past streamed answer."""
+    with st.expander(f"Thinking process · {len(steps)} steps · {elapsed:.1f}s", expanded=False):
+        for step in steps:
+            render_step(step)
+
+
+def ask_stream(base_url: str, question: str, user_id: str) -> tuple[str, list, float]:
+    """Call POST /process_stream, showing each node live in an expanded status box that
+    collapses once the final answer arrives. Returns (answer, thinking steps, elapsed seconds)."""
+    request_id = uuid.uuid4().hex[:8]
+    logger.info(
+        "[%s] POST %s%s user_id=%s input=%r",
+        request_id,
+        base_url,
+        PROCESS_STREAM_PATH,
+        user_id,
+        question,
+    )
+    start = time.perf_counter()
+    steps: list = []
+    answer, state = None, "complete"
+    status = st.status("Thinking…", expanded=True)
+    slots: dict = {}
+    try:
+        with requests.post(
+            f"{base_url}{PROCESS_STREAM_PATH}",
+            json={"input": question, "user_id": user_id},
+            headers={"X-Request-ID": request_id},
+            stream=True,
+            timeout=conf.API_PROCESS_TIMEOUT,
+        ) as response:
+            if response.status_code != 200:
+                logger.error(
+                    "[%s] %s -> %d: %s",
+                    request_id,
+                    PROCESS_STREAM_PATH,
+                    response.status_code,
+                    truncate(response.text),
+                )
+                answer, state = f"API error (HTTP {response.status_code}).", "error"
+            else:
+                pending: dict = {}
+                for line in response.iter_lines(decode_unicode=True):
+                    if not line:
+                        continue
+                    try:
+                        message = json.loads(line)
+                    except json.JSONDecodeError:
+                        logger.error("[%s] Malformed stream line: %s", request_id, truncate(line))
+                        answer, state = "Unexpected response from the API.", "error"
+                        break
+                    if not isinstance(message, dict):
+                        logger.error("[%s] Non-object stream line: %s", request_id, truncate(line))
+                        answer, state = "Unexpected response from the API.", "error"
+                        break
+                    msg_type = message.get("type")
+                    if msg_type != "thinking":
+                        answer = message.get("output") or "No answer was returned."
+                        if msg_type == "error":
+                            state = "error"
+                        break
+                    node = message.get("node")
+                    node_status = message.get("status")
+                    if not node or not node_status:
+                        logger.error("[%s] Thinking event missing node/status: %s", request_id, truncate(message))
+                        continue
+                    node = str(node)
+                    if node_status == "start":
+                        safe_node = node.replace("`", "'")
+                        status.update(label=f"Thinking… running {safe_node}")
+                        slots[node] = status.empty()
+                        slots[node].markdown(f"⏳ `{safe_node}` …")
+                    elif node_status == "update":
+                        pending[node] = message.get("data") or {}
+                    elif node_status == "end":
+                        step = {"node": node, "data": pending.pop(node, {})}
+                        steps.append(step)
+                        with slots.pop(node, status.empty()).container():
+                            render_step(step)
+    except requests.Timeout:
+        logger.error("[%s] %s timed out after %ds", request_id, PROCESS_STREAM_PATH, conf.API_PROCESS_TIMEOUT)
+        answer, state = f"Request timed out after {conf.API_PROCESS_TIMEOUT}s. Please try again.", "error"
+    except requests.ConnectionError as e:
+        logger.error("[%s] Cannot connect to %s: %s", request_id, base_url, e)
+        answer, state = f"Cannot connect to the API at {base_url}. Is the FastAPI server running?", "error"
+    except (TypeError, KeyError, ValueError):
+        logger.exception("[%s] Malformed stream payload", request_id)
+        answer, state = "Unexpected response from the API.", "error"
+
+    if answer is None:
+        logger.error("[%s] Stream ended without a final message", request_id)
+        answer, state = "The answer stream ended unexpectedly. Please try again.", "error"
+    elapsed = time.perf_counter() - start
+    logger.info("[%s] %s done in %.2fs, %d steps", request_id, PROCESS_STREAM_PATH, elapsed, len(steps))
+    logger.debug("[%s] Answer: %s", request_id, truncate(answer, 2000))
+    status.update(
+        label=f"Thinking process · {len(steps)} steps · {elapsed:.1f}s",
+        state=state,
+        expanded=False,
+    )
+    return answer, steps, elapsed
 
 
 def submit_question(question: str) -> None:
@@ -461,7 +598,7 @@ def render_ask_composer(form_key: str) -> None:
         with input_col:
             question = st.text_input(
                 "Question",
-                placeholder="Ask about a herb, formula, symptom, or disease…",
+                placeholder=INPUT_PLACEHOLDER,
                 label_visibility="collapsed",
             )
         with send_col:
@@ -474,7 +611,10 @@ def render_ask_composer(form_key: str) -> None:
 
 with st.sidebar:
     st.markdown("### Connection")
-    api_base_url = st.text_input("API base URL", value=conf.API_BASE_URL).rstrip("/")
+    raw_api_base_url = st.text_input("API base URL", value=conf.API_BASE_URL)
+    api_base_url, api_url_ok = normalize_api_base_url(raw_api_base_url)
+    if not api_url_ok and (raw_api_base_url or "").strip():
+        st.warning("Invalid API base URL (use http(s)://host[:port] without credentials). Using the configured default.")
     status_placeholder = st.empty()
 
     col_a, col_b = st.columns(2)
@@ -494,6 +634,12 @@ with st.sidebar:
             st.session_state.pending_question = None
             st.rerun()
 
+    stream_enabled = st.toggle(
+        "Stream thinking",
+        value=STREAM_DEFAULT,
+        help=f"Use {PROCESS_STREAM_PATH} to show each reasoning step live; off uses {PROCESS_PATH}.",
+    )
+
     st.caption(f"Session `{st.session_state.user_id}`")
     if SIDEBAR_HOWTO:
         st.divider()
@@ -510,9 +656,9 @@ st.markdown(
     f"""
 <div class="brand-wrap">
   <div class="brand-mark">🌿</div>
-  <h1 class="brand-name">{BRAND}</h1>
-  <p class="brand-tagline">{TAGLINE}</p>
-  <div class="status-row"><span class="status-dot {api_class}"></span>{api_label}</div>
+  <h1 class="brand-name">{html.escape(BRAND)}</h1>
+  <p class="brand-tagline">{html.escape(TAGLINE)}</p>
+  <div class="status-row"><span class="status-dot {api_class}"></span>{html.escape(api_label)}</div>
 </div>
 """,
     unsafe_allow_html=True,
@@ -520,13 +666,13 @@ st.markdown(
 
 if is_home:
     st.markdown(
-        '<p class="empty-hint">Try an example, or type your own question below.</p>',
+        f'<p class="empty-hint">{html.escape(EMPTY_HINT)}</p>',
         unsafe_allow_html=True,
     )
     cols = st.columns(3, gap="small")
-    for col, example in zip(cols, EXAMPLE_QUESTIONS):
+    for idx, (col, example) in enumerate(zip(cols, EXAMPLE_QUESTIONS)):
         with col:
-            if st.button(example, key=f"ex_{hash(example)}", use_container_width=True):
+            if st.button(example, key=f"ex_{idx}", use_container_width=True):
                 submit_question(example)
                 st.rerun()
     render_ask_composer("home_ask")
@@ -537,6 +683,8 @@ if is_home:
         )
 else:
     for message in st.session_state.messages:
+        if message.get("thinking"):
+            render_thinking(message["thinking"], float(message.get("elapsed") or 0.0))
         render_message(message["role"], message["content"])
     render_ask_composer("chat_ask")
 
@@ -546,7 +694,12 @@ if st.session_state.pending_question:
     st.session_state.messages.append({"role": "user", "content": question})
     render_message("user", question)
 
-    with st.spinner("Consulting the knowledge graph…"):
-        answer = ask(api_base_url, question, st.session_state.user_id)
+    if stream_enabled:
+        answer, steps, elapsed = ask_stream(api_base_url, question, st.session_state.user_id)
+        reply = {"role": "assistant", "content": answer, "thinking": steps, "elapsed": elapsed}
+    else:
+        with st.spinner(SPINNER_TEXT):
+            answer = ask(api_base_url, question, st.session_state.user_id)
+        reply = {"role": "assistant", "content": answer}
     render_message("assistant", answer)
-    st.session_state.messages.append({"role": "assistant", "content": answer})
+    st.session_state.messages.append(reply)
